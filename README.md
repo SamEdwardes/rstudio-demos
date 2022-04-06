@@ -20,6 +20,8 @@ A repo containing links to my favourite RStudio demo repos.
 
 ### Streamlit
 
+- <https://github.com/SamEdwardes/demo-streamlit-penguins>
+
 ### Bokeh
 
 ### FastAPI
