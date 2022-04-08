@@ -6,11 +6,15 @@ A repo containing links to my favourite RStudio demo repos.
 
 ### Shiny
 
-- <https://github.com/SamEdwardes/demo-shiny-penguins>
+- Code: <https://github.com/SamEdwardes/demo-shiny-penguins>
+- Deployment: 
 
 ### RMarkdown
 
 ### Plumber
+
+- Code: <https://github.com/SamEdwardes/demo-plumber-penguins>
+- Deployment
 
 ### Pins
 
@@ -20,7 +24,8 @@ A repo containing links to my favourite RStudio demo repos.
 
 ### Streamlit
 
-- <https://github.com/SamEdwardes/demo-streamlit-penguins>
+- Code: <https://github.com/SamEdwardes/demo-streamlit-penguins>
+- Deployment <>
 
 ### Bokeh
 
