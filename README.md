@@ -25,7 +25,7 @@ A repo containing links to my favourite RStudio demo repos.
 ### Streamlit
 
 - Code: <https://github.com/SamEdwardes/demo-streamlit-penguins>
-- Deployment <>
+- Deployment: <https://colorado.rstudio.com/rsc/demo-streamlit-penguins/>
 
 ### Bokeh
 
