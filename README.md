@@ -14,7 +14,7 @@ A repo containing links to my favourite RStudio demo repos.
 ### Plumber
 
 - Code: <https://github.com/SamEdwardes/demo-plumber-penguins>
-- Deployment
+- Deployment: <https://colorado.rstudio.com/rsc/palmerspenguins/>
 
 ### Pins
 
