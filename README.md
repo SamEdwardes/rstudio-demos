@@ -7,7 +7,7 @@ A repo containing links to my favourite RStudio demo repos.
 ### Shiny
 
 - Code: <https://github.com/SamEdwardes/demo-shiny-penguins>
-- Deployment: 
+- Deployment: <https://colorado.rstudio.com/rsc/demo-penguins-shiny/>
 
 ### RMarkdown
 
