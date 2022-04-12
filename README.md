@@ -4,29 +4,26 @@ A repo containing links to my favourite RStudio demo repos.
 
 ## R
 
-### Shiny
+### Palmer Penguins Demos
 
-- Code: <https://github.com/SamEdwardes/demo-shiny-penguins>
-- Deployment: <https://colorado.rstudio.com/rsc/demo-shiny-penguins/>
-
-### RMarkdown
-
-### Plumber
-
-- Code: <https://github.com/SamEdwardes/demo-plumber-penguins>
-- Deployment: <https://colorado.rstudio.com/rsc/demo-plumber-penguins/>
-
-### Pins
+| Type        | Code                                                   | Deployment                                                |
+| ----------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| Shiny       | <https://github.com/SamEdwardes/demo-shiny-penguins>   | <https://colorado.rstudio.com/rsc/demo-shiny-penguins/>   |
+| RMarkdown   | <https://github.com/SamEdwardes/demo-rmd-penguins>     | <https://colorado.rstudio.com/rsc/demo-rmd-penguins/>     |
+| Plumber API | <https://github.com/SamEdwardes/demo-plumber-penguins> | <https://colorado.rstudio.com/rsc/demo-plumber-penguins/> |
+| Pins        | ...                                                    | ...                                                       |
+| Vetiver     | ...                                                    | ...                                                       |
 
 ## Python
 
-### Dash
+### Palmer Penguins Demos
 
-### Streamlit
-
-- Code: <https://github.com/SamEdwardes/demo-streamlit-penguins>
-- Deployment: <https://colorado.rstudio.com/rsc/demo-streamlit-penguins/>
-
-### Bokeh
-
-### FastAPI
+| Demo      | Code                                                     | Deployment                                                  |
+| --------- | -------------------------------------------------------- | ----------------------------------------------------------- |
+| Streamlit | <https://github.com/SamEdwardes/demo-streamlit-penguins> | <https://colorado.rstudio.com/rsc/demo-streamlit-penguins/> |
+| Dash      | ...                                                      | ...                                                         |
+| Bokeh     | ...                                                      | ...                                                         |
+| FastAPI   | ...                                                      | ...                                                         |
+| Flask     | ...                                                      | ...                                                         |
+| Pins      | ...                                                      | ...                                                         |
+| Vetiver   | ...                                                      | ...                                                         |
