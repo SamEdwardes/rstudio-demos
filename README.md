@@ -18,7 +18,7 @@ A repo containing links to my favourite RStudio demo repos.
 
 ### Palmer Penguins Demos
 
-| Demo      | Code                                                     | Deployment                                                  |
+| Type      | Code                                                     | Deployment                                                  |
 | --------- | -------------------------------------------------------- | ----------------------------------------------------------- |
 | Streamlit | <https://github.com/SamEdwardes/demo-streamlit-penguins> | <https://colorado.rstudio.com/rsc/demo-streamlit-penguins/> |
 | Dash      | ...                                                      | ...                                                         |
