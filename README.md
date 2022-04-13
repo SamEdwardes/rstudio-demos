@@ -13,7 +13,7 @@ Related demos using Palmer Penguins data set!
 | **R** | Plumber API     | [SamEdwardes/demo-plumber-penguins](https://github.com/SamEdwardes/demo-plumber-penguins) | <https://colorado.rstudio.com/rsc/demo-plumber-penguins/>    |
 | **R** | Pins            | [SamEdwardes/demo-pins-r-penguins](https://github.com/SamEdwardes/demo-pins-r-penguins) | <https://colorado.rstudio.com/rsc/demo-pins-r-penguins/> and <https://colorado.rstudio.com/rsc/demo-pins-penguins-data/> |
 | **R** | Vetiver         | ...                                                          | ...                                                          |
-| **R** | Connect Widgets | [SamEdwardes/demo-connect-widgets-penguins](https://github.com/SamEdwardes/demo-connect-widgets-penguins) | ...                                                          |
+| **R** | Connect Widgets | [SamEdwardes/demo-connect-widgets-penguins](https://github.com/SamEdwardes/demo-connect-widgets-penguins) | <https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins/> |
 | 🐍     | Streamlit       | [SamEdwardes/demo-streamlit-penguins](https://github.com/SamEdwardes/demo-streamlit-penguins) | <https://colorado.rstudio.com/rsc/demo-streamlit-penguins/>  |
 | 🐍     | Dash            | ...                                                          | ...                                                          |
 | 🐍     | Bokeh           | ...                                                          | ...                                                          |
