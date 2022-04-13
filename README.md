@@ -11,7 +11,7 @@ A repo containing links to my favourite RStudio demo repos.
 | Shiny       | <https://github.com/SamEdwardes/demo-shiny-penguins>   | <https://colorado.rstudio.com/rsc/demo-shiny-penguins/>   |
 | RMarkdown   | <https://github.com/SamEdwardes/demo-rmd-penguins>     | <https://colorado.rstudio.com/rsc/demo-rmd-penguins/>     |
 | Plumber API | <https://github.com/SamEdwardes/demo-plumber-penguins> | <https://colorado.rstudio.com/rsc/demo-plumber-penguins/> |
-| Pins        | ...                                                    | ...                                                       |
+| Pins        | <https://github.com/SamEdwardes/demo-pins-r-penguins>  | <https://colorado.rstudio.com/rsc/demo-pins-r-penguins/> and <https://colorado.rstudio.com/rsc/demo-pins-penguins-data/> |
 | Vetiver     | ...                                                    | ...                                                       |
 
 ## Python
