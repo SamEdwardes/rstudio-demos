@@ -13,6 +13,7 @@ A repo containing links to my favourite RStudio demo repos.
 | Plumber API | <https://github.com/SamEdwardes/demo-plumber-penguins> | <https://colorado.rstudio.com/rsc/demo-plumber-penguins/> |
 | Pins        | <https://github.com/SamEdwardes/demo-pins-r-penguins>  | <https://colorado.rstudio.com/rsc/demo-pins-r-penguins/> and <https://colorado.rstudio.com/rsc/demo-pins-penguins-data/> |
 | Vetiver     | ...                                                    | ...                                                       |
+| Connect Widgets     | ...                                                    | ...                                                       |
 
 ## Python
 
