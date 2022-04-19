@@ -15,7 +15,7 @@ Related demos using Palmer Penguins data set!
 | **R** | Vetiver         | ...                                                          | ...                                                          |
 | **R** | Connect Widgets | [SamEdwardes/demo-connect-widgets-penguins](https://github.com/SamEdwardes/demo-connect-widgets-penguins) | <https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins/> |
 | 🐍     | Streamlit       | [SamEdwardes/demo-streamlit-penguins](https://github.com/SamEdwardes/demo-streamlit-penguins) | <https://colorado.rstudio.com/rsc/demo-streamlit-penguins/>  |
-| 🐍     | Dash            | ...                                                          | ...                                                          |
+| 🐍     | Dash            | [SamEdwardes/demo-dash-penguins](https://github.com/SamEdwardes/demo-dash-penguins) | <https://colorado.rstudio.com/rsc/demo-dash-penguins/>       |
 | 🐍     | Bokeh           | ...                                                          | ...                                                          |
 | 🐍     | FastAPI         | [SamEdwardes/demo-fastapi-penguins](https://github.com/SamEdwardes/demo-fastapi-penguins) | <https://colorado.rstudio.com/rsc/demo-fastapi-penguins/docs> |
 | 🐍     | Flask           | ...                                                          | ...                                                          |
