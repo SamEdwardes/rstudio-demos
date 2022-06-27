@@ -11,6 +11,7 @@ Related demos using Palmer Penguins data set!
 | **R** | Shiny           | [SamEdwardes/demo-shiny-penguins](https://github.com/SamEdwardes/demo-shiny-penguins) | <https://colorado.rstudio.com/rsc/demo-shiny-penguins/>      |
 | **R** | RMarkdown       | [SamEdwardes/demo-rmd-penguins](https://github.com/SamEdwardes/demo-rmd-penguins) | <https://colorado.rstudio.com/rsc/demo-rmd-penguins/>        |
 | **R** | Plumber API     | [SamEdwardes/demo-plumber-penguins](https://github.com/SamEdwardes/demo-plumber-penguins) | <https://colorado.rstudio.com/rsc/demo-plumber-penguins/>    |
+| **R** | Plumber Tableau | [SamEdwardes/demo-plumber-tableau-penguins](https://github.com/SamEdwardes/demo-plumber-tableau-penguins) | <https://colorado.rstudio.com/rsc/demo-plumber-tableau-penguins/>    |
 | **R** | Pins            | [SamEdwardes/demo-pins-r-penguins](https://github.com/SamEdwardes/demo-pins-r-penguins) | <https://colorado.rstudio.com/rsc/demo-pins-r-penguins/> and <https://colorado.rstudio.com/rsc/demo-pins-penguins-data/> |
 | **R** | Vetiver         | ...                                                          | ...                                                          |
 | **R** | Connect Widgets | [SamEdwardes/demo-connect-widgets-penguins](https://github.com/SamEdwardes/demo-connect-widgets-penguins) | <https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins/> |
