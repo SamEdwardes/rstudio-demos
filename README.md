@@ -15,18 +15,18 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **Python** | Bokeh            | ...                                                               |
 | **Python** | Shiny for Python | ...                                                               |
 
-<!-- Shiny -->
+<!-- Shiny ✅ --> 
 [app-1a]: ./applications/shiny-penguins/         
 [app-1b]: https://colorado.rstudio.com/rsc/demo-shiny-penguins/
-[app-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/111d99ef-5d8e-478b-b73b-30f024643677
-<!-- Streamlit -->
+[app-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/03953aef-f4f7-4de6-8de0-828e1cb64f8f
+<!-- Streamlit ✅ -->
 [app-2a]: ./applications/streamlit-penguins/
 [app-2b]: https://colorado.rstudio.com/rsc/demo-streamlit-penguins/
-[app-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/7fc935e1-f2f6-4d24-9d21-abff741a3761
-<!-- Dash single page -->
+[app-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/e33879ca-e251-49fa-b9bf-a56db9997048
+<!-- Dash single page ✅ -->
 [app-3a]: ./applications/dash-penguins/
 [app-3b]: https://colorado.rstudio.com/rsc/demo-dash-penguins/
-[app-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/101bcd8b-a03e-48c0-889c-e5a6d5c4a502
+[app-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/
 <!-- Dash multi-page -->
 [app-4a]: ./applications/dash-multi-page-penguins/
 [app-4b]: https://colorado.rstudio.com/rsc/demo-dash-multi-page-penguins/

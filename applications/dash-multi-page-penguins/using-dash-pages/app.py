@@ -4,7 +4,7 @@ import pandas as pd
 from dash import Dash, dcc, html
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True)
-url = "https://github.com/allisonhorst/palmerpenguins/raw/master/inst/extdata/penguins.csv"
+url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
 data = pd.read_csv(url)
 
 app.layout = dbc.Container([
