@@ -36,7 +36,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 | Type       | Content          | Links                                                             |
 | ---------- | ---------------- | ----------------------------------------------------------------- |
-| **R**      | RMarkdown        | [Code][doc-1a] \| [Solo View][doc-1b] \| [Dashboard View][doc-1c] |
+| **R**      | R Markdown       | [Code][doc-1a] \| [Solo View][doc-1b] \| [Dashboard View][doc-1c] |
 | **R**      | Connect Widgets  | [Code][doc-2a] \| [Solo View][doc-2b] \| [Dashboard View][doc-2c] |
 | **Python** | Jupyter Notebook | [Code][doc-3a] \| [Solo View][doc-3b] \| [Dashboard View][doc-3c] |
 
