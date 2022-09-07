@@ -30,7 +30,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 <!-- Dash multi-page -->
 [app-4a]: ./applications/dash-multi-page-penguins/
 [app-4b]: https://colorado.rstudio.com/rsc/demo-dash-multi-page-penguins/
-[app-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/50848991-39ad-4439-b452-2679e60a5968
+[app-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/73f77f59-1bc7-4225-b21a-01df0447ac7b
 
 ### Documents
 

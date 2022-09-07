@@ -9,7 +9,7 @@ dash.register_page(
     name="Distribution of Flipper Length"
 )
 
-url = "https://github.com/allisonhorst/palmerpenguins/raw/master/inst/extdata/penguins.csv"
+url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
 data = pd.read_csv(url)
 
 def plot_histogram():
