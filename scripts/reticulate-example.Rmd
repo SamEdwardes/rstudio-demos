@@ -1,0 +1,49 @@
+---
+title: Reticulate Example
+---
+
+An example of how to use [reticulate](https://rstudio.github.io/reticulate/) in RStudio Workbench. 
+
+## Setup
+
+Before running this notebook you should set a value for `RETICULATE_PYTHON` in your `.Renviron` file. You can check if it has been set by running the code below.
+
+```{r}
+Sys.getenv("RETICULATE_PYTHON")
+```
+
+## Run Python Code
+
+Set up reticulate.
+
+```{r}
+library(reticulate)
+library(dplyr)
+```
+
+Create a dataframe using Python
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame({
+  "x": [1, 2, 3, 4, 5, 6, 7, 8],
+  "y": [True, False, True, True, False, False, False, True]
+})
+
+df
+```
+
+Access the same data from R using the `py` variable 🤯
+
+```{r}
+glimpse(py$df)
+```
+
+You can also add the object into your R environment.
+
+```{r}
+df <- py$df
+df
+```
+

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-dash",
+    "entrypoint": "app"
+  },
+  "python": {
+    "version": "3.10.4",
+    "package_manager": {
+      "name": "pip",
+      "version": "22.2.2",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "d764aae00db965b13fce4579be9dcf98"
+    },
+    "README.md": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "app.py": {
+      "checksum": "03ad77595159d70671d2cde087310d49"
+    },
+    "pages/__init__.py": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "pages/__pycache__/__init__.cpython-310.pyc": {
+      "checksum": "9c09b85e93ed9bfb98f6ef347f058df2"
+    },
+    "pages/__pycache__/index.cpython-310.pyc": {
+      "checksum": "424929240d5116ebc137fb520840af29"
+    },
+    "pages/__pycache__/page1.cpython-310.pyc": {
+      "checksum": "e31faf3794d17a9dc9a5c5827ca415be"
+    },
+    "pages/__pycache__/page2.cpython-310.pyc": {
+      "checksum": "91cd32c2d535d7cbae0b1da5d28a25d9"
+    },
+    "pages/index.py": {
+      "checksum": "88cf11e7ed8222a22d71c8e754b4c16d"
+    },
+    "pages/page1.py": {
+      "checksum": "93048d72d1f25e43546361f51e043dc6"
+    },
+    "pages/page2.py": {
+      "checksum": "af35da3d90d15deac14c314aebab2c0b"
+    }
+  }
+}

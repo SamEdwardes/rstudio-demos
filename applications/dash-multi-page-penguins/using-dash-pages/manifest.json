@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-dash",
+    "entrypoint": "app"
+  },
+  "python": {
+    "version": "3.10.4",
+    "package_manager": {
+      "name": "pip",
+      "version": "22.2.2",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "4b6d34b8d6df48b6c01943b055cc343b"
+    },
+    "README.md": {
+      "checksum": "123601a2fe4822cb2946d069701ad329"
+    },
+    "app.py": {
+      "checksum": "4ceda498a673bec06ec09e728bae145f"
+    },
+    "pages/__pycache__/analytics.cpython-310.pyc": {
+      "checksum": "5c02f2a356ca9f3217587904416df271"
+    },
+    "pages/__pycache__/archive.cpython-310.pyc": {
+      "checksum": "9f03b69d0b7aa7905cf7527863136636"
+    },
+    "pages/__pycache__/histogram.cpython-310.pyc": {
+      "checksum": "36e9438c85e16065f9f85f082a2eb2f8"
+    },
+    "pages/__pycache__/home.cpython-310.pyc": {
+      "checksum": "8648448e2e5a96f635351b8d56cf97ce"
+    },
+    "pages/__pycache__/info.cpython-310.pyc": {
+      "checksum": "d4ba603d250475e778c373ca7b4d052f"
+    },
+    "pages/__pycache__/scatter.cpython-310.pyc": {
+      "checksum": "ec647ca70be19f2fe4c083ff7e417169"
+    },
+    "pages/histogram.py": {
+      "checksum": "0e7099bd3a092715195c009fd7fbfaa6"
+    },
+    "pages/home.py": {
+      "checksum": "9bdd0ed2849f1e4ad57005e628a3cae5"
+    },
+    "pages/scatter.py": {
+      "checksum": "9c9ff466eb5312b95f073435c66dd3e6"
+    }
+  }
+}
