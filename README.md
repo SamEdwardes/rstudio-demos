@@ -8,10 +8,10 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 | Type       | Content          | Links                                                             |
 | ---------- | ---------------- | ----------------------------------------------------------------- |
-| **R**      | Shiny            | [Code](app-1a) \| [Solo View](app-1b) \| [Dashboard View](app-1c) |
-| **Python** | Streamlit        | [Code](app-2a) \| [Solo View](app-2b) \| [Dashboard View](app-2c) |
-| **Python** | Dash             | [Code](app-3a) \| [Solo View](app-3b) \| [Dashboard View](app-3c) |
-| **Python** | Dash multi-page  | [Code](app-4a) \| [Solo View](app-4b) \| [Dashboard View](app-4c) |
+| **R**      | Shiny            | [Code][app-1a] \| [Solo View][app-1b] \| [Dashboard View][app-1c] |
+| **Python** | Streamlit        | [Code][app-2a] \| [Solo View][app-2b] \| [Dashboard View][app-2c] |
+| **Python** | Dash             | [Code][app-3a] \| [Solo View][app-3b] \| [Dashboard View][app-3c] |
+| **Python** | Dash multi-page  | [Code][app-4a] \| [Solo View][app-4b] \| [Dashboard View][app-4c] |
 | **Python** | Bokeh            | ...                                                               |
 | **Python** | Shiny for Python | ...                                                               |
 
