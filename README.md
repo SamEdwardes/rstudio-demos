@@ -26,9 +26,9 @@ A repo containing links to my favourite RStudio demo repos and documentation
 <!-- Dash single page ✅ -->
 [app-3a]: ./applications/dash-penguins/
 [app-3b]: https://colorado.rstudio.com/rsc/demo-dash-penguins/
-[app-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/
-<!-- Dash multi-page -->
-[app-4a]: ./applications/dash-multi-page-penguins/
+[app-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/9b456fb6-e8b7-4b4c-bb60-2ba5f113b052
+<!-- Dash multi-page ✅  -->
+[app-4a]: ./applications/dash-multi-page-penguins/using-dash-pages/
 [app-4b]: https://colorado.rstudio.com/rsc/demo-dash-multi-page-penguins/
 [app-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/73f77f59-1bc7-4225-b21a-01df0447ac7b
 
@@ -40,18 +40,18 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **R**      | Connect Widgets  | [Code][doc-2a] \| [Solo View][doc-2b] \| [Dashboard View][doc-2c] |
 | **Python** | Jupyter Notebook | [Code][doc-3a] \| [Solo View][doc-3b] \| [Dashboard View][doc-3c] |
 
-<!-- RMarkdown -->
+<!-- RMarkdown ✅ -->
 [doc-1a]: ./documents/rmd-penguins/        
 [doc-1b]: https://colorado.rstudio.com/rsc/demo-rmd-penguins/
-[doc-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/42a4c20d-a169-4372-93b8-6436fe732404
-<!-- Connect Widgets -->
+[doc-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/5450ba17-ddc2-4ef6-aeb8-ac2cec53d244
+<!-- Connect Widgets ✅  -->
 [doc-2a]: ./documents/connect-widgets-penguins/ 
 [doc-2b]: https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins
-[doc-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/c21c3d9a-7fc4-4d71-9d77-4dc7400b9c85
+[doc-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/692ea95d-ac94-4afa-aa5b-db76c278d2ac
 <!-- Jupyter Notebook -->
 [doc-3a]: ./documents/jupyter-python-penguins/          
 [doc-3b]: #
-[doc-3c]: #
+[doc-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/241fe2cd-6eba-4a79-9aa3-6e6fe28c5714
 
 
 ### APIs

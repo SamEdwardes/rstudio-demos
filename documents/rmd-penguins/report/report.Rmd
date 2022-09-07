@@ -2,7 +2,7 @@
 title: "March of the Penguins"
 output: html_document
 params:
-  echo_code: FALSE
+  echo_code: TRUE
 ---
 
 ```{r setup, include=FALSE}
