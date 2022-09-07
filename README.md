@@ -36,9 +36,9 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 | Type       | Content          | Links                                                             |
 | ---------- | ---------------- | ----------------------------------------------------------------- |
-| **R**      | RMarkdown        | [Code](doc-1a) \| [Solo View](doc-1b) \| [Dashboard View](doc-1c) |
-| **R**      | Connect Widgets  | [Code](doc-2a) \| [Solo View](doc-2b) \| [Dashboard View](doc-2c) |
-| **Python** | Jupyter Notebook | [Code](doc-3a) \| [Solo View](doc-3b) \| [Dashboard View](doc-3c) |
+| **R**      | RMarkdown        | [Code][doc-1a] \| [Solo View][doc-1b] \| [Dashboard View][doc-1c] |
+| **R**      | Connect Widgets  | [Code][doc-2a] \| [Solo View][doc-2b] \| [Dashboard View][doc-2c] |
+| **Python** | Jupyter Notebook | [Code][doc-3a] \| [Solo View][doc-3b] \| [Dashboard View][doc-3c] |
 
 <!-- RMarkdown -->
 [doc-1a]: ./documents/rmd-penguins/        
@@ -58,9 +58,9 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 | Type        | Content          | Links                                                                                             |
 | ----------- | ---------------- | ------------------------------------------------------------------------------------------------- |
-| **R**       | Plumber API      | [Code](api-1a) \| [Solo View](api-1b) \| [Dashboard View](api-1c)                                 |
-| **R**       | Plumber Tableau  | [Code](api-2a) \| [Solo View](api-2b) \| [Dashboard View](api-2c) \| [Tableau Deployment](api-2d) |
-| **Python**  | FastAPI          | [Code](api-3a) \| [Solo View](api-3b) \| [Dashboard View](api-3c)                                 |
+| **R**       | Plumber API      | [Code][api-1a] \| [Solo View][api-1b] \| [Dashboard View][api-1c]                                 |
+| **R**       | Plumber Tableau  | [Code][api-2a] \| [Solo View][api-2b] \| [Dashboard View][api-2c] \| [Tableau Deployment][api-2d] |
+| **Python**  | FastAPI          | [Code][api-3a] \| [Solo View][api-3b] \| [Dashboard View][api-3c]                                 |
 | **Python**  | Flask            | ... |
 
 <!-- Plumber -->
@@ -81,7 +81,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 | Type       | Content          | Links                                                             |
 | ---------- | ---------------- | ----------------------------------------------------------------- |
-| **R**      | Pins             | [Code](pin-1a) \| [Solo View](pin-1b) \| [Dashboard View](pin-1c) |
+| **R**      | Pins             | [Code][pin-1a] \| [Solo View][pin-1b] \| [Dashboard View][pin-1c] |
 | **Python** | Pins             | ...                                                               |
 
 <!-- Pins - R -->
