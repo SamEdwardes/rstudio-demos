@@ -21,6 +21,46 @@ A curated list of RStudio Connect demos using the [Palmer Penguins](https://alli
 
 ![](imgs/penguins.png)
 
+## Applications
+
+```{r}
+client |> 
+  content() |> 
+  by_tags("Demo: Palmer Penguins") |> 
+  by_tags("Application") |> 
+  rsc_grid()
+```
+
+## APIs
+
+```{r}
+client |> 
+  content() |> 
+  by_tags("Demo: Palmer Penguins") |> 
+  by_tags("API") |> 
+  rsc_grid()
+```
+
+## Documents
+
+```{r}
+client |> 
+  content() |> 
+  by_tags("Demo: Palmer Penguins") |> 
+  by_tags("Document") |> 
+  rsc_grid()
+```
+
+## Pins
+
+```{r}
+client |> 
+  content() |> 
+  by_tags("Demo: Palmer Penguins") |> 
+  by_tags("Pins") |> 
+  rsc_grid()
+```
+
 ## R Content
 
 ```{r}
