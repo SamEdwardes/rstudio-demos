@@ -1,5 +1,9 @@
 # The Colorado Report
 
 ```r
-rsconnect::writeManifest(quarto = quarto::quarto_path())
+rsconnect::writeManifest(
+  appDir = ".", 
+  appPrimaryDoc = "colorado-report.qmd",
+  quarto = quarto::quarto_path()
+)
 ```

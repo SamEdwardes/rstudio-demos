@@ -3,11 +3,15 @@
   "locale": "en_US",
   "platform": "4.2.0",
   "metadata": {
-    "appmode": "rmd-static",
+    "appmode": "quarto-static",
     "primary_rmd": "colorado-report.qmd",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
+  },
+  "quarto": {
+    "version": "0.9.651",
+    "engines": ["knitr"]
   },
   "packages": {
     "MASS": {
