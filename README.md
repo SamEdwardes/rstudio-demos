@@ -50,9 +50,9 @@ A repo containing links to my favourite RStudio demo repos and documentation
 [doc-2b]: https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins
 [doc-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/692ea95d-ac94-4afa-aa5b-db76c278d2ac
 <!-- Quarto - R -->
-[doc-4a]: ./documents/quarto-colorado-reoprt/          
-[doc-4b]: https://colorado.rstudio.com/rsc/demo-quarto-colorado-report-r/
-[doc-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd/
+[doc-3a]: ./documents/quarto-colorado-reoprt/          
+[doc-3b]: https://colorado.rstudio.com/rsc/demo-quarto-colorado-report-r/
+[doc-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd/
 <!-- Jupyter Notebook -->
 [doc-4a]: ./documents/jupyter-python-penguins/          
 [doc-4b]: https://colorado.rstudio.com/rsc/demo-jupyter-python-penguins/
