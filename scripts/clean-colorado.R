@@ -8,7 +8,11 @@ all_content <- get_content(client, owner_guid = sam_edawrdes_guid)
 
 white_list <- c(
   "Using VS Code in Workbench",
-  "bike_predict_model_r: a pinned list"
+  "bike_predict_model_r: a pinned list",
+  "The Colorado Report",
+  "Workbench Admin Guide (PREVIEW)",
+  "Workbench User Guide (PREVIEW)",
+  "Global variable scope test"
 )
 
 content_to_delete <-
@@ -25,7 +29,8 @@ content_to_delete <-
     title,
     created_time,
     last_deployed_time
-  )
+  ) |> 
+  arrange(created_time)
 
 content_to_delete |> 
   select(guid, title) |> 
@@ -34,9 +39,16 @@ content_to_delete |>
 print(content_to_delete, n = 100)
 
 for (i in c(1:nrow(content_to_delete))) {
+  print("=====================================================================")
   glimpse(content_to_delete[i,])
   content <- as.list(content_to_delete[i,])
   item <- content_item(client, content$guid)
-  content_delete(item)
+  tryCatch(
+    content_delete(item),
+    error = function(err) {
+      print(err)
+    }
+  )
+  
 }
   
