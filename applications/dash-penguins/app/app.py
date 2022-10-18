@@ -1,12 +1,16 @@
 # app/app.py
 
+import os
 from textwrap import dedent
 
+from dotenv import load_dotenv
+load_dotenv()
+
+from dash import Dash, dcc, html
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from dash import Dash, dcc, html
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
@@ -83,4 +87,7 @@ app.layout = dbc.Container([
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    if os.getenv("DASH_DEBUG"):
+        app.run_server(debug=True)
+    else:
+        app.run_server(debug=False)

@@ -18,6 +18,7 @@ pip install -r app/requirements.txt
 The run the app:
 
 ```bash
+export DASH_DEBUG=1
 python app/app.py
 ```
 
