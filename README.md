@@ -132,6 +132,7 @@ Links to my most commonly reference documentation.
 - [RStudio in the Cloud](https://www.rstudio.com/solutions/rstudio-in-the-cloud/)
 - [Where Does RStudio Fit into Your Cloud Strategy?](https://www.rstudio.com/blog/cloud-strategy/)
 - [Why Data Science in the Cloud?](https://www.rstudio.com/resources/webinars/why-data-science-in-the-cloud/) (Webinar)
+- [RStudio Cloud Marketplace Offers](https://docs.rstudio.com/rstudio-team/marketplaces/)
 
 **Databricks**
 
@@ -151,3 +152,7 @@ Links to my most commonly reference documentation.
 - <https://www.rstudio.com/azure-ml/>
 - [Announcing RStudio for Microsoft Azure ML](https://cloud.rstudio.com/blog/announcing-rstudio-for-azure-ml/)
 - [Add RStudio to Azure ML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=python#add-custom-applications-such-as-rstudio-preview) (Azure Docs)
+- [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=RStudio&page=1)
+  - [RStudio Workbench Standard for Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudioserverprostandard)
+  - [RStudio Connect](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudio-connect)
+  - [FAQ for RStudio Connect Azure](https://support.rstudio.com/hc/en-us/articles/360022703493-FAQ-for-RStudio-Connect-Azure)
