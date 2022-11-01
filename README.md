@@ -61,7 +61,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 <!-- Blastula - R -->
 [doc-5a]: ./documents/rmd-blastula/          
 [doc-5b]: https://colorado.rstudio.com/rsc/demo-rmd-blastula/
-[doc-5c]: xx
+[doc-5c]: https://colorado.rstudio.com/rsc/connect/#/apps/e0b35f2a-9a69-498a-a97f-914b4e4f5931/
 
 
 ### APIs
