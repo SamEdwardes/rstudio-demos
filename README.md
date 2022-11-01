@@ -39,6 +39,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **R**      | R Markdown       | [Code][doc-1a] \| [Solo View][doc-1b] \| [Dashboard View][doc-1c] |
 | **R**      | Connect Widgets  | [Code][doc-2a] \| [Solo View][doc-2b] \| [Dashboard View][doc-2c] |
 | **R**      | Quarto           | [Code][doc-3a] \| [Solo View][doc-3b] \| [Dashboard View][doc-3c] |
+| **R**      | Blastula         | [Code][doc-5a] \| [Solo View][doc-5b] \| [Dashboard View][doc-5c] |
 | **Python** | Jupyter Notebook | [Code][doc-4a] \| [Solo View][doc-4b] \| [Dashboard View][doc-4c] |
 
 <!-- RMarkdown -->
@@ -50,13 +51,17 @@ A repo containing links to my favourite RStudio demo repos and documentation
 [doc-2b]: https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins
 [doc-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/692ea95d-ac94-4afa-aa5b-db76c278d2ac
 <!-- Quarto - R -->
-[doc-3a]: ./documents/quarto-colorado-reoprt/          
+[doc-3a]: ./documents/quarto-colorado-report/          
 [doc-3b]: https://colorado.rstudio.com/rsc/demo-quarto-colorado-report-r/
 [doc-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd/
 <!-- Jupyter Notebook -->
 [doc-4a]: ./documents/jupyter-python-penguins/          
 [doc-4b]: https://colorado.rstudio.com/rsc/demo-jupyter-python-penguins/
 [doc-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/241fe2cd-6eba-4a79-9aa3-6e6fe28c5714
+<!-- Blastula - R -->
+[doc-5a]: ./documents/rmd-blastula/          
+[doc-5b]: https://colorado.rstudio.com/rsc/demo-rmd-blastula/
+[doc-5c]: xx
 
 
 ### APIs
