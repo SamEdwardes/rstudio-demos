@@ -121,6 +121,12 @@ Links to my most commonly reference documentation.
 - [Configuration and sizing recommendations](https://support.rstudio.com/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations)
 - [Shimmer: Shiny sizing simulation](https://colorado.rstudio.com/rsc/shimmer_and_shiny/)
 
+### Product
+
+#### Connect
+
+- [Scaling and Performance Tuning in RStudio Connect](https://support.posit.co/hc/en-us/articles/231874748-Scaling-and-Performance-Tuning-in-RStudio-Connect)
+
 ### Root & Privileged Requirements
 
 - [RStudio Professional Product Root & Privileged Requirements](https://support.rstudio.com/hc/en-us/articles/1500005369282-RStudio-Professional-Product-Root-Privileged-Requirements)
