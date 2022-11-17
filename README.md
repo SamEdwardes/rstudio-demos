@@ -127,6 +127,11 @@ Links to my most commonly reference documentation.
 
 - [Scaling and Performance Tuning in RStudio Connect](https://support.posit.co/hc/en-us/articles/231874748-Scaling-and-Performance-Tuning-in-RStudio-Connect)
 
+#### Package Manager
+
+- [RStudio Package Manager and Artifactory](https://support.posit.co/hc/en-us/articles/360016522533-RStudio-Package-Manager-and-Artifactory)
+- [Posit Package Manager and Sonatype Nexus Repository](https://support.posit.co/hc/en-us/articles/10016108647703)
+
 ### Root & Privileged Requirements
 
 - [RStudio Professional Product Root & Privileged Requirements](https://support.rstudio.com/hc/en-us/articles/1500005369282-RStudio-Professional-Product-Root-Privileged-Requirements)
