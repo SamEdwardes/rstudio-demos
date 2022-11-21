@@ -1,0 +1,61 @@
+---
+title: User Counting in Connect
+---
+
+```{r}
+library(dplyr)
+library(connectapi)
+library(lubridate)
+library(ggplot2)
+
+client <- connect()
+```
+
+Get all users
+
+```{r}
+users <- get_users(client, limit = 999)
+glimpse(users)
+```
+
+```{r}
+users <- users |> 
+  mutate(
+    days_since_last_active = round(difftime(today(), active_time, units="days"), 0)
+  )
+
+users |> 
+  select(
+    username,
+    active_time,
+    days_since_last_active,
+    locked
+  )
+```
+
+See how many users are inactive:
+
+```{r}
+users |> 
+  ggplot() +
+  geom_histogram(aes(x = days_since_last_active, fill = locked))
+```
+
+Users to lock:
+
+```{r}
+users |> 
+  filter(
+    days_since_last_active >= 365,
+    locked == FALSE
+  ) |> 
+  select(
+    username,
+    created_time,
+    active_time,
+    days_since_last_active,
+    locked
+  ) |> 
+  arrange(desc(days_since_last_active))
+```
+
