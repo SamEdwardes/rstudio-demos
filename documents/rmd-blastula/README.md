@@ -1,5 +1,7 @@
 # Blastula Example
 
+![](./email-screenshot.jpg)
+
 ```r
 rsconnect::writeManifest(
   appDir = ".", 
