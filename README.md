@@ -120,6 +120,9 @@ Links to my most commonly reference documentation.
 - [Platform Support](https://www.rstudio.com/about/platform-support/)
 - [Configuration and sizing recommendations](https://support.rstudio.com/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations)
 - [Shimmer: Shiny sizing simulation](https://colorado.rstudio.com/rsc/shimmer_and_shiny/)
+- [RStudio Professional Product Root & Privileged Requirements](https://support.rstudio.com/hc/en-us/articles/1500005369282-RStudio-Professional-Product-Root-Privileged-Requirements)
+- [Environment Management Strategy Map](https://solutions.rstudio.com/environments/reproduce/)
+- [Managing libraries for RStudio Workbench / RStudio Server](https://support.rstudio.com/hc/en-us/articles/215733837-Managing-libraries-for-RStudio-Workbench-RStudio-Server)
 
 ### Product
 
@@ -131,15 +134,6 @@ Links to my most commonly reference documentation.
 
 - [RStudio Package Manager and Artifactory](https://support.posit.co/hc/en-us/articles/360016522533-RStudio-Package-Manager-and-Artifactory)
 - [Posit Package Manager and Sonatype Nexus Repository](https://support.posit.co/hc/en-us/articles/10016108647703)
-
-### Root & Privileged Requirements
-
-- [RStudio Professional Product Root & Privileged Requirements](https://support.rstudio.com/hc/en-us/articles/1500005369282-RStudio-Professional-Product-Root-Privileged-Requirements)
-
-### Environments
-
-- [Environment Management Strategy Map](https://solutions.rstudio.com/environments/reproduce/)
-- [Managing libraries for RStudio Workbench / RStudio Server](https://support.rstudio.com/hc/en-us/articles/215733837-Managing-libraries-for-RStudio-Workbench-RStudio-Server)
 
 ### Cloud
 
@@ -172,3 +166,125 @@ Links to my most commonly reference documentation.
   - [RStudio Workbench Standard for Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudioserverprostandard)
   - [RStudio Connect](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudio-connect)
   - [FAQ for RStudio Connect Azure](https://support.rstudio.com/hc/en-us/articles/360022703493-FAQ-for-RStudio-Connect-Azure)
+
+## Pro Product Cheat Sheet
+
+### Workbench
+
+```bash
+# --------------------------
+# Stop, Start, Status
+# --------------------------
+sudo systemctl start rstudio-server
+sudo systemctl stop rstudio-server
+sudo systemctl status rstudio-server
+# Or... you can use the rstudio-server utility installed at /usr/bin 
+# (https://docs.posit.co/ide/server-pro/reference/rstudio_server_cli.html)
+sudo rstudio-server restart # start, stop, status, etc.
+
+# --------------------------
+# CLIs
+# --------------------------
+# https://docs.posit.co/ide/server-pro/reference/rstudio_server_cli.html
+rstudio-server
+
+# --------------------------
+# Logs
+# --------------------------
+sudo tail -n 50 /var/log/rstudio/rstudio-server
+sudo tail -n 50 /var/log/rstudio/launcher
+sudo tail -n 50 ~/.local/share/rstudio/log
+sudo journalctl # need to figure this one out
+
+# --------------------------
+# License Management
+# --------------------------
+
+# --------------------------
+# User Management
+# --------------------------
+```
+
+### Connect
+
+```bash
+# --------------------------
+# Stop, Start, Status
+# --------------------------
+sudo systemctl start rstudio-connect
+sudo systemctl stop rstudio-connect
+sudo systemctl restart rstudio-connect
+sudo systemctl reload rstudio-connect # trigger a configuration reload
+sudo systemctl status rstudio-connect
+
+# --------------------------
+# CLIs
+# --------------------------
+# See all CLIs
+sudo ls -la /opt/rstudio-connect/bin
+# Most common
+sudo /opt/rstudio-connect/bin/migrate
+sudo /opt/rstudio-connect/bin/usermanager
+sudo /opt/rstudio-connect/bin/license-manager
+sudo /opt/rstudio-connect/bin/rscadmin
+
+# --------------------------
+# Logs
+# --------------------------
+sudo tail -n 50 /var/log/rstudio/rstudio-connect/rstudio-connect.log
+sudo tail -n 50 /var/log/rstudio/rstudio-connect/rstudio-connect.access.log
+sudo tail -n 50 /var/log/rstudio/rstudio-connect/rstudio-connect.audit.log
+
+# --------------------------
+# License Management
+# --------------------------
+sudo /opt/rstudio-connect/bin/license-manager activate $PCT_KEY
+sudo /opt/rstudio-connect/bin/license-manager status
+sudo /opt/rstudio-connect/bin/license-manager deactivate
+
+# --------------------------
+# User Management
+# --------------------------
+```
+
+### Package Manager
+
+```bash
+# --------------------------
+# Stop, Start, Status
+# --------------------------
+sudo systemctl start rstudio-pm
+sudo systemctl stop rstudio-pm
+sudo systemctl status rstudio-pm
+
+# --------------------------
+# CLIs
+# --------------------------
+# See all CLIs
+sudo ls -la /opt/rstudio-pm/bin
+# Most commmon
+sudo /opt/rstudio-pm/bin/rspm
+sudo /opt/rstudio-pm/bin/license-manager
+
+# --------------------------
+# Logs
+# --------------------------
+# Server logs
+sudo tail -n 50 /var/log/rstudio/rstudio-pm/rstudio-pm.log
+# Access logs
+sudo tail -n 50 /var/log/rstudio/rstudio-pm/rstudio-pm.log
+# Package service logs (not enalbed by default
+sudo tail -n 50 /var/log/rstudio/rstudio-pm/rstudio-pm.service.log
+
+# --------------------------
+# License Management
+# --------------------------
+sudo /opt/rstudio-pm/bin/license-manager activate $PPM_KEY
+sudo /opt/rstudio-pm/bin/license-manager status
+sudo /opt/rstudio-pm/bin/license-manager deactivate
+
+# --------------------------
+# User Management
+# --------------------------
+
+```
