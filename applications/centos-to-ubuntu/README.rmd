@@ -1,0 +1,31 @@
+Set centOS8 as the URL:
+
+```{r}
+getOption("repos")
+
+options(
+  repos = c(
+    CRAN = "https://packagemanager.rstudio.com/cran/__linux__/centos8/latest"
+  )
+)
+
+getOption("repos")
+
+# http://aae2c0117097541568987265ca961fe7-1030668405.us-east-1.elb.amazonaws.com/
+
+rsconnect::addConnectServer(
+  url = "http://aae2c0117097541568987265ca961fe7-1030668405.us-east-1.elb.amazonaws.com", 
+  name = "test-k8s"
+)
+
+rsconnect::connectUser(server = "test-k8s")
+
+rsconnect::connectApiUser(
+  server = "test-k8s",
+  apiKey = "Nt1yyjCbS2W1gHjAUGdKwO6rmxzcCf95"
+)
+
+
+rsconnect::writeManifest("app")
+rsconnect::deployApp(appDir = "app")
+```
