@@ -191,8 +191,9 @@ rstudio-server
 # --------------------------
 # Logs
 # --------------------------
-sudo tail -n 50 /var/log/rstudio/rstudio-server
-sudo tail -n 50 /var/log/rstudio/launcher
+sudo tail -n 50 /var/log/rstudio/rstudio-server/rserver.log
+sudo tail -n 50 /var/log/rstudio/rstudio-server/rserver-http-error.log
+sudo tail -n 50 /var/log/rstudio/launcher/rstudio-launcher.log
 sudo tail -n 50 ~/.local/share/rstudio/log
 sudo journalctl # need to figure this one out
 
