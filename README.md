@@ -71,7 +71,8 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **R**       | Plumber API      | [Code][api-1a] \| [Solo View][api-1b] \| [Dashboard View][api-1c]                                 |
 | **R**       | Plumber Tableau  | [Code][api-2a] \| [Solo View][api-2b] \| [Dashboard View][api-2c] \| [Tableau Deployment][api-2d] |
 | **Python**  | FastAPI          | [Code][api-3a] \| [Solo View][api-3b] \| [Dashboard View][api-3c]                                 |
-| **Python**  | Flask            | ... |
+| **Python**  | Flask            | ...                                                                                               |
+| **Python**  | Vetiver          | [Code][api-4a]                                                                                    |
 
 <!-- Plumber -->
 [api-1a]: ./apis/plumber-penguins/
@@ -86,6 +87,8 @@ A repo containing links to my favourite RStudio demo repos and documentation
 [api-3a]: ./apis/fastapi-penguins/
 [api-3b]: https://colorado.rstudio.com/rsc/demo-fastapi-penguins/docs
 [api-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/331f89eb-988f-4874-b831-566916def4dd
+<!-- Vetiver -->      
+[api-4a]: ./apis/vetiver-train-and-deploy-python/
 
 ### Pins
 
@@ -103,7 +106,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 ### Bike share
 
-The "mega" bike share demo: 
+The bike share demo: 
 
 - To see all content on Connect filter on the tag *[Bike Predict](https://colorado.rstudio.com/rsc/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=expanded&tags=111-tagtree:218)*
 - View the Connect Widgets Dashboard:
