@@ -1,0 +1,11 @@
+{
+    "https://colorado.posit.co/rsc": {
+        "server_url": "https://colorado.posit.co/rsc",
+        "filename": "/usr/home/rika.gorn/rstudio-demos-fork/applications/streamlit-penguins",
+        "app_url": "https://colorado.posit.co/rsc/content/35078a09-b57f-4afe-aa70-4fa3e84ffc60/",
+        "app_id": 15802,
+        "app_guid": "35078a09-b57f-4afe-aa70-4fa3e84ffc60",
+        "title": "streamlit-penguins",
+        "app_mode": "python-streamlit"
+    }
+}

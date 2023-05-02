@@ -1,0 +1,11 @@
+{
+    "https://colorado.posit.co/rsc": {
+        "server_url": "https://colorado.posit.co/rsc",
+        "filename": "/usr/home/rika.gorn/rstudio-demos-fork/applications/dash-penguins",
+        "app_url": "https://colorado.posit.co/rsc/content/bcf2488e-6341-42df-9299-bc56e4c9e972/",
+        "app_id": 15796,
+        "app_guid": "bcf2488e-6341-42df-9299-bc56e4c9e972",
+        "title": "dash-penguins",
+        "app_mode": "python-dash"
+    }
+}

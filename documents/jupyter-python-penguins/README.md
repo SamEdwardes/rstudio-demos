@@ -4,8 +4,8 @@
 
 ```bash
 # set up a virtual environment
-/opt/python/3.10.4/bin/python -m venv venv
-source venv/bin/activate
+/opt/python/3.10.4/bin/python -m venv .venv
+source .venv/bin/activate
 python -m pip install --upgrade pip wheel setuptools
 python -m pip install -r requirements.txt
 
