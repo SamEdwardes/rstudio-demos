@@ -1,10 +1,11 @@
 # app/app.py
 
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 from textwrap import dedent
 
-from dotenv import load_dotenv
-load_dotenv()
 
 from dash import Dash, dcc, html
 import dash_bootstrap_components as dbc

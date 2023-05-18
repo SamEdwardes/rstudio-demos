@@ -4,12 +4,12 @@
 
 ```bash
 # set up a virtual environment
-/opt/python/3.10.4/bin/python -m venv venv
-source venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install --upgrade pip wheel setuptools
 python -m pip install -r requirements.txt
 
-# register the venv as kernel
+# register the .venv as kernel
 python -m ipykernel install --user --name demo-jupyter-python-penguins-3-10-4
 ```
 
@@ -22,7 +22,7 @@ The app is automatically deployed to RStudio connect using git backed deployment
 ```bash
 rsconnect write-manifest notebook \
   --overwrite \
-  --python venv/bin/python \
+  --python .venv/bin/python \
   notebook.ipynb
 ```
 
@@ -34,7 +34,7 @@ You can deploy the app using the rsconnect cli:
 
 ```bash
 rsconnect deploy notebook \
-  --python venv/bin/python \
+  --python .venv/bin/python \
   --new \
   notebook.ipynb
 ```

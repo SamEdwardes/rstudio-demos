@@ -1,24 +1,24 @@
 {
   "version": 1,
+  "locale": "en_US.UTF-8",
   "metadata": {
     "appmode": "python-fastapi",
     "entrypoint": "main:app"
   },
-  "locale": "en_US.UTF-8",
   "python": {
-    "version": "3.9.6",
+    "version": "3.10.11",
     "package_manager": {
       "name": "pip",
-      "version": "22.0.4",
+      "version": "23.1.2",
       "package_file": "requirements.txt"
     }
   },
   "files": {
     "requirements.txt": {
-      "checksum": "c0a841833b486e5a2c7614b07a481113"
+      "checksum": "6d5111dffc112b91e7a1369580257adb"
     },
     "main.py": {
-      "checksum": "6faf81d557bdb0821631d422b14398d9"
+      "checksum": "2bce872f9e20afeb257ef7a3376e36e6"
     }
   }
 }
