@@ -72,6 +72,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **R**       | Plumber Tableau  | [Code][api-2a] \| [Solo View][api-2b] \| [Dashboard View][api-2c] \| [Tableau Deployment][api-2d] |
 | **Python**  | FastAPI          | [Code][api-3a] \| [Solo View][api-3b] \| [Dashboard View][api-3c]                                 |
 | **Python**  | Flask            | ...                                                                                               |
+| **Python**  | Flask Webapp     | [Code][api-5a] \| [Solo View][api-5b] \| [Dashboard View][api-5c] |
 | **Python**  | Vetiver          | [Code][api-4a]                                                                                    |
 
 <!-- Plumber -->
@@ -89,6 +90,10 @@ A repo containing links to my favourite RStudio demo repos and documentation
 [api-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/331f89eb-988f-4874-b831-566916def4dd
 <!-- Vetiver -->      
 [api-4a]: ./apis/vetiver-train-and-deploy-python/
+<!-- Flask webapp -->
+[api-5a]: ./apis/flask-webapp/
+[api-5b]: https://colorado.posit.co/rsc/flask-webapp-example/
+[api-5c]: https://colorado.rstudio.com/rsc/connect/#/apps/0e4a7469-4d3e-4609-86f1-a4dc1e9db103
 
 ### Pins
 
