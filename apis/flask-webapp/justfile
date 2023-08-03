@@ -14,3 +14,9 @@ write-manifest:
         --python .venv/bin/python \
         --entrypoint app.app:app \
         .
+
+open-dashboard:
+    open https://colorado.posit.co/rsc/connect/#/apps/0e4a7469-4d3e-4609-86f1-a4dc1e9db103
+
+open-solo:
+    open https://colorado.posit.co/rsc/flask-webapp-example/
