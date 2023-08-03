@@ -55,7 +55,7 @@ rsconnect write-manifest fastapi \
 
 > ⚠️ Remember to update the app/requirements.txt file if you add any new packages.
 
-### Programatic
+### Programmatic
 
 You can deploy the app using the rsconnect cli:
 

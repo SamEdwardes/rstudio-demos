@@ -46,6 +46,7 @@ for (i in c(1:nrow(content_to_delete))) {
   glimpse(content_to_delete[i,])
   content <- as.list(content_to_delete[i,])
   item <- content_item(client, content$guid)
+  print(get_vanity_url(item))
   tryCatch(
     content_delete(item),
     error = function(err) {
