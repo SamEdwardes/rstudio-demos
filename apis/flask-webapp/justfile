@@ -1,0 +1,16 @@
+run:
+    flask --debug --app "app/app.py" run
+
+deploy:
+    rsconnect deploy api \
+        --title "Flask Webapp Example" \
+        --entrypoint "app.app:app" \
+        --python ".venv/bin/python" \
+        .
+
+write-manifest:
+    rsconnect write-manifest api \
+        --overwrite \
+        --python .venv/bin/python \
+        --entrypoint app.app:app \
+        .
