@@ -17,20 +17,20 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 <!-- Shiny --> 
 [app-1a]: ./applications/shiny-penguins/         
-[app-1b]: https://colorado.rstudio.com/rsc/demo-shiny-penguins/
-[app-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/03953aef-f4f7-4de6-8de0-828e1cb64f8f
+[app-1b]: https://colorado.posit.co/rsc/demo-shiny-penguins/
+[app-1c]: https://colorado.posit.co/rsc/connect/#/apps/03953aef-f4f7-4de6-8de0-828e1cb64f8f
 <!-- Streamlit -->
 [app-2a]: ./applications/streamlit-penguins/
-[app-2b]: https://colorado.rstudio.com/rsc/demo-streamlit-penguins/
-[app-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/e33879ca-e251-49fa-b9bf-a56db9997048
+[app-2b]: https://colorado.posit.co/rsc/demo-streamlit-penguins/
+[app-2c]: https://colorado.posit.co/rsc/connect/#/apps/e33879ca-e251-49fa-b9bf-a56db9997048
 <!-- Dash single page -->
 [app-3a]: ./applications/dash-penguins/
-[app-3b]: https://colorado.rstudio.com/rsc/demo-dash-penguins/
-[app-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/9b456fb6-e8b7-4b4c-bb60-2ba5f113b052
+[app-3b]: https://colorado.posit.co/rsc/demo-dash-penguins/
+[app-3c]: https://colorado.posit.co/rsc/connect/#/apps/9b456fb6-e8b7-4b4c-bb60-2ba5f113b052
 <!-- Dash multi-page -->
 [app-4a]: ./applications/dash-multi-page-penguins/using-dash-pages/
-[app-4b]: https://colorado.rstudio.com/rsc/demo-dash-multi-page-penguins/
-[app-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/73f77f59-1bc7-4225-b21a-01df0447ac7b
+[app-4b]: https://colorado.posit.co/rsc/demo-dash-multi-page-penguins/
+[app-4c]: https://colorado.posit.co/rsc/connect/#/apps/73f77f59-1bc7-4225-b21a-01df0447ac7b
 
 ### Documents
 
@@ -44,24 +44,24 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 <!-- RMarkdown -->
 [doc-1a]: ./documents/rmd-penguins/        
-[doc-1b]: https://colorado.rstudio.com/rsc/demo-rmd-penguins/
-[doc-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/5450ba17-ddc2-4ef6-aeb8-ac2cec53d244
+[doc-1b]: https://colorado.posit.co/rsc/demo-rmd-penguins/
+[doc-1c]: https://colorado.posit.co/rsc/connect/#/apps/5450ba17-ddc2-4ef6-aeb8-ac2cec53d244
 <!-- Connect Widgets -->
 [doc-2a]: ./documents/connect-widgets-penguins/ 
-[doc-2b]: https://colorado.rstudio.com/rsc/demo-connect-widgets-penguins
-[doc-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/692ea95d-ac94-4afa-aa5b-db76c278d2ac
+[doc-2b]: https://colorado.posit.co/rsc/demo-connect-widgets-penguins
+[doc-2c]: https://colorado.posit.co/rsc/connect/#/apps/692ea95d-ac94-4afa-aa5b-db76c278d2ac
 <!-- Quarto - R -->
 [doc-3a]: ./documents/quarto-colorado-report/          
-[doc-3b]: https://colorado.rstudio.com/rsc/demo-quarto-colorado-report-r/
-[doc-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd/
+[doc-3b]: https://colorado.posit.co/rsc/demo-quarto-colorado-report-r/
+[doc-3c]: https://colorado.posit.co/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd/
 <!-- Jupyter Notebook -->
 [doc-4a]: ./documents/jupyter-python-penguins/          
-[doc-4b]: https://colorado.rstudio.com/rsc/demo-jupyter-python-penguins/
-[doc-4c]: https://colorado.rstudio.com/rsc/connect/#/apps/241fe2cd-6eba-4a79-9aa3-6e6fe28c5714
+[doc-4b]: https://colorado.posit.co/rsc/demo-jupyter-python-penguins/
+[doc-4c]: https://colorado.posit.co/rsc/connect/#/apps/241fe2cd-6eba-4a79-9aa3-6e6fe28c5714
 <!-- Blastula - R -->
 [doc-5a]: ./documents/rmd-blastula/          
-[doc-5b]: https://colorado.rstudio.com/rsc/demo-rmd-blastula/
-[doc-5c]: https://colorado.rstudio.com/rsc/connect/#/apps/e0b35f2a-9a69-498a-a97f-914b4e4f5931/
+[doc-5b]: https://colorado.posit.co/rsc/demo-rmd-blastula/
+[doc-5c]: https://colorado.posit.co/rsc/connect/#/apps/e0b35f2a-9a69-498a-a97f-914b4e4f5931/
 
 
 ### APIs
@@ -77,23 +77,23 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 <!-- Plumber -->
 [api-1a]: ./apis/plumber-penguins/
-[api-1b]: https://colorado.rstudio.com/rsc/demo-plumber-penguins/
-[api-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/3b7c12ff-328c-4031-b0af-47110c4ff747
+[api-1b]: https://colorado.posit.co/rsc/demo-plumber-penguins/
+[api-1c]: https://colorado.posit.co/rsc/connect/#/apps/3b7c12ff-328c-4031-b0af-47110c4ff747
 <!-- Plumber Tableau -->
 [api-2a]: ./apis/plumber-tableau-penguins/
-[api-2b]: https://colorado.rstudio.com/rsc/demo-plumber-tableau-penguins
-[api-2c]: https://colorado.rstudio.com/rsc/connect/#/apps/8ffb7488-d360-43ee-93bb-babf7a56ac59
+[api-2b]: https://colorado.posit.co/rsc/demo-plumber-tableau-penguins
+[api-2c]: https://colorado.posit.co/rsc/connect/#/apps/8ffb7488-d360-43ee-93bb-babf7a56ac59
 [api-2d]: https://us-west-2b.online.tableau.com/#/site/rstudio/workbooks/472632?:origin=card_share_link
 <!-- FastAPI -->      
 [api-3a]: ./apis/fastapi-penguins/
-[api-3b]: https://colorado.rstudio.com/rsc/demo-fastapi-penguins/docs
-[api-3c]: https://colorado.rstudio.com/rsc/connect/#/apps/331f89eb-988f-4874-b831-566916def4dd
+[api-3b]: https://colorado.posit.co/rsc/demo-fastapi-penguins/docs
+[api-3c]: https://colorado.posit.co/rsc/connect/#/apps/331f89eb-988f-4874-b831-566916def4dd
 <!-- Vetiver -->      
 [api-4a]: ./apis/vetiver-train-and-deploy-python/
 <!-- Flask webapp -->
 [api-5a]: ./apis/flask-webapp/
 [api-5b]: https://colorado.posit.co/rsc/flask-webapp-example/
-[api-5c]: https://colorado.rstudio.com/rsc/connect/#/apps/0e4a7469-4d3e-4609-86f1-a4dc1e9db103
+[api-5c]: https://colorado.posit.co/rsc/connect/#/apps/0e4a7469-4d3e-4609-86f1-a4dc1e9db103
 
 ### Pins
 
@@ -104,8 +104,8 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 <!-- Pins - R -->
 [pin-1a]: ./pins/pins-r-penguins/
-[pin-1b]: https://colorado.rstudio.com/rsc/demo-pins-penguins-data
-[pin-1c]: https://colorado.rstudio.com/rsc/connect/#/apps/f351231a-84bd-4598-b550-f835f76cf2ae
+[pin-1b]: https://colorado.posit.co/rsc/demo-pins-penguins-data
+[pin-1c]: https://colorado.posit.co/rsc/connect/#/apps/f351231a-84bd-4598-b550-f835f76cf2ae
 
 ## Projects
 
@@ -113,10 +113,10 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 The bike share demo: 
 
-- To see all content on Connect filter on the tag *[Bike Predict](https://colorado.rstudio.com/rsc/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=expanded&tags=111-tagtree:218)*
+- To see all content on Connect filter on the tag *[Bike Predict](https://colorado.posit.co/rsc/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=expanded&tags=111-tagtree:218)*
 - View the Connect Widgets Dashboard:
-  - [Solo View](https://colorado.rstudio.com/rsc/bike-share/)
-  - [Dashboard View](https://colorado.rstudio.com/rsc/connect/#/apps/3124a8f9-7d30-44b9-a49a-552db71b036e)
+  - [Solo View](https://colorado.posit.co/rsc/bike-share/)
+  - [Dashboard View](https://colorado.posit.co/rsc/connect/#/apps/3124a8f9-7d30-44b9-a49a-552db71b036e)
 - Source code: <https://github.com/sol-eng/bike_predict>
 
 ## Docs
@@ -127,7 +127,7 @@ Links to my most commonly reference documentation.
 
 - [Platform Support](https://www.rstudio.com/about/platform-support/)
 - [Configuration and sizing recommendations](https://support.rstudio.com/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations)
-- [Shimmer: Shiny sizing simulation](https://colorado.rstudio.com/rsc/shimmer_and_shiny/)
+- [Shimmer: Shiny sizing simulation](https://colorado.posit.co/rsc/shimmer_and_shiny/)
 - [RStudio Professional Product Root & Privileged Requirements](https://support.rstudio.com/hc/en-us/articles/1500005369282-RStudio-Professional-Product-Root-Privileged-Requirements)
 - [Environment Management Strategy Map](https://solutions.rstudio.com/environments/reproduce/)
 - [Managing libraries for RStudio Workbench / RStudio Server](https://support.rstudio.com/hc/en-us/articles/215733837-Managing-libraries-for-RStudio-Workbench-RStudio-Server)
