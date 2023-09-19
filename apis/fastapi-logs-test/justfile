@@ -1,0 +1,5 @@
+run:
+    uvicorn app:app --reload
+
+write-manifest:
+    rsconnect write-manifest fastapi --entrypoint app:app .
