@@ -7,12 +7,12 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/test")
 def index():
     print("This line was printed using `print`.")
-    logger.info("The index/root of the site.")
-    logger.debug("The index/root of the site.")
-    logger.error("The index/root of the site.")
+    logger.info("This is a test.")
+    logger.debug("This is a test.")
+    logger.error("This is a test.")
     return {"The": "index"}
 
 
