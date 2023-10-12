@@ -1,5 +1,5 @@
 pydantic==1.10.13
-fastapi
-uvicorn[standard]
-rsconnect-python
-pandas
+fastapi==0.103.2
+uvicorn[standard]==0.23.2
+rsconnect-python==1.20.0
+pandas==2.1.1
