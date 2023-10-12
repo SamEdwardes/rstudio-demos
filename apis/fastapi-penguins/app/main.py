@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field, validator
 import datetime as dt
 
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 
 app = FastAPI()
 
@@ -44,6 +45,11 @@ class PenguinRaw(PenguinsBase):
     sex: str = Field(alias="Sex")
     delta_15_n_o_oo: Optional[float] = Field(alias="Delta 15 N (o/oo)")
     delta_13_c_o_oo: Optional[float] = Field(alias="Delta 13 C (o/oo)")
+
+
+# @app.get("/", response_class=RedirectResponse)
+# def index():
+#     return RedirectResponse("/docs")
 
 
 @app.get("/penguins", response_model=List[Penguin])
