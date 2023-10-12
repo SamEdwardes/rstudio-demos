@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flask Webapp</title>
+	</head>
+	<body>
+		<header>
+			<h1>Flask Webapp Example</h1>
+		</header>
+		<nav>
+			<a href="{{ url_for('index') }}">Home</a> |
+			<a href="{{ url_for('about') }}">About</a> |
+			<a href="{{ url_for('hello_world')}}">API Example</a>
+		</nav>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>
