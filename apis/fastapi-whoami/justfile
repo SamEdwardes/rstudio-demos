@@ -1,0 +1,13 @@
+init:
+    python -m venv .venv \
+        && .venv/bin/python -m pip install --upgrade pip wheel setuptools \
+        && .venv/bin/python -m pip install -r requirements.txt
+
+run:
+    uvicorn app:app --reload
+
+deploy:
+    rsconnect deploy fastapi \
+        --python .venv/bin/python \
+        --entrypoint app:app \
+        .

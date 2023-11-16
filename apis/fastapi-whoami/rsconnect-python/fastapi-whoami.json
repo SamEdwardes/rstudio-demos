@@ -1,0 +1,12 @@
+{
+    "https://pct.samedwardes.com": {
+        "server_url": "https://pct.samedwardes.com",
+        "filename": "/home/edwardes.s/projects/rstudio-demos/apis/fastapi-whoami",
+        "app_url": "https://pct.samedwardes.com/content/86ae698f-ca17-4d44-bd0a-930553beea1a/",
+        "app_id": "86ae698f-ca17-4d44-bd0a-930553beea1a",
+        "app_guid": "86ae698f-ca17-4d44-bd0a-930553beea1a",
+        "title": "fastapi-whoami",
+        "app_mode": "python-fastapi",
+        "app_store_version": 1
+    }
+}
