@@ -4,8 +4,18 @@ import json
 from typing import Annotated
 
 from fastapi import FastAPI, Request, Header, Depends
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 app = FastAPI()
+
+
+@app.get("/whoami")
+async def get_whoami(rstudio_connect_credentials: Annotated[str | None, Header()] = None) -> JSONResponse:
+    """
+    The most simple and contained way to get user metadata.
+    """ 
+    user_meta_data = json.loads(rstudio_connect_credentials)
+    return user_meta_data
 
 
 class UserMetadata(BaseModel):
@@ -21,8 +31,8 @@ class UserMetadata(BaseModel):
         return user_meta_data
 
 
-@app.get("/whoami")
-async def get_whoami(request: Request) -> UserMetadata:
+@app.get("/whoami1")
+async def get_whoami1(request: Request) -> UserMetadata:
     """
     Headers can be obtained using the `Request` object.
     """ 
