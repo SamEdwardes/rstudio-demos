@@ -26,6 +26,7 @@ create_venv() {
 install_uv() {
     heading "Installing uv"
     curl -LsSf https://astral.sh/uv/install.sh | sh
+    source $HOME/.cargo/env
 }
 
 # ------------------------------------------------------------------------------
