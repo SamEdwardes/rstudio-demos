@@ -19,9 +19,13 @@ heading() {
 
 create_venv() {
     REQUIREMENTS_TXT="$1"
-    python -m venv .venv
-    .venv/bin/python3 -m pip install --upgrade pip wheel setuptools
-    .venv/bin/python3 -m pip install -r "$REQUIREMENTS_TXT"
+    uv venv
+    uv pip install -r "$REQUIREMENTS_TXT"
+}
+
+install_uv() {
+    heading "Installing uv"
+    curl -LsSf https://astral.sh/uv/install.sh | sh
 }
 
 # ------------------------------------------------------------------------------
