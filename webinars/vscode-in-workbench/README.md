@@ -9,3 +9,4 @@ Using VS Code in Posit Workbench.
 - Command Palette: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette
 - Multiple Cursors: https://code.visualstudio.com/docs/editor/codebasics
 - Keyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference
+- <>
