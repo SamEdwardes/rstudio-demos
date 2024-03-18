@@ -29,6 +29,18 @@ install_uv() {
     source $HOME/.cargo/env
 }
 
+install_zsh() {
+    heading "Installing zsh"
+    wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
+    mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh --strip-components 1
+    cd zsh
+}
+
+# ------------------------------------------------------------------------------
+# Install CLI tools
+# ------------------------------------------------------------------------------
+install_uv
+
 # ------------------------------------------------------------------------------
 # Applications
 # ------------------------------------------------------------------------------
