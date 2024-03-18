@@ -20,6 +20,7 @@ Using VS Code in Posit Workbench.
 **Command Pallet**
 
 - [ ] Open the command pallet with `Cmd` + `Shift` + `p`.
+- [ ] Open a file with `Cmd` + `p`.
 - [ ] Open your home directory, then open this project again.
 - [ ] Open the settings with `>Preferences: Open User Settings`.
 - [ ] Open the terminal with `>Terminal: Create New Terminal`.
@@ -44,29 +45,85 @@ Using VS Code in Posit Workbench.
 - [ ] Toggle the bottom pane using `Cmd` + `j`.
 - [ ] Toggle the terminal using ^ + `\``
 
+**Working with Python files**
 
+- [ ] Create a virtual environment. (Tip: open VS Code in the same folder as the python .venv, otherwise it can be finnicky with auto-complete)
+- [ ] IntelliSense (https://code.visualstudio.com/docs/editor/intellisense)
+    - Trigger IntelliSense with `^Space`
+    - Use arrow keys to select
+    - Press `Tab` or `Enter` to insert
+- [ ] Quick fix with `Cmd` + `.`
+- [ ] RStudio style interactive coding with Python using `Shift` + `Enter`.
+- [ ] `#%%` For running chunks of a script, and showing off the interactive window
+- [ ] Linting and Formatting with `>Ruff: ...`
+- [ ] Debugging
+    - [ ] Set a breakpoint
+    - [ ] Run with the debugger
+- [ ] Refactoring with `F2` or `>Rename Symbol`
+- [ ] VS Code Workbench Jobs
 
+**Working with Notebooks**
 
-- Open a .py file:
-    - IntelliSense (https://code.visualstudio.com/docs/editor/intellisense)
-        - Triggger IntelliSense with `^Space`
-        - Use arrow keys to select
-        - Press `Tab` or `Enter` to insert
-    - RStudio style interactive coding with Python
-    - `#%%` For running chunks of a script, and showing off the interactive window
-    - Linting and Formatting
-    - Debugging
-    - Refactoring
-    - Formatting
-    - Multiple cursors
-    - Quick fix with `command+.`
-    - VS Code Workbench Jobs
-- Open a .ipynb file
-    - Selecting the kernel - it auto prompts me to install `ipykernel`
-    - Notebooks in VS Code
-- Understanding VS Code settings
-- Other tips
-    - Open VS Code in the same folder as the python .venv, otherwise it can be finnicky with auto-complete
-    - How to get back to Workbench home page.
+- Like Jupyter Notebooks, but with all the great IDE features of VS Code like the Command Pallet, intellisense, formatting, git version control, etc.
+- [ ] Selecting the kernel - it auto prompts me to install `ipykernel`
+- [ ] Variable explorer
 
-- [ ]
+**Other tips and tricks**
+
+- [ ] Understanding VS Code settings
+    - [ ] User settings
+    - [ ] Workspace settings
+    - [ ] JSON vs. UI settings
+- [ ] How to get back to Workbench home page.
+- [ ] Multiple cursors (https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor)
+    - [ ] Create multiple aligned cursors: `Cmd` + `Shift` + `Up`/`Down`.
+    - [ ] Create multiple cursors anywhere: Hold `Option` + `Click`.
+    - [ ] Move line or selected text up/down: `Option` + `Up`/`Down`.
+    - [ ] Duplicate selected text or line: `Option` + `Shift` + `Up`/`Down`.
+    - [ ] Create cursor at all instances of selected text: `Cmd` + `Shift` + `L`
+
+## My config
+
+```json
+{
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.emptyWindow": false,
+    "remote.autoForwardPorts": false,
+    "window.menuBarVisibility": "classic",
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.rulers": [80]
+      },
+    "[r]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [80]
+      },
+      "posit.workbench.showWorkbenchFlaskHint": false,
+      "posit.workbench.showWorkbenchHint": false,
+      "jupyter.interactiveWindow.textEditor.executeSelection": true,
+}
+```
+
+## My extensions
+
+```json
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "quarto.quarto",
+        "rstudio.rstudio-workbench",
+        "alefragnani.project-manager",
+        "sleistner.vscode-fileutils",
+        "mhutchie.git-graph",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}
+```
+
