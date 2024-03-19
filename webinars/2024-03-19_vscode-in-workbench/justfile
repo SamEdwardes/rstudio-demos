@@ -1,0 +1,9 @@
+default:
+    just render
+    just publish
+
+render:
+    quarto render README.qmd --to gfm
+
+publish:
+    quarto publish README.qmd

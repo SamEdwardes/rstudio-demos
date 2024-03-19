@@ -1,24 +1,32 @@
----
-title: VS Code in Posit Workbench Webinar
-date: 2024-03-19
-author: Sam Edwardes (Solutions Engineer at Posit)
-toc: true
----
+# VS Code in Posit Workbench Webinar
+Sam Edwardes (Solutions Engineer at Posit)
+2024-03-19
+
+- [About](#about)
+- [Additional Resources](#additional-resources)
+- [Tasks](#tasks)
+- [My config](#my-config)
+- [My extensions](#my-extensions)
 
 ## About
 
 A webinar for using VS Code in Posit Workbench.
 
-- To see the source code and the example `.py` and `.ipynb` files please refer to this repo: <>.
-- To see this document rendered on Quarto Pub visit: <https://samedwardes.quarto.pub/vs-code-in-posit-workbench-webinar-2024-03-19/>
+- To see the source code and the example `.py` and `.ipynb` files please
+  refer to this repo: \<\>.
+- To see this document rendered on Quarto Pub visit:
+  https://samedwardes.quarto.pub/vs-code-in-posit-workbench-webinar-(2024-03-19/
 
 ## Additional Resources
 
 - VS Code Docs: <https://code.visualstudio.com/Docs>
 - Python for VS Code Docs: <https://code.visualstudio.com/Docs>
-- Command Palette: <https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette>
-- Multiple Cursors: <https://code.visualstudio.com/docs/editor/codebasics>
-- Keyboard Shortcuts: <https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference>
+- Command Palette:
+  <https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette>
+- Multiple Cursors:
+  <https://code.visualstudio.com/docs/editor/codebasics>
+- Keyboard Shortcuts:
+  <https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference>
 
 ## Tasks
 
@@ -35,17 +43,20 @@ A webinar for using VS Code in Posit Workbench.
 - [ ] Open the settings with `>Preferences: Open User Settings`.
 - [ ] Open the terminal with `>Terminal: Create New Terminal`.
 
-**Understanding workspaces in VS Code vs. Projects in RStudio**
+**Understanding workspaces in VS Code vs. Projects in RStudio**
 
 - VS Code does not have a notion of projects.
-- You can think of the directory that you choose to open VS Code as the project. VS Code refers to this as the "Workspace"
+- You can think of the directory that you choose to open VS Code as the
+  project. VS Code refers to this as the “Workspace”
 - Workspace specific settings are stored in the `./vscode/` directory.
-- [ ] Change a setting for this Workspace only with `Preferences: Open Workspace Settings`
+- [ ] Change a setting for this Workspace only with
+  `Preferences: Open Workspace Settings`
 
 **Extensions**
 
 - VS Code is a simple text editor. The power comes from extensions!
-- Many of the best Python extensions are developed by Microsoft, but anyone can develop and share an extensions.
+- Many of the best Python extensions are developed by Microsoft, but
+  anyone can develop and share an extensions.
 - Workbench will automatically include the basic Python extensions.
 - See `./vscode/extensions.json` for my recommended extensions.
 
@@ -53,48 +64,58 @@ A webinar for using VS Code in Posit Workbench.
 
 - [ ] See all of the terminal commands with `>Terminal:`
 - [ ] Toggle the bottom pane using `Cmd` + `j`.
-- [ ] Toggle the terminal using ^ + `\``
+- [ ] Toggle the terminal using ^ + \`\`\`
 
 **Working with Python files**
 
-- [ ] Create a virtual environment. (Tip: open VS Code in the same folder as the python .venv, otherwise it can be finnicky with auto-complete)
-- [ ] IntelliSense (<https://code.visualstudio.com/docs/editor/intellisense>)
-    - Trigger IntelliSense with `^Space`
-    - Use arrow keys to select
-    - Press `Tab` or `Enter` to insert
+- [ ] Create a virtual environment. (Tip: open VS Code in the same
+  folder as the python .venv, otherwise it can be finnicky with
+  auto-complete)
+- [ ] IntelliSense
+  (<https://code.visualstudio.com/docs/editor/intellisense>)
+  - Trigger IntelliSense with `^Space`
+  - Use arrow keys to select
+  - Press `Tab` or `Enter` to insert
 - [ ] Quick fix with `Cmd` + `.`
-- [ ] RStudio style interactive coding with Python using `Shift` + `Enter`.
-- [ ] `#%%` For running chunks of a script, and showing off the interactive window
+- [ ] RStudio style interactive coding with Python using `Shift` +
+  `Enter`.
+- [ ] `#%%` For running chunks of a script, and showing off the
+  interactive window
 - [ ] Linting and Formatting with `>Ruff: ...`
 - [ ] Debugging
-    - [ ] Set a breakpoint
-    - [ ] Run with the debugger
+  - [ ] Set a breakpoint
+  - [ ] Run with the debugger
 - [ ] Refactoring with `F2` or `>Rename Symbol`
 - [ ] VS Code Workbench Jobs
 
 **Working with Notebooks**
 
-- Like Jupyter Notebooks, but with all the great IDE features of VS Code like the Command Pallet, intellisense, formatting, git version control, etc.
+- Like Jupyter Notebooks, but with all the great IDE features of VS Code
+  like the Command Pallet, intellisense, formatting, git version
+  control, etc.
 - [ ] Selecting the kernel - it auto prompts me to install `ipykernel`
 - [ ] Variable explorer
 
 **Other tips and tricks**
 
 - [ ] Understanding VS Code settings
-    - [ ] User settings
-    - [ ] Workspace settings
-    - [ ] JSON vs. UI settings
+  - [ ] User settings
+  - [ ] Workspace settings
+  - [ ] JSON vs. UI settings
 - [ ] How to get back to Workbench home page.
-- [ ] Multiple cursors (<https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor>)
-    - [ ] Create multiple aligned cursors: `Cmd` + `Shift` + `Up`/`Down`.
-    - [ ] Create multiple cursors anywhere: Hold `Option` + `Click`.
-    - [ ] Move line or selected text up/down: `Option` + `Up`/`Down`.
-    - [ ] Duplicate selected text or line: `Option` + `Shift` + `Up`/`Down`.
-    - [ ] Create cursor at all instances of selected text: `Cmd` + `Shift` + `L`
+- [ ] Multiple cursors
+  (<https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor>)
+  - [ ] Create multiple aligned cursors: `Cmd` + `Shift` + `Up`/`Down`.
+  - [ ] Create multiple cursors anywhere: Hold `Option` + `Click`.
+  - [ ] Move line or selected text up/down: `Option` + `Up`/`Down`.
+  - [ ] Duplicate selected text or line: `Option` + `Shift` +
+    `Up`/`Down`.
+  - [ ] Create cursor at all instances of selected text: `Cmd` +
+    `Shift` + `L`
 
 ## My config
 
-```json
+``` json
 {
     "terminal.integrated.shell.linux": "/bin/bash",
     "extensions.autoUpdate": false,
@@ -121,7 +142,7 @@ A webinar for using VS Code in Posit Workbench.
 
 ## My extensions
 
-```json
+``` json
 {
     "recommendations": [
         "charliermarsh.ruff",

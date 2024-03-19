@@ -1,0 +1,4 @@
+- source: README.qmd
+  quarto-pub:
+    - id: f9a00102-6a7a-4562-901b-f0354c8a95be
+      url: 'https://samedwardes.quarto.pub/vs-code-in-posit-workbench-webinar-2024-03-19'
