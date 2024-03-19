@@ -7,6 +7,8 @@ toc: true
 
 ## About
 
+Hello world
+
 A webinar for using VS Code in Posit Workbench.
 
 - To see the source code and the example `.py` and `.ipynb` files please refer to this repo: <https://github.com/SamEdwardes/rstudio-demos/tree/main/webinars/2024-03-19_vscode-in-workbench>.

@@ -1,0 +1,9 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: quarto-render-vscode-webinar
+        name: quarto render
+        files: webinars/2024-03-19_vscode-in-workbench/README.qmd
+        # files: \.qmd$
+        entry: cd webinars/2024-03-19_vscode-in-workbench && quarto render README.qmd --to gfm
+        language: system
