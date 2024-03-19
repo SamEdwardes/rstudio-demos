@@ -1,6 +1,6 @@
 # VS Code Webinar (2024-03-19)
 
-Using VS Code in Posit Workbench. To see the source code and the example `.py` and `.ipynb` refer to this repo: <>.
+Using VS Code in Posit Workbench.
 
 ## Additional Resources
 
@@ -126,3 +126,4 @@ Using VS Code in Posit Workbench. To see the source code and the example `.py` a
     ]
 }
 ```
+
