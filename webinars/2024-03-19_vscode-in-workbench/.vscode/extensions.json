@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "quarto.quarto",
+        "rstudio.rstudio-workbench",
+        "alefragnani.project-manager",
+        "sleistner.vscode-fileutils",
+        "mhutchie.git-graph",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}

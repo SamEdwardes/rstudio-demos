@@ -23,11 +23,41 @@ create_venv() {
     uv pip install -r "$REQUIREMENTS_TXT"
 }
 
+install_pipx() {
+    /opt/python/3.11.6/bin/python -m pip install pipx
+    ~/.local/bin/pipx ensurepath
+}
+
 install_uv() {
     heading "Installing uv"
     curl -LsSf https://astral.sh/uv/install.sh | sh
     source $HOME/.cargo/env
 }
+
+install_zsh() {
+    heading "Installing zsh"
+    wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
+    mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh --strip-components 1
+    cd zsh
+}
+
+install_starship () {
+    heading "Installing starship"
+    wget --no-verbose --directory-prefix '/tmp' https://github.com/starship/starship/releases/download/v1.17.1/starship-x86_64-unknown-linux-musl.tar.gz
+    tar --directory ~/.local/bin -zxf /tmp/starship-x86_64-unknown-linux-musl.tar.gz
+    echo 'eval "$(~/.local/bin/starship init bash)"' >> ~/.bashrc
+}
+
+
+# ------------------------------------------------------------------------------
+# Install CLI tools
+# ------------------------------------------------------------------------------
+mkdir -p ~/.local/bin
+
+install_pipx
+install_uv
+install_starship
+
 
 # ------------------------------------------------------------------------------
 # Applications
