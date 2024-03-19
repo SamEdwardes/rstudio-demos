@@ -13,9 +13,10 @@ Sam Edwardes (Solutions Engineer at Posit)
 A webinar for using VS Code in Posit Workbench.
 
 - To see the source code and the example `.py` and `.ipynb` files please
-  refer to this repo: \<\>.
+  refer to this repo:
+  <https://github.com/SamEdwardes/rstudio-demos/tree/main/webinars/2024-03-19_vscode-in-workbench>.
 - To see this document rendered on Quarto Pub visit:
-  https://samedwardes.quarto.pub/vs-code-in-posit-workbench-webinar-(2024-03-19/
+  <https://samedwardes.quarto.pub/vs-code-in-posit-workbench-webinar-2024-03-19/>
 
 ## Additional Resources
 
