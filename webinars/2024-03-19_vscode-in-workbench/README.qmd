@@ -1,6 +1,6 @@
 # VS Code Webinar (2024-03-19)
 
-Using VS Code in Posit Workbench.
+Using VS Code in Posit Workbench. To see the source code and the example `.py` and `.ipynb` refer to this repo: <>.
 
 ## Additional Resources
 
@@ -75,7 +75,7 @@ Using VS Code in Posit Workbench.
     - [ ] Workspace settings
     - [ ] JSON vs. UI settings
 - [ ] How to get back to Workbench home page.
-- [ ] Multiple cursors (https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor)
+- [ ] Multiple cursors (<https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor>)
     - [ ] Create multiple aligned cursors: `Cmd` + `Shift` + `Up`/`Down`.
     - [ ] Create multiple cursors anywhere: Hold `Option` + `Click`.
     - [ ] Move line or selected text up/down: `Option` + `Up`/`Down`.
