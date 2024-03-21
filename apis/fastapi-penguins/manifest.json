@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-fastapi",
+    "entrypoint": "app:app"
+  },
+  "python": {
+    "version": "3.11.1",
+    "package_manager": {
+      "name": "pip",
+      "version": "24.0",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "993c9a415484597c31dbd94d4292d8a9"
+    },
+    ".gitignore": {
+      "checksum": "4d92154ac438cfa9a48e17d295a7249c"
+    },
+    ".posit/publish/default.toml": {
+      "checksum": "913ca9bfc5193918a732a168217a1b82"
+    },
+    ".posit/publish/deployments/Fast API Penguins from PPub.toml": {
+      "checksum": "e89cd1e0c9a4bd9881299d4e1645410e"
+    },
+    ".positignore": {
+      "checksum": "33ab4689aad8940657f7cf1bec2bda00"
+    },
+    ".vscode/settings.json": {
+      "checksum": "5833a12496bde3662e9992108caecff7"
+    },
+    "LICENSE": {
+      "checksum": "77f9d1d8952a6481ac0196ba89e11cfe"
+    },
+    "README.md": {
+      "checksum": "61a2a0e25c675575f029e9c89b19b63a"
+    },
+    "app.py": {
+      "checksum": "2394a188145427dad8b40608da707adb"
+    },
+    "imgs/screenshot.png": {
+      "checksum": "04ebd19096ebd6934973d0a5c18686e5"
+    }
+  }
+}
