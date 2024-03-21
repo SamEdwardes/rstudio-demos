@@ -98,7 +98,7 @@ create_venv "requirements.txt"
 # ------------------------------------------------------------------------------
 cd "$PROJECT_ROOT/apis/fastapi-penguins"
 heading "$(pwd)"
-create_venv "app/requirements.txt"
+create_venv "requirements.txt"
 
 cd "$PROJECT_ROOT/apis/fastapi-whoami"
 heading "$(pwd)"
