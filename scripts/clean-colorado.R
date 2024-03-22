@@ -15,7 +15,8 @@ white_list <- c(
   "Workbench User Guide (PREVIEW)",
   "Global variable scope test",
   "Sam's Shiny Shell",
-  "RMarkdown - Blastula - Connect Content Report"
+  "RMarkdown - Blastula - Connect Content Report",
+  "Flask Webapp Example"
 )
 
 content_to_delete <-
@@ -23,6 +24,8 @@ content_to_delete <-
   filter(
     !stringr::str_ends(title, " - Palmer Penguins"),
     !stringr::str_starts(title, "Bike Predict - "),
+    !stringr::str_detect(title, "[Bb]ikeshare"),
+    !stringr::str_starts(title, "City of Chicago"),
     !stringr::str_starts(title, "bike-predict-model-metrics:"),
     !title %in% white_list
   ) |> 
@@ -55,4 +58,6 @@ for (i in c(1:nrow(content_to_delete))) {
   )
   
 }
+
+print("🎉 Clean up complete!")
   
