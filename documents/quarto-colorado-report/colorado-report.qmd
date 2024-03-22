@@ -19,7 +19,7 @@ format:
 :::::: {#title-column}
 # The Colorado Report
 
-A monthly review of the different content that has been deployed to Colorado.
+A monthly review of the state of Colorado.
 ::::::
 
 :::::: {#image-column}
