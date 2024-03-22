@@ -3,6 +3,15 @@ format:
   html:
     code-fold: true
     toc: true
+    other-links:
+      - text: Connect Dashboard View
+        href: https://colorado.posit.co/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd
+      - text: GitHub
+        href: https://github.com/SamEdwardes/rstudio-demos/tree/main/documents/quarto-colorado-report
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
 ---
 
 :::: {layout-ncol=2}
