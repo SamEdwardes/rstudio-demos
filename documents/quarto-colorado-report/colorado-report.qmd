@@ -1,33 +1,35 @@
 ---
 format:
-  html:
+  email:
     code-fold: true
+    code-tools: false
     toc: true
+    toc-location: left
     other-links:
       - text: Connect Dashboard View
         href: https://colorado.posit.co/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd
       - text: GitHub
         href: https://github.com/SamEdwardes/rstudio-demos/tree/main/documents/quarto-colorado-report
-  pdf:
+  typst:
     toc: true
-    number-sections: true
-    colorlinks: true
 ---
 
-:::: {layout-ncol=2}
+::: {layout="[ 60, 40 ]"}
+
+:::::: {#title-column}
 # The Colorado Report
 
 A monthly review of the different content that has been deployed to Colorado.
+::::::
 
-
+:::::: {#image-column}
 <img src='./imgs/mountains-circle.png' align="right" height="200" />
-::::
-
-## What is on Colorado?
+::::::
+:::
 
 :::{.callout-tip collapse="true"}
 
-## Expand to see starter code
+## Expand to see setup code
 
 ```{r setup}
 #| output: false
@@ -41,6 +43,7 @@ library(lubridate)
 library(stringr)
 library(scales)
 library(forcats)
+library(glue)
 
 
 colour_mapping_lang <- c(
@@ -96,18 +99,86 @@ content <- content |>
   )
 ```
 
+```{r user-count}
+#| code-fold: false
+
+licensed_users <- client |> 
+  get_users(page_size = 50, limit = 99999) |>
+  filter(locked == FALSE)
+
+summary_of_last_login <- licensed_users |> 
+  mutate(
+    last_active_month = as.Date(lubridate::floor_date(active_time, unit = "month")),
+  ) |> 
+  group_by(last_active_month) |>
+  summarise(count = n(), .groups = "drop") |> 
+  arrange(desc(last_active_month))
+
+last_year <- lubridate::today() - days(365)
+
+num_not_logged_in_1_year <- summary_of_last_login |>
+  filter(last_active_month < last_year) |>
+  nrow()
+```
+
 :::
 
-Colorado currenlty has `r comma(nrow(content))` items deployed.
+## Users
+
+Colorado has **`r comma(nrow(licensed_users))`** licensed users. Of those `r comma(nrow(licensed_users))` users, **`r num_not_logged_in_1_year`** have not logged in for a year.
 
 ::: {.panel-tabset}
 
-## Deployed by language
+### Last Login
+
+```{r user-logins}
+#| fig-align: center
+
+usage_plot <- summary_of_last_login |>
+  ggplot(aes(x = last_active_month, y = count)) +
+  geom_line() +
+  geom_vline(xintercept = last_year, color="red") +
+  annotate(
+    "rect", 
+    xmin=min(summary_of_last_login$last_active_month), 
+    xmax=last_year, 
+    ymin=0, 
+    ymax=max(summary_of_last_login$count), 
+    alpha=.2, 
+    fill='red'
+  ) +
+  annotate(
+    "label", 
+    x =last_year,
+    hjust=1.1,
+    y=max(summary_of_last_login$count) / 2,
+    label=glue("{num_not_logged_in_1_year} users have not logged in for a year"),
+    color="red"
+  ) +
+  labs(
+    title = "Last Login",
+    subtitle = "Count of users by last login (licensed users only).",
+    x = "Month",
+    y = "Number of Users",
+  )
+  
+usage_plot
+```
+
+:::
+
+## Content
+
+Colorado has **`r comma(nrow(content))`** items deployed.
+
+::: {.panel-tabset}
+
+### Deployed by language
 
 ```{r plot-by-lang}
 #| fig-align: center
 
-content |> 
+deployed_by_language <- content |> 
   group_by(language, app_type) |>
   summarise(n = n(), .groups = "drop") |> 
   ggplot(aes(x = app_type, y = n)) +
@@ -122,9 +193,11 @@ content |>
     fill = "Language"
   ) +
   coord_flip()
+
+deployed_by_language
 ```
 
-## App Mode
+### App Mode
 
 ```{r plot-by-type}
 #| fig-align: center
@@ -153,7 +226,7 @@ We can see how the type of content deployed changes over time.
 
 ::: {.panel-tabset}
 
-## Langauge
+### Langauge
 
 ```{r content-deployed-by-time-by-lang}
 #| fig-align: center
@@ -175,7 +248,7 @@ content |>
   )
 ```
 
-## Type
+### Type
 
 ```{r content-deployed-by-time-by-type}
 #| fig-align: center
@@ -199,8 +272,38 @@ content |>
 
 :::
 
-## Who is deploying to Colorado?
+<!-- All content below here will be rendered in an email. -->
 
-:::{.callout-warning}
-Workin progress
+::: {.email}
+
+::: {.subject}
+Colorado Report Update for `r today()`
+:::
+
+Hello Colorado user,
+
+Below is a summary of the key metrics for Colorado as of `r today()`. To see the complete report or access prior versions please visit: <https://colorado.posit.co/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd>.
+
+**Users**
+
+Colorado has **`r comma(nrow(licensed_users))`** licensed users. Of those `r comma(nrow(licensed_users))` users, **`r num_not_logged_in_1_year`** have not logged in for a year.
+
+```{r email-user-logins}
+#| fig-align: center
+#| code-fold: false
+#| echo: false
+usage_plot
+```
+
+**Content**
+
+Colorado has **`r comma(nrow(content))`** items deployed.
+
+```{r email-plot-by-lang}
+#| fig-align: center
+#| code-fold: false
+#| echo: false
+deployed_by_language
+```
+
 :::
