@@ -1,2 +1,5 @@
 dash==2.4.1
+# Issues with newer versions of Flask. See:
+# https://stackoverflow.com/questions/73570041/flask-deprecated-before-first-request-how-to-update
+flask<2.3
 rsconnect-python
