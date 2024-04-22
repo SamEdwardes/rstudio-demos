@@ -208,4 +208,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+rsconnect-python/
 /.luarc.json
