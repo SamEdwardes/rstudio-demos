@@ -112,7 +112,7 @@ create_venv "requirements.txt"
 # ------------------------------------------------------------------------------
 cd "$PROJECT_ROOT/documents/quarto-colorado-report"
 heading "$(pwd)"
-Rscript -e 'renv::restore()'
+Rscript -e 'renv::restore(repos = "https://packagemanager.posit.co/cran/__linux__/jammy/latest")'
 # Rscript -e 'renv::install("rsconnect"); rsconnect::deployApp(appDir = ".", appPrimaryDoc = "colorado-report.qmd")'
 
 # ------------------------------------------------------------------------------
@@ -142,5 +142,5 @@ create_venv "requirements.txt"
 # ------------------------------------------------------------------------------
 cd "$PROJECT_ROOT/apis/plumber-penguins"
 heading "$(pwd)"
-Rscript -e 'renv::restore()'
+Rscript -e 'renv::restore(repos = "https://packagemanager.posit.co/cran/__linux__/jammy/latest")'
 Rscript -e 'renv::install("rsconnect"); rsconnect::deployAPI(api = "app", appFiles = c("plumber.R"), appTitle = "R API - Plumber - Penguins Data", forceUpdate = TRUE)'
