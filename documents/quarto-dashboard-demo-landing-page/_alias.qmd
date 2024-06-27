@@ -1,0 +1,111 @@
+## {.tabset}
+
+:::{.card title="Workbench"}
+
+With sudo:
+
+```bash
+# Edit configuration files for Workbench
+config_pw(){
+        sudo vi /etc/rstudio/"$1";  unset -f config_rsw;
+};
+# Show logs for both rstudio-server and rstudio-launcher
+logs_pw(){
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Workbench Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-server/rserver.log && echo -e ${GREEN}"\n Posit Launcher Logs:\n"${NC} && tail -n 15 
+/var/log/rstudio/launcher/rstudio-launcher.log'
+};
+alias config=config_pw
+alias restart="sudo sh -c '/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop && /usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher'"
+alias status="sudo sh -c 'systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher'"
+alias stop="sudo sh -c '/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop'"
+alias start="sudo sh -c '/usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher'"
+alias diagnostic="sudo sh -c '/usr/sbin/rstudio-server run-diagnostics'"
+alias license-status="sudo sh -c '/usr/sbin/rstudio-server license-manager status'"
+alias logs=logs_pw
+```
+
+As root:
+
+```bash
+alias config='f(){ vi /etc/rstudio/"$1";  unset -f f; }; f'
+alias restart="/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop && /usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher"
+alias status="systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher"
+alias stop="/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop"
+alias start="/usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher"
+alias diagnostic="/usr/sbin/rstudio-server run-diagnostics"
+alias license-status="/usr/sbin/rstudio-server license-manager status"
+alias logs='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Workbench Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-server/rserver.log && echo -e ${GREEN}"\n Posit Launcher Logs:\n"${NC} && tail -n 15 /var/log/rstudio/launcher/rstudio-launcher.log'
+```
+:::
+
+:::{.card title="Connect"}
+With sudo:
+
+```bash
+# Show nicely formatted logs for Connect
+logs_pc(){
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
+};
+
+alias config="sudo sh -c 'vi /etc/rstudio-connect/rstudio-connect.gcfg'"
+alias restart="sudo sh -c 'systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect'"
+alias status="sudo sh -c 'systemctl --no-pager -l status rstudio-connect'"
+alias stop="sudo sh -c 'systemctl stop rstudio-connect'"
+alias start="sudo sh -c 'systemctl start rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect'"
+alias diagnostic="sudo sh -c '/opt/rstudio-connect/scripts/run-diagnostics.sh ~/'"
+alias license-status="sudo sh -c '/opt/rstudio-connect/bin/license-manager status'"
+alias logs=logs_pc
+```
+
+As root:
+
+```bash
+alias config="vi /etc/rstudio-connect/rstudio-connect.gcfg"
+alias restart="systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
+alias status="systemctl --no-pager -l status rstudio-connect"
+alias stop="systemctl stop rstudio-connect"
+alias start="systemctl start rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
+alias diagnostic="/opt/rstudio-connect/scripts/run-diagnostics.sh ~/"
+alias license-status="/opt/rstudio-connect/bin/license-manager status"
+alias logs='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
+```
+:::
+
+:::{.card title="Package Manager"}
+With sudo:
+
+```bash
+# Show nicely formatted logs for Package Manager
+logs_pm(){
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Package Manager Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-pm/rstudio-pm.log'
+}
+
+alias config="sudo sh -c 'vi /etc/rstudio-pm/rstudio-pm.gcfg'"
+alias restart="sudo sh -c 'systemctl restart rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm'"
+alias status="sudo sh -c 'systemctl --no-pager -l status rstudio-pm'"
+alias stop="sudo sh -c 'systemctl stop rstudio-pm'"
+alias start="sudo sh -c 'systemctl start rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm'"
+alias diagnostic="sudo sh -c '/opt/rstudio-pm/bin/run-diagnostics'"
+alias license-status="sudo sh -c '/opt/rstudio-pm/bin/license-manager status'"
+alias logs=logs_pm
+alias cran-setup="sudo sh -c '/opt/rstudio-pm/bin/rspm create repo --name=cran --description=Access-CRAN-packages && /opt/rstudio-pm/bin/rspm subscribe --repo=cran --source=cran && /opt/rstudio-pm/bin/rspm sync --type=cran &'"
+alias pypi-setup="sudo sh -c '/opt/rstudio-pm/bin/rspm create repo --name=pypi --type=python --description=Access-PyPI-packages && /opt/rstudio-pm/bin/rspm subscribe --repo=pypi --source=pypi && nohup /opt/rstudio-pm/bin/rspm sync --type=pypi &'"
+alias rspm="sudo sh -c '/opt/rstudio-pm/bin/rspm'"
+```
+
+As root:
+
+```bash
+alias config="vi /etc/rstudio-pm/rstudio-pm.gcfg"
+alias restart="systemctl restart rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm"
+alias status="systemctl --no-pager -l status rstudio-pm"
+alias stop="systemctl stop rstudio-pm"
+alias start="systemctl start rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm"
+alias diagnostic="/opt/rstudio-pm/bin/run-diagnostics"
+alias license-status="/opt/rstudio-pm/bin/license-manager status"
+alias logs='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Package Manager Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-pm/rstudio-pm.log'
+alias cran-setup="/opt/rstudio-pm/bin/rspm create repo --name=cran --description='Access CRAN packages' && /opt/rstudio-pm/bin/rspm subscribe --repo=cran --source=cran && /opt/rstudio-pm/bin/rspm sync --type=cran &"
+alias pypi-setup="/opt/rstudio-pm/bin/rspm create repo --name=pypi --type=python --description='Access PyPI packages' && /opt/rstudio-pm/bin/rspm subscribe --repo=pypi --source=pypi && nohup /opt/rstudio-pm/bin/rspm sync --type=pypi &"
+alias rspm="/opt/rstudio-pm/bin/rspm"
+```
+:::

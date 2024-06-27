@@ -1,0 +1,20 @@
+##
+
+###
+:::{.card title="Demo"}
+{{< include _demo-links.qmd >}}
+:::
+
+###
+
+:::{.card title="Docs"}
+- All docs: <>
+- Admin Guide: <>
+- User Guide: <>
+- Configuration: <>
+- Choose the right architecture: <https://solutions.posit.co/architecting/architectures/ppm/>
+- Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-pm>
+- Support ticket:
+    - Server: <https://docs.posit.co/support.html>
+    - K8s: <>
+:::

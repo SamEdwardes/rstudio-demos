@@ -1,0 +1,101 @@
+##
+
+###
+
+:::{.card title="Demo"}
+{{< include _demo-links.qmd >}}
+:::
+
+###
+
+:::{.card title="Docs"}
+
+- All docs: <https://docs.posit.co/pwb/documentation.html>
+- Admin Guide: <https://docs.posit.co/ide/server-pro/>
+- User Guide: <https://docs.posit.co/ide/server-pro/user/>
+- Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pwb/>
+- Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-workbench>
+- Support ticket:
+    - Server: <https://docs.posit.co/support.html>
+    - K8s: <https://docs.posit.co/ide/server-pro/getting_started/installation/kubernetes_installation.html#opening-a-support-ticket>
+:::
+
+## {.tabset}
+
+:::{.card title="Databricks"}
+**Demo**
+
+- <https://databricks.posit.team>
+
+**Docs**
+
+- [Using sparklyr with Databricks](https://spark.rstudio.com/deployment/databricks-cluster.html)
+- [Option 1 - Connecting to Databricks remotely](https://spark.rstudio.com/deployment/databricks-cluster-remote.html)
+- [Option 2 - Working inside of Databricks](https://spark.rstudio.com/deployment/databricks-cluster-local.html)
+- [YouTube: Databricks x Posit | Improved Productivity for your Data Teams](https://www.youtube.com/live/iShpyDxzMeE?si=uAqiZEwUJaNd5Tci)
+- [YouTube: Predicting Lending Rates with Databricks, tidymodels, and Posit Team](https://youtu.be/qIzKJKcmh-s?si=yZpiwFR19GABbrnc)
+- [YouTube: Playlist of other databricks videos](https://youtube.com/playlist?list=PL9HYL-VRX0oR-3AgWbXtlfdr29626EjRJ&si=pmer_351dBj9Emm4)
+:::
+
+:::{.card title="Snowflake"}
+**Demo**
+
+- <https://demo.posit.team>
+
+**Docs**
+
+- TBD
+:::
+
+:::{.card title="Sagemaker"}
+**Demo**
+
+- <https://d-9a672de26a.awsapps.com/start/#/saml/default/Amazon%20SageMaker%20Studio%20%28d-h3xermozfbey%29/ins-f8c02ae6f7b844eb>
+
+**Docs**
+
+- https://www.rstudio.com/sagemaker/
+- [Get started with RStudio on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/get-started-with-rstudio-on-amazon-sagemaker/) (AWS Docs)
+- [Manage RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-manage.html) (AWS Docs)
+- [Use RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-use.html) (AWS Docs)
+- Sagemaker:
+    - <https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio.html>
+
+
+:::
+
+:::{.card title="Azure ML"}
+**Demo**
+
+- TBD
+
+**Docs**
+
+- https://www.rstudio.com/azure-ml/
+- [Announcing RStudio for Microsoft Azure ML](https://cloud.rstudio.com/blog/announcing-rstudio-for-azure-ml/)
+- [Add RStudio to Azure ML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=python#add-custom-applications-such-as-rstudio-preview) (Azure Docs)
+- [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=RStudio&page=1)
+    - [RStudio Workbench Standard for Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudioserverprostandard)
+    - [RStudio Connect](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudio-connect)
+    - [FAQ for RStudio Connect Azure](https://support.rstudio.com/hc/en-us/articles/360022703493-FAQ-for-RStudio-Connect-Azure)
+:::
+
+:::{.card title="Google Workstations"}
+**Demo**
+
+- TBD
+
+**Docs**
+
+- TBD
+:::
+
+:::{.card title="Tableau"}
+**Demo**
+
+- <https://github.com/SamEdwardes/rstudio-demos/tree/main/apis/plumber-tableau-penguins>
+
+**Docs**
+
+- TBD
+:::

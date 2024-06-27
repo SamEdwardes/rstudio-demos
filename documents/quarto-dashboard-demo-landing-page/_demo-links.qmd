@@ -1,0 +1,4 @@
+- <https://demo.posit.team>
+- <https://palm.ptd.posit.it>
+- <https://colorado.posit.co>
+- <https://databricks.posit.team>

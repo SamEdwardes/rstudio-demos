@@ -1,0 +1,14 @@
+:::{.card title="Workbench"}
+- [ ] Do this
+- [ ] Do this
+:::
+
+:::{.card title="Connect"}
+- [ ] Do this
+- [ ] Do this
+:::
+
+:::{.card title="Package Manager"}
+- [ ] Do this
+- [ ] Do this
+:::
