@@ -26,6 +26,7 @@
 **Demo**
 
 - <https://databricks.posit.team>
+- <https://github.com/sol-eng/databricks_demo>
 
 **Docs**
 

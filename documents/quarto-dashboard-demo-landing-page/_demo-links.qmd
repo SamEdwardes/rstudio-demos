@@ -1,4 +1,14 @@
-- <https://demo.posit.team>
-- <https://palm.ptd.posit.it>
-- <https://colorado.posit.co>
-- <https://databricks.posit.team>
+Posit Team instances:
+
+- <https://current.posit.team> (primary demo environment)
+- <https://palm.ptd.posit.it> (running the dailies)
+- <https://databricks.posit.team> (for Databricks demos)
+- <https://colorado.posit.co> (old demo environment)
+- <https://demo.posit.team> (this is for DevRel)
+
+Docker images:
+
+- palm.ptd.posit.it: `654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2`
+- demo.posit.team: `654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2`
+- databricks.posit.team: `654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2`
+- current.posit.team: `654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.04.2-764.pro1`
