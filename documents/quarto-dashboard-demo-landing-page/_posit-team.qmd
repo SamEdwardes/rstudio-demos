@@ -3,13 +3,17 @@
 ###
 
 ::: {.card title='Demo'}
+
 **Environments**
 
 {{< include _demo-links.qmd >}}
 
 **Example code**
 
-- <https://github.com/SamEdwardes/rstudio-demos>
+- Generic demos: <https://github.com/SamEdwardes/rstudio-demos>
+- Databricks: <https://github.com/sol-eng/databricks_demo>
+- Snowflake: <https://github.com/sol-eng/snowflake_demo>
+
 :::
 
 ###
@@ -36,4 +40,5 @@
 
 - Sizing reccomendations: <https://support.posit.co/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations>
 - How to submit a support ticket: <https://support.posit.co/hc/en-us/articles/360004788294-How-do-I-submit-a-Support-ticket>
+
 :::
