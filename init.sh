@@ -23,11 +23,6 @@ create_venv() {
     uv pip install -r "$REQUIREMENTS_TXT"
 }
 
-install_pipx() {
-    /opt/python/3.11.6/bin/python -m pip install pipx
-    ~/.local/bin/pipx ensurepath
-}
-
 install_uv() {
     heading "Installing uv"
     curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -41,23 +36,64 @@ install_zsh() {
     cd zsh
 }
 
-install_starship () {
+install_starship() {
     heading "Installing starship"
     wget --no-verbose --directory-prefix '/tmp' https://github.com/starship/starship/releases/download/v1.17.1/starship-x86_64-unknown-linux-musl.tar.gz
     tar --directory ~/.local/bin -zxf /tmp/starship-x86_64-unknown-linux-musl.tar.gz
     echo 'eval "$(~/.local/bin/starship init bash)"' >> ~/.bashrc
 }
 
+install_nerdfont() {
+    heading "Installing nerdfont (DroidSansMono NF)"
+    curl -sS https://webi.sh/nerdfont | sh
+}
+
+intall_gh() {
+    heading "Installing gh"
+    curl -sS https://webi.sh/gh | sh
+    git config --global user.name "SamEdwardes"
+    git config --global user.email "sam.edwardes@posit.co"
+    ~/.local/bin/gh auth setup-git
+}
+
+install_ripgrep() {
+    heading "Installing ripgrep (rg)"
+    curl -sS https://webi.sh/rg | sh
+}
+
+install_shellcheck() {
+    heading "Installing shellcheck"
+    curl -sS https://webi.sh/shellcheck | sh
+}
+
+install_bat() {
+    heading "Installing bat"
+    curl -sS https://webi.sh/bat | sh
+}
+
+bootstrap_r() {
+    heading "Bootstrapping R environment"
+    RScript -e 'install.packages("pak")'
+    RScript -e 'pak::pkg_install(c("renv", "tidyverse", "shiny", "quarto", "rmarkdown", "janitor", "devtools", "usethis"))'
+}
 
 # ------------------------------------------------------------------------------
 # Install CLI tools
 # ------------------------------------------------------------------------------
 mkdir -p ~/.local/bin
 
-install_pipx
 install_uv
 install_starship
+install_nerdfont
+install_gh
+install_ripgrep
+install_shellcheck
+install_bat
 
+# ------------------------------------------------------------------------------
+# Bootstrap R
+# ------------------------------------------------------------------------------
+bootstrap_r
 
 # ------------------------------------------------------------------------------
 # Python - Applications
@@ -76,7 +112,6 @@ cd "$PROJECT_ROOT/applications/dash-penguins"
 heading "$(pwd)"
 create_venv "app/requirements.txt"
 .venv/bin/rsconnect deploy dash --new --title "Python App - Dash - Pengins" --python .venv/bin/python --entrypoint app:app app
-
 
 cd "$PROJECT_ROOT/applications/streamlit-penguins"
 heading "$(pwd)"
