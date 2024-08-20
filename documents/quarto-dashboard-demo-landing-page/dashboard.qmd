@@ -5,28 +5,340 @@ format:
     nav-buttons: [github]
     link-external-icon: true
     link-external-newwindow: true
+    scrolling: false
 ---
 
 # Posit Team
 
-{{< include _posit-team.qmd >}}
+## Row
 
-# Workbench
+### Column <> Demo {.tabset}
 
-{{< include _posit-workbench.qmd >}}
+:::{.card title="General"}
 
-# Connect
+**Environments**:
 
-{{< include _posit-connect.qmd >}}
+<https://current.posit.team> (primary demo environment)
 
-# Package Manager
+```bash {.flow .code-overflow-wrap}
+654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.04.2-764.pro1
+```
 
-{{< include _posit-package-manager.qmd >}}
+<https://palm.ptd.posit.it> (running the dailies)
+
+```bash {.flow .code-overflow-wrap}
+654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
+```
+
+<https://demo.posit.team> (this is for DevRel)
+
+```bash {.flow .code-overflow-wrap}
+654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
+```
+
+<https://colorado.posit.co> (old demo environment)
+
+**Example code**:
+
+- Generic demos: <https://github.com/SamEdwardes/rstudio-demos>
+
+:::
+
+:::{.card title="Databricks"}
+
+**Environments**
+
+- Posit team: <https://databricks.posit.team>
+
+    ```bash {.flow .code-overflow-wrap}
+    # databricks.posit.team
+    654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.08.0-351.pro19
+    
+    # See sol-eng/pro-product-images for latest image builds:
+    # https://github.com/sol-eng/pro-product-images/actions/workflows/build-r-session-complete-adhoc%20copy%202.yaml
+    ```
+
+- Databricks: <https://adb-3256282566390055.15.azuredatabricks.net/> (use the `sol_eng_demo_nickp` catalog)
+
+**Example code**
+
+- <https://github.com/sol-eng/databricks_demo>
+
+**Docs**
+
+- [Using sparklyr with Databricks](https://spark.rstudio.com/deployment/databricks-cluster.html)
+- [Option 1 - Connecting to Databricks remotely](https://spark.rstudio.com/deployment/databricks-cluster-remote.html)
+- [Option 2 - Working inside of Databricks](https://spark.rstudio.com/deployment/databricks-cluster-local.html)
+- [YouTube: Databricks x Posit | Improved Productivity for your Data Teams](https://www.youtube.com/live/iShpyDxzMeE?si=uAqiZEwUJaNd5Tci)
+- [YouTube: Predicting Lending Rates with Databricks, tidymodels, and Posit Team](https://youtu.be/qIzKJKcmh-s?si=yZpiwFR19GABbrnc)
+- [YouTube: Playlist of other databricks videos](https://youtube.com/playlist?list=PL9HYL-VRX0oR-3AgWbXtlfdr29626EjRJ&si=pmer_351dBj9Emm4)
+
+:::
+
+:::{.card title="Snowflake"}
+
+**Environments**:
+
+- Posit Team: <https://palm.ptd.posit.it>
+- Snowflake: <https://app.snowflake.com/duloftf/posit_software_pbc_dev/#/homepage>
+
+**Example code**:
+
+- Snowflake: <https://github.com/sol-eng/snowflake_demo>
+
+:::
+
+:::{.card title="AWS"}
+
+**Environments**:
+
+- Sagemaker: <https://d-9a672de26a.awsapps.com/start/#/saml/default/Amazon%20SageMaker%20Studio%20%28d-h3xermozfbey%29/ins-f8c02ae6f7b844eb>
+
+**Repos**:
+
+**Docs**
+
+- https://www.rstudio.com/sagemaker/
+- [Get started with RStudio on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/get-started-with-rstudio-on-amazon-sagemaker/) (AWS Docs)
+- [Manage RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-manage.html) (AWS Docs)
+- [Use RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-use.html) (AWS Docs)
+- Sagemaker:
+    - <https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio.html>
+
+:::
+
+:::{.card title="Azure"}
+
+**Environments**:
+
+**Repos**:
+
+**Docs**
+
+- https://www.rstudio.com/azure-ml/
+- [Announcing RStudio for Microsoft Azure ML](https://cloud.rstudio.com/blog/announcing-rstudio-for-azure-ml/)
+- [Add RStudio to Azure ML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=python#add-custom-applications-such-as-rstudio-preview) (Azure Docs)
+- [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=RStudio&page=1)
+    - [RStudio Workbench Standard for Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudioserverprostandard)
+    - [RStudio Connect](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rstudio-5237862.rstudio-connect)
+    - [FAQ for RStudio Connect Azure](https://support.rstudio.com/hc/en-us/articles/360022703493-FAQ-for-RStudio-Connect-Azure)
+
+:::
+
+::: {.card title="GCP"}
+:::
+
+:::{.card title="Other"}
+
+**Tableau**:
+
+- <https://github.com/SamEdwardes/rstudio-demos/tree/main/apis/plumber-tableau-penguins>
+
+:::
+
+### Column <> Docs {.tabset}
+
+:::{.card title="General"}
+
+**General**
+
+- Docs: <https://docs.posit.co>
+- Feature Matrix: <https://connect.posit.it/feature-matrix/>
+
+**Architecture diagrams**
+
+- Pharos: <https://pub.demo.posit.team/pharos-app/>
+- Choose the right architecture: <https://solutions.posit.co/architecting/>
+
+**Kubernetes**
+
+- Helm charts: <https://github.com/rstudio/helm>
+- DockerHub: <https://hub.docker.com/u/rstudio>
+- Docker images: <https://github.com/rstudio/rstudio-docker-products>
+
+**Favourite Articles**
+
+- Sizing reccomendations: <https://support.posit.co/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations>
+- How to submit a support ticket: <https://support.posit.co/hc/en-us/articles/360004788294-How-do-I-submit-a-Support-ticket>
+
+:::
+
+:::{.card title="Workbench"}
+
+- All docs: <https://docs.posit.co/pwb/documentation.html>
+- Admin Guide: <https://docs.posit.co/ide/server-pro/>
+- User Guide: <https://docs.posit.co/ide/server-pro/user/>
+- Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pwb/>
+- Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-workbench>
+- Support ticket:
+    - Server: <https://docs.posit.co/support.html>
+    - K8s: <https://docs.posit.co/ide/server-pro/getting_started/installation/kubernetes_installation.html#opening-a-support-ticket>
+
+:::
+
+:::{.card title="Connect"}
+
+- All docs: <https://docs.posit.co/connect/>
+- Admin Guide: <https://docs.posit.co/connect/admin/>
+- User Guide: <https://docs.posit.co/connect/user/>
+- Configuration: <https://docs.posit.co/connect/admin/appendix/configuration/>
+- Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pct/>
+- Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-connect>
+- Support ticket:
+    - Server: <https://docs.posit.co/support.html>
+    - K8s: <https://docs.posit.co/connect/admin/appendix/off-host/support/>
+
+:::
+
+:::{.card title="Package Mananger"}
+
+- All docs: <>
+- Admin Guide: <>
+- User Guide: <>
+- Configuration: <>
+- Choose the right architecture: <https://solutions.posit.co/architecting/architectures/ppm/>
+- Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-pm>
+- Support ticket:
+    - Server: <https://docs.posit.co/support.html>
+    - K8s: <>
+
+:::
 
 # Alias
 
-{{< include _alias.qmd >}}
+## Row {.tabset}
+
+:::{.card title="Workbench"}
+
+With sudo:
+
+```bash
+# Edit configuration files for Workbench
+config_pw(){
+        sudo vi /etc/rstudio/"$1";  unset -f config_rsw;
+};
+# Show logs for both rstudio-server and rstudio-launcher
+logs_pw(){
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Workbench Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-server/rserver.log && echo -e ${GREEN}"\n Posit Launcher Logs:\n"${NC} && tail -n 15 
+/var/log/rstudio/launcher/rstudio-launcher.log'
+};
+alias config=config_pw
+alias restart="sudo sh -c '/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop && /usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher'"
+alias status="sudo sh -c 'systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher'"
+alias stop="sudo sh -c '/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop'"
+alias start="sudo sh -c '/usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher'"
+alias diagnostic="sudo sh -c '/usr/sbin/rstudio-server run-diagnostics'"
+alias license-status="sudo sh -c '/usr/sbin/rstudio-server license-manager status'"
+alias logs=logs_pw
+```
+
+As root:
+
+```bash
+alias config='f(){ vi /etc/rstudio/"$1";  unset -f f; }; f'
+alias restart="/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop && /usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher"
+alias status="systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher"
+alias stop="/usr/sbin/rstudio-server stop && /usr/bin/rstudio-launcher stop"
+alias start="/usr/bin/rstudio-launcher start && /usr/sbin/rstudio-server start && sleep 2 && systemctl --no-pager -l status rstudio-server && systemctl --no-pager -l status rstudio-launcher"
+alias diagnostic="/usr/sbin/rstudio-server run-diagnostics"
+alias license-status="/usr/sbin/rstudio-server license-manager status"
+alias logs='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Workbench Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-server/rserver.log && echo -e ${GREEN}"\n Posit Launcher Logs:\n"${NC} && tail -n 15 /var/log/rstudio/launcher/rstudio-launcher.log'
+```
+:::
+
+:::{.card title="Connect"}
+With sudo:
+
+```bash
+# Show nicely formatted logs for Connect
+logs_pc(){
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
+};
+
+alias config="sudo sh -c 'vi /etc/rstudio-connect/rstudio-connect.gcfg'"
+alias restart="sudo sh -c 'systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect'"
+alias status="sudo sh -c 'systemctl --no-pager -l status rstudio-connect'"
+alias stop="sudo sh -c 'systemctl stop rstudio-connect'"
+alias start="sudo sh -c 'systemctl start rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect'"
+alias diagnostic="sudo sh -c '/opt/rstudio-connect/scripts/run-diagnostics.sh ~/'"
+alias license-status="sudo sh -c '/opt/rstudio-connect/bin/license-manager status'"
+alias logs=logs_pc
+```
+
+As root:
+
+```bash
+alias config="vi /etc/rstudio-connect/rstudio-connect.gcfg"
+alias restart="systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
+alias status="systemctl --no-pager -l status rstudio-connect"
+alias stop="systemctl stop rstudio-connect"
+alias start="systemctl start rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
+alias diagnostic="/opt/rstudio-connect/scripts/run-diagnostics.sh ~/"
+alias license-status="/opt/rstudio-connect/bin/license-manager status"
+alias logs='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
+```
+:::
+
+:::{.card title="Package Manager"}
+With sudo:
+
+```bash
+# Show nicely formatted logs for Package Manager
+logs_pm(){
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Package Manager Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-pm/rstudio-pm.log'
+}
+
+alias config="sudo sh -c 'vi /etc/rstudio-pm/rstudio-pm.gcfg'"
+alias restart="sudo sh -c 'systemctl restart rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm'"
+alias status="sudo sh -c 'systemctl --no-pager -l status rstudio-pm'"
+alias stop="sudo sh -c 'systemctl stop rstudio-pm'"
+alias start="sudo sh -c 'systemctl start rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm'"
+alias diagnostic="sudo sh -c '/opt/rstudio-pm/bin/run-diagnostics'"
+alias license-status="sudo sh -c '/opt/rstudio-pm/bin/license-manager status'"
+alias logs=logs_pm
+alias cran-setup="sudo sh -c '/opt/rstudio-pm/bin/rspm create repo --name=cran --description=Access-CRAN-packages && /opt/rstudio-pm/bin/rspm subscribe --repo=cran --source=cran && /opt/rstudio-pm/bin/rspm sync --type=cran &'"
+alias pypi-setup="sudo sh -c '/opt/rstudio-pm/bin/rspm create repo --name=pypi --type=python --description=Access-PyPI-packages && /opt/rstudio-pm/bin/rspm subscribe --repo=pypi --source=pypi && nohup /opt/rstudio-pm/bin/rspm sync --type=pypi &'"
+alias rspm="sudo sh -c '/opt/rstudio-pm/bin/rspm'"
+```
+
+As root:
+
+```bash
+alias config="vi /etc/rstudio-pm/rstudio-pm.gcfg"
+alias restart="systemctl restart rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm"
+alias status="systemctl --no-pager -l status rstudio-pm"
+alias stop="systemctl stop rstudio-pm"
+alias start="systemctl start rstudio-pm && sleep 2 && systemctl --no-pager -l status rstudio-pm"
+alias diagnostic="/opt/rstudio-pm/bin/run-diagnostics"
+alias license-status="/opt/rstudio-pm/bin/license-manager status"
+alias logs='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Package Manager Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-pm/rstudio-pm.log'
+alias cran-setup="/opt/rstudio-pm/bin/rspm create repo --name=cran --description='Access CRAN packages' && /opt/rstudio-pm/bin/rspm subscribe --repo=cran --source=cran && /opt/rstudio-pm/bin/rspm sync --type=cran &"
+alias pypi-setup="/opt/rstudio-pm/bin/rspm create repo --name=pypi --type=python --description='Access PyPI packages' && /opt/rstudio-pm/bin/rspm subscribe --repo=pypi --source=pypi && nohup /opt/rstudio-pm/bin/rspm sync --type=pypi &"
+alias rspm="/opt/rstudio-pm/bin/rspm"
+```
+:::
 
 # Go Live
 
-{{< include _go-live.qmd >}}
+## Row {.tabset}
+
+:::{.card title="Workbench"}
+
+- [ ] Do this
+- [ ] Do this
+
+:::
+
+:::{.card title="Connect"}
+
+- [ ] Do this
+- [ ] Do this
+
+:::
+
+:::{.card title="Package Manager"}
+
+- [ ] Do this
+- [ ] Do this
+
+:::
