@@ -73,8 +73,8 @@ install_bat() {
 
 bootstrap_r() {
     heading "Bootstrapping R environment"
-    RScript -e 'install.packages("pak")'
-    RScript -e 'pak::pkg_install(c("renv", "tidyverse", "shiny", "shinydashboard", "palmerpenguins", "quarto", "rmarkdown", "janitor", "plumber", "devtools", "usethis"))'
+    Rscript -e 'install.packages("pak")'
+    Rscript -e 'pak::pkg_install(c("renv", "tidyverse", "shiny", "shinydashboard", "palmerpenguins", "quarto", "rmarkdown", "janitor", "plumber", "devtools", "usethis"))'
 }
 
 # ------------------------------------------------------------------------------
