@@ -18,25 +18,23 @@ format:
 
 **Environments**:
 
-<https://current.posit.team> (primary demo environment)
+- <https://current.posit.team> (primary demo environment)
+- <https://palm.ptd.posit.it> (running the dailies)
+- <https://demo.posit.team> (this is for DevRel)
+- <https://colorado.posit.co> (old demo environment)
+
+**Images**:
 
 ```bash {.flow .code-overflow-wrap}
+# See sol-eng/pro-product-images for latest image builds:
+# https://github.com/sol-eng/pro-product-images/actions/workflows/build-r-session-complete-adhoc%20copy%202.yaml
+
 654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.04.2-764.pro1
-```
 
-<https://palm.ptd.posit.it> (running the dailies)
-
-```bash {.flow .code-overflow-wrap}
 654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
+
+654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.08.0-351.pro19
 ```
-
-<https://demo.posit.team> (this is for DevRel)
-
-```bash {.flow .code-overflow-wrap}
-654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
-```
-
-<https://colorado.posit.co> (old demo environment)
 
 **Example code**:
 
@@ -51,11 +49,11 @@ format:
 - Posit team: <https://databricks.posit.team>
 
     ```bash {.flow .code-overflow-wrap}
-    # databricks.posit.team
-    654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.08.0-351.pro19
-    
     # See sol-eng/pro-product-images for latest image builds:
     # https://github.com/sol-eng/pro-product-images/actions/workflows/build-r-session-complete-adhoc%20copy%202.yaml
+    654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.04.2-764.pro1
+    654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
+    654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.08.0-351.pro19
     ```
 
 - Databricks: <https://adb-3256282566390055.15.azuredatabricks.net/> (use the `sol_eng_demo_nickp` catalog)
