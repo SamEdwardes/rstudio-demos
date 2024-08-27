@@ -73,8 +73,25 @@ install_bat() {
 
 bootstrap_r() {
     heading "Bootstrapping R environment"
-    Rscript -e 'install.packages("pak")'
-    Rscript -e 'pak::pkg_install(c("renv", "tidyverse", "shiny", "shinydashboard", "palmerpenguins", "quarto", "rmarkdown", "janitor", "plumber", "devtools", "usethis"))'
+    local R_INIT=$(cat << EOF
+options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+install.packages("pak")
+pak::pkg_install(c(
+    "renv",
+    "tidyverse",
+    "shiny",
+    "shinydashboard",
+    "palmerpenguins",
+    "quarto",
+    "rmarkdown",
+    "janitor",
+    "plumber",
+    "devtools",
+    "usethis"
+))
+EOF
+)
+    Rscript -e "$R_INIT"
 }
 
 # ------------------------------------------------------------------------------
