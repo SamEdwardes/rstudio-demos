@@ -48,7 +48,7 @@ install_nerdfont() {
     curl -sS https://webi.sh/nerdfont | sh
 }
 
-intall_gh() {
+install_gh() {
     heading "Installing gh"
     curl -sS https://webi.sh/gh | sh
     git config --global user.name "SamEdwardes"
