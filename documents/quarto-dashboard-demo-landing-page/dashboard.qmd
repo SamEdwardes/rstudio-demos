@@ -82,8 +82,18 @@ format:
 
 **Example code**:
 
-- Snowflake: <https://github.com/sol-eng/snowflake_demo>
+- Snowflake demo repo: <https://github.com/sol-eng/snowflake_demo>
+- Internal Posit Snowflake docs: <https://connect.posit.it/snowflake/>
 
+**Posit Docs**:
+
+- Posit Workbench > **User** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/user/2024.09.0/posit-workbench/managed-credentials/snowflake.html> 
+- Posit Workbench > **Admin** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/2024.09.0/integration/snowflake/native-app/>
+
+**Other resources**:
+
+- Snowflake quick start: [Analyze Data with R using Posit Workbench and Snowflake](https://quickstarts.snowflake.com/guide/analyze_data_with_r_using_posit_workbench_and_snowflake/index.html#0)
+- Snowflake solutions center: <https://developers.snowflake.com/solution/data-analysis-with-r-using-posit-workbench-and-snowflake/>
 :::
 
 :::{.card title="AWS"}
