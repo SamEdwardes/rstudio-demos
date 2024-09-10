@@ -177,6 +177,9 @@ format:
 - Admin Guide: <https://docs.posit.co/ide/server-pro/>
 - User Guide: <https://docs.posit.co/ide/server-pro/user/>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pwb/>
+- Reference architectures: <https://github.com/rstudio/rstudio-ide-automation/tree/main>
+    - Single server: `fuzzbucket`
+    - EKS: `pulumi/eks-reference`
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-workbench>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
@@ -191,6 +194,7 @@ format:
 - User Guide: <https://docs.posit.co/connect/user/>
 - Configuration: <https://docs.posit.co/connect/admin/appendix/configuration/>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pct/>
+- Reference architecture: <https://github.com/posit-dev/connect-architectures>
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-connect>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
@@ -205,6 +209,7 @@ format:
 - User Guide: <>
 - Configuration: <>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/ppm/>
+- Reference architecture: <https://github.com/rstudio/architectures-package-manager> 
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-pm>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
