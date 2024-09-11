@@ -20,7 +20,7 @@ A fast replacement for an entire ecosystem of tools:
 
 uv does not do anything with R! 
 
-But if I were to compare it to the R ecosystem, uv is kind of like having `rig` and `renv` in a single super fast package.
+But if I were to compare it to the R ecosystem, uv is kind of like having `rig`, `renv`, and `pak` in a single super fast package.
 
 ## Use cases
 
