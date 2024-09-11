@@ -9,6 +9,7 @@ files = [
   '/slides.qmd'
 ]
 title = 'uv for Posit (2024-09-11)'
+description = 'An overview of `uv`. How I use it in my day-to-day workflows, and considerations for how Posit can integrate with and support `uv`.'
 
 [quarto]
 version = '1.5.47'
