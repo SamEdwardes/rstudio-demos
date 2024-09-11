@@ -218,6 +218,7 @@ pl.DataFrame({"x": [1, 2, 3]})
 ## Links
 
 - Source code for slides: <https://github.com/SamEdwardes/rstudio-demos/tree/main/webinars/2024-09-11_uv>
+- Slides on Connect: <https://connect.posit.it/2024-09-11-uv/>
 - uv docs: <https://docs.astral.sh/uv/>
 - Astral blog post: <https://astral.sh/blog/uv-unified-python-packaging>
 - My blog post: <https://samedwardes.com/blog/2024-08-28-data-science-projects-with-uv/>
