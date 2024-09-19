@@ -5,7 +5,7 @@ format:
     nav-buttons: [github]
     link-external-icon: true
     link-external-newwindow: true
-    scrolling: false
+    scrolling: true
 ---
 
 # Posit Team
@@ -23,7 +23,7 @@ format:
 - <https://demo.posit.team> (this is for DevRel)
 - <https://colorado.posit.co> (old demo environment)
 
-**Images**:
+**Workbench Session Images**:
 
 ```bash {.flow .code-overflow-wrap}
 # See sol-eng/pro-product-images for latest image builds:
@@ -34,6 +34,8 @@ format:
 654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
 
 654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.08.0-351.pro19
+
+654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.09.0-375.pro3
 ```
 
 **Example code**:
@@ -89,6 +91,8 @@ format:
 
 - Posit Workbench > **User** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/user/2024.09.0/posit-workbench/managed-credentials/snowflake.html> 
 - Posit Workbench > **Admin** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/2024.09.0/integration/snowflake/native-app/>
+- Architecture diagrams from James: <https://docs.google.com/presentation/d/1mTuZMkx9o9gMtrBNaVJ_PFmiUB-7yxqBfS2FUH6IuG4/edit#slide=id.g28740c4c710_0_200>
+- RevOrg Confluence page: <https://positpbc.atlassian.net/wiki/spaces/REV/pages/1021509633/Snowflake+Posit+Workbench+Native+App>
 
 **Other resources**:
 
@@ -225,7 +229,7 @@ format:
 
 With sudo:
 
-```bash
+```{.bash}
 # Edit configuration files for Workbench
 config_pw(){
         sudo vi /etc/rstudio/"$1";  unset -f config_rsw;
@@ -331,7 +335,13 @@ alias rspm="/opt/rstudio-pm/bin/rspm"
 ```
 :::
 
+## Row
+
+See <https://positpbc.atlassian.net/wiki/spaces/SE/pages/289538176/Linux+Command+Aliases> for Sam Cofer's copy.
+
 # Go Live
+
+🚧 Work in progress
 
 ## Row {.tabset}
 
@@ -355,3 +365,7 @@ alias rspm="/opt/rstudio-pm/bin/rspm"
 - [ ] Do this
 
 :::
+
+# About
+
+This is a dashboard I use to keep track of all the assets I may need for a demo. The source code is here: <https://github.com/SamEdwardes/rstudio-demos/tree/main/documents/quarto-dashboard-demo-landing-page>.
