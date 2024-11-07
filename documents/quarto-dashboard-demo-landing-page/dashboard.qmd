@@ -104,18 +104,24 @@ format:
 
 **Environments**:
 
-- Sagemaker: <https://d-9a672de26a.awsapps.com/start/#/saml/default/Amazon%20SageMaker%20Studio%20%28d-h3xermozfbey%29/ins-f8c02ae6f7b844eb>
+- Sagemaker (latest environment shared by Katie on 2024-10-28): <https://studio-d-nqjsae0kldvf.studio.us-east-2.sagemaker.aws/home?tab=Overview>
 
 **Repos**:
 
-**Docs**
+- SagemakerDemo: <https://github.com/sol-eng/SagemakerDemo>
 
-- https://www.rstudio.com/sagemaker/
+**Docs**:
+
+From Posit:
+
+- <https://www.rstudio.com/sagemaker/>
+
+From AWS SageMaker:
+
+- <https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio.html>
 - [Get started with RStudio on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/get-started-with-rstudio-on-amazon-sagemaker/) (AWS Docs)
 - [Manage RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-manage.html) (AWS Docs)
 - [Use RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-use.html) (AWS Docs)
-- Sagemaker:
-    - <https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio.html>
 
 :::
 
@@ -127,7 +133,7 @@ format:
 
 **Docs**
 
-- https://www.rstudio.com/azure-ml/
+- <https://www.rstudio.com/azure-ml/>
 - [Announcing RStudio for Microsoft Azure ML](https://cloud.rstudio.com/blog/announcing-rstudio-for-azure-ml/)
 - [Add RStudio to Azure ML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=python#add-custom-applications-such-as-rstudio-preview) (Azure Docs)
 - [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=RStudio&page=1)

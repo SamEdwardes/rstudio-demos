@@ -2,17 +2,17 @@
 '$schema' = 'https://cdn.posit.co/publisher/schemas/posit-publishing-record-schema-v3.json'
 server_type = 'connect'
 server_url = 'https://connect.posit.it'
-client_version = '1.1.6'
+client_version = '1.2.1'
 created_at = '2024-09-18T13:52:50-07:00'
 type = 'quarto'
 configuration_name = "Sam's Demo Dashboard-Q100"
 id = 'fbda1909-859b-4e9b-8ecb-4bfac9ad8751'
-deployed_at = '2024-09-19T13:21:30-07:00'
-bundle_id = '594801'
-bundle_url = 'https://connect.posit.it/__api__/v1/content/fbda1909-859b-4e9b-8ecb-4bfac9ad8751/bundles/594801/download'
 dashboard_url = 'https://connect.posit.it/connect/#/apps/fbda1909-859b-4e9b-8ecb-4bfac9ad8751'
 direct_url = 'https://connect.posit.it/content/fbda1909-859b-4e9b-8ecb-4bfac9ad8751/'
 logs_url = 'https://connect.posit.it/connect/#/apps/fbda1909-859b-4e9b-8ecb-4bfac9ad8751/logs'
+deployed_at = '2024-11-07T10:21:29-08:00'
+bundle_id = '619887'
+bundle_url = 'https://connect.posit.it/__api__/v1/content/fbda1909-859b-4e9b-8ecb-4bfac9ad8751/bundles/619887/download'
 files = [
   'dashboard.qmd'
 ]
