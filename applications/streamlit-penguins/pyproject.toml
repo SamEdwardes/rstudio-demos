@@ -1,0 +1,11 @@
+[project]
+name = "streamlit-penguins"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.8"
+dependencies = [
+    "certifi>=2024.12.14",
+    "rsconnect-python>=1.25.1",
+    "streamlit>=1.41.1",
+]
