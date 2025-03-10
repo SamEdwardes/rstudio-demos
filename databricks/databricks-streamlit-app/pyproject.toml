@@ -1,0 +1,13 @@
+[project]
+name = "2025-03-10-databricks-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "databricks-connect==14.3.7",
+    "ipykernel>=6.29.5",
+    "loguru>=0.7.3",
+    "posit-sdk>=0.8.0",
+    "streamlit>=1.43.1",
+]
