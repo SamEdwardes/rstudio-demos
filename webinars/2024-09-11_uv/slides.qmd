@@ -1,0 +1,224 @@
+---
+title: "uv for Posit"
+date: 2024-09-11
+author: Sam Edwardes
+format: revealjs
+---
+
+## What is uv - for Python users
+
+A fast replacement for an entire ecosystem of tools:
+
+- pip
+- pyenv
+- pip-tools
+- poetry 
+- pdm
+- pipx
+
+## What is uv - for R users
+
+uv does not do anything with R! 
+
+But if I were to compare it to the R ecosystem, uv is kind of like having `rig`, `renv`, and `pak` in a single super fast package.
+
+## Use cases
+
+- Fast pip replacement
+- Project management (e.g. pyproject.toml or requirements.txt)
+- Package development
+- Running scripts (`uv run app.py`)
+- Running tools (`uvx ruff`)
+
+## uv vs... 
+
+## uv vs. pip
+
+pip
+
+```{.bash code-line-numbers="false"}
+pip install polars
+
+# becomes
+
+uv pip install polars
+```
+
+## uv vs. pyenv
+
+[pyenv](https://github.com/pyenv/pyenv)
+
+```{.bash code-line-numbers="false"}
+pyenv install 3.11.7
+
+# becomes
+
+uv python install 3.11.7
+```
+
+## uv vs. pip-tools
+
+[pip-tools](https://pip-tools.readthedocs.io/en/stable/#)
+
+```{.bash code-line-numbers="false"}
+pip-compile -o requirements.txt requirements.in
+pip-sync requirements.txt
+
+# becomes
+
+uv pip compile requirements.in --output-file requirements.txt
+uv pip sync requirements.txt
+```
+
+## uv vs. poetry
+
+[poetry](https://python-poetry.org/)
+
+```{.bash code-line-numbers="false"}
+poetry add polars
+
+# becomes
+
+uv add polars
+```
+
+## uv vs. pdm
+
+[pdm](https://pdm-project.org/latest/)
+
+```{.bash code-line-numbers="false"}
+# no example yet sorry!
+```
+
+## uv vs. pipx
+
+[pipx](https://pipx.pypa.io/stable/)
+
+```{.bash code-line-numbers="false"}
+pipx run ruff
+
+# becomes
+
+uvx ruff
+```
+
+or
+
+```{.bash code-line-numbers="false"}
+pipx install ruff && ruff
+
+# becomes
+
+uv tool install ruff && ruff
+```
+
+## My new project workflow
+
+```{.bash code-line-numbers="false"}
+# Create a new project
+mkdir example-project
+cd example-project
+uv init --app --python 3.12.5
+
+# Add a package
+uv add requests
+uv add httpx
+
+# Remove a package
+uv remove httpx
+
+# Run code
+uv run hello.py
+
+# Run other tools
+uvx ruff format .
+
+# Generate a requirements.txt
+uv export --output-file requirements.txt
+```
+
+## Project structure
+
+```{.bash code-line-numbers="false"}
+.
+├── .python-version
+├── .venv
+├── hello.py
+├── pyproject.toml
+├── README.md
+└── uv.lock
+```
+
+## Script execution
+
+I am excited for what this can unlock! Sharing scripts with other people is easier than ever before. They only need uv installed.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{.bash code-line-numbers="false"}
+tee oneoff.py <<EOF
+import polars as pl
+
+pl.DataFrame({"x": [1, 2, 3]})
+EOF
+
+# This will fail
+uv run hello.py
+
+# This will run
+uv add polars --script oneoff.py
+uv run hello.py
+```
+:::
+
+::: {.column width="50%"}
+```{.python filename="oneoff.py"}
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "polars",
+# ]
+# ///
+import polars as pl
+
+pl.DataFrame({"x": [1, 2, 3]})
+```
+:::
+
+::::
+
+## Why uv
+
+- It is fast. Really fast. And it can change how you work.
+- Enforces best practices.
+    - Virtual environments be default, you have to opt out to use system Python.
+    - uv.lock is cross platform.
+    - Reasonable project structure and defaults.
+- Replaces many tools, easier for new people to learn.
+- Very active development. Every GitHub issue I have created has had a response in under 24 hours.
+
+## Why not uv?
+
+- They are VC funded, is it sustainable (no business model yet)? 
+- but... the project is open source and could be forked (MIT & Apache-2.0).
+- Pace of development is very fast. Constant changes right now.
+
+## What can Posit do? {.smaller}
+
+- First class Positron support
+    - For example, uv does not use `pip`, can Positron use `uv pip install` to bootstrap with ipykernel
+    - Lets get crazy! Could Positron bootstrap users with a Python installation?
+    - Positron support for [inline script metadata](https://packaging.python.org/en/latest/specifications/inline-script-metadata/#inline-script-metadata) [PEP 723](https://peps.python.org/pep-0723/).
+- Ensure Package Manager plays nice (e.g. ppm [#14292](https://github.com/rstudio/package-manager/issues/14292))
+- Can Connect speed up Python app deployments with uv?
+- Connect Cloud is already using uv (citation needed)!
+- rsconnect-python is already using uv (citation needed)!
+
+## Links
+
+- Source code for slides: <https://github.com/SamEdwardes/rstudio-demos/tree/main/webinars/2024-09-11_uv>
+- Slides on Connect: <https://connect.posit.it/2024-09-11-uv/>
+- uv docs: <https://docs.astral.sh/uv/>
+- Astral blog post: <https://astral.sh/blog/uv-unified-python-packaging>
+- My blog post: <https://samedwardes.com/blog/2024-08-28-data-science-projects-with-uv/>

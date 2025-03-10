@@ -81,6 +81,8 @@ pak::pkg_install(c(
     "tidyverse",
     "shiny",
     "shinydashboard",
+    "gt",
+    "gtExtras",
     "palmerpenguins",
     "quarto",
     "rmarkdown",

@@ -5,7 +5,7 @@ format:
     nav-buttons: [github]
     link-external-icon: true
     link-external-newwindow: true
-    scrolling: false
+    scrolling: true
 ---
 
 # Posit Team
@@ -23,7 +23,7 @@ format:
 - <https://demo.posit.team> (this is for DevRel)
 - <https://colorado.posit.co> (old demo environment)
 
-**Images**:
+**Workbench Session Images**:
 
 ```bash {.flow .code-overflow-wrap}
 # See sol-eng/pro-product-images for latest image builds:
@@ -34,6 +34,8 @@ format:
 654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.07.0-daily-305.pro2
 
 654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.08.0-351.pro19
+
+654654567442.dkr.ecr.us-east-2.amazonaws.com/ptd-adhoc-pwb:session-jammy-daily-2024.09.0-375.pro3
 ```
 
 **Example code**:
@@ -82,26 +84,44 @@ format:
 
 **Example code**:
 
-- Snowflake: <https://github.com/sol-eng/snowflake_demo>
+- Snowflake demo repo: <https://github.com/sol-eng/snowflake_demo>
+- Internal Posit Snowflake docs: <https://connect.posit.it/snowflake/>
 
+**Posit Docs**:
+
+- Posit Workbench > **User** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/user/2024.09.0/posit-workbench/managed-credentials/snowflake.html> 
+- Posit Workbench > **Admin** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/2024.09.0/integration/snowflake/native-app/>
+- Architecture diagrams from James: <https://docs.google.com/presentation/d/1mTuZMkx9o9gMtrBNaVJ_PFmiUB-7yxqBfS2FUH6IuG4/edit#slide=id.g28740c4c710_0_200>
+- RevOrg Confluence page: <https://positpbc.atlassian.net/wiki/spaces/REV/pages/1021509633/Snowflake+Posit+Workbench+Native+App>
+
+**Other resources**:
+
+- Snowflake quick start: [Analyze Data with R using Posit Workbench and Snowflake](https://quickstarts.snowflake.com/guide/analyze_data_with_r_using_posit_workbench_and_snowflake/index.html#0)
+- Snowflake solutions center: <https://developers.snowflake.com/solution/data-analysis-with-r-using-posit-workbench-and-snowflake/>
 :::
 
 :::{.card title="AWS"}
 
 **Environments**:
 
-- Sagemaker: <https://d-9a672de26a.awsapps.com/start/#/saml/default/Amazon%20SageMaker%20Studio%20%28d-h3xermozfbey%29/ins-f8c02ae6f7b844eb>
+- Sagemaker (latest environment shared by Katie on 2024-10-28): <https://studio-d-nqjsae0kldvf.studio.us-east-2.sagemaker.aws/home?tab=Overview>
 
 **Repos**:
 
-**Docs**
+- SagemakerDemo: <https://github.com/sol-eng/SagemakerDemo>
 
-- https://www.rstudio.com/sagemaker/
+**Docs**:
+
+From Posit:
+
+- <https://www.rstudio.com/sagemaker/>
+
+From AWS SageMaker:
+
+- <https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio.html>
 - [Get started with RStudio on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/get-started-with-rstudio-on-amazon-sagemaker/) (AWS Docs)
 - [Manage RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-manage.html) (AWS Docs)
 - [Use RStudio on Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-use.html) (AWS Docs)
-- Sagemaker:
-    - <https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio.html>
 
 :::
 
@@ -113,7 +133,7 @@ format:
 
 **Docs**
 
-- https://www.rstudio.com/azure-ml/
+- <https://www.rstudio.com/azure-ml/>
 - [Announcing RStudio for Microsoft Azure ML](https://cloud.rstudio.com/blog/announcing-rstudio-for-azure-ml/)
 - [Add RStudio to Azure ML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=python#add-custom-applications-such-as-rstudio-preview) (Azure Docs)
 - [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=RStudio&page=1)
@@ -167,6 +187,9 @@ format:
 - Admin Guide: <https://docs.posit.co/ide/server-pro/>
 - User Guide: <https://docs.posit.co/ide/server-pro/user/>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pwb/>
+- Reference architectures: <https://github.com/rstudio/rstudio-ide-automation/tree/main>
+    - Single server: `fuzzbucket`
+    - EKS: `pulumi/eks-reference`
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-workbench>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
@@ -181,6 +204,7 @@ format:
 - User Guide: <https://docs.posit.co/connect/user/>
 - Configuration: <https://docs.posit.co/connect/admin/appendix/configuration/>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/pct/>
+- Reference architecture: <https://github.com/posit-dev/connect-architectures>
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-connect>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
@@ -195,6 +219,7 @@ format:
 - User Guide: <>
 - Configuration: <>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/ppm/>
+- Reference architecture: <https://github.com/rstudio/architectures-package-manager> 
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-pm>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
@@ -210,7 +235,7 @@ format:
 
 With sudo:
 
-```bash
+```{.bash}
 # Edit configuration files for Workbench
 config_pw(){
         sudo vi /etc/rstudio/"$1";  unset -f config_rsw;
@@ -316,7 +341,13 @@ alias rspm="/opt/rstudio-pm/bin/rspm"
 ```
 :::
 
+## Row
+
+See <https://positpbc.atlassian.net/wiki/spaces/SE/pages/289538176/Linux+Command+Aliases> for Sam Cofer's copy.
+
 # Go Live
+
+🚧 Work in progress
 
 ## Row {.tabset}
 
@@ -340,3 +371,7 @@ alias rspm="/opt/rstudio-pm/bin/rspm"
 - [ ] Do this
 
 :::
+
+# About
+
+This is a dashboard I use to keep track of all the assets I may need for a demo. The source code is here: <https://github.com/SamEdwardes/rstudio-demos/tree/main/documents/quarto-dashboard-demo-landing-page>.
