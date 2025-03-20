@@ -1,16 +1,15 @@
-from typing import Optional, List
-import pandas as pd
-from pydantic import BaseModel, Field, validator
 import datetime as dt
+from typing import List, Optional
 
+import pandas as pd
 from fastapi import FastAPI
-from fastapi.responses import RedirectResponse
+from pydantic import BaseModel, Field, validator
 
 app = FastAPI()
 
 
 class PenguinsBase(BaseModel):
-    @validator('*')
+    @validator("*")
     def change_nan_to_none(cls, v, field):
         if field.outer_type_ is float and pd.isna(v):
             return None
@@ -68,5 +67,7 @@ def raw_penguins(sample_size: Optional[int] = None):
     penguins_raw_df = pd.read_csv(url)
     if sample_size:
         penguins_raw_df = penguins_raw_df.sample(sample_size)
-    penguins_raw_response = [PenguinRaw(**i) for i in penguins_raw_df.to_dict(orient="records")]
+    penguins_raw_response = [
+        PenguinRaw(**i) for i in penguins_raw_df.to_dict(orient="records")
+    ]
     return penguins_raw_response

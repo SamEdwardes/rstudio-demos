@@ -2,7 +2,7 @@
 title: Reticulate Example
 ---
 
-An example of how to use [reticulate](https://rstudio.github.io/reticulate/) in RStudio Workbench. 
+An example of how to use [reticulate](https://rstudio.github.io/reticulate/) in RStudio Workbench.
 
 ## Setup
 
@@ -46,4 +46,3 @@ You can also add the object into your R environment.
 df <- py$df
 df
 ```
-

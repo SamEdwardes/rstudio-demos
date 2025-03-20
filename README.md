@@ -15,8 +15,8 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **Python** | Bokeh            | ...                                                               |
 | **Python** | Shiny for Python | ...                                                               |
 
-<!-- Shiny --> 
-[app-1a]: ./applications/shiny-penguins/         
+<!-- Shiny -->
+[app-1a]: ./applications/shiny-penguins/
 [app-1b]: https://colorado.posit.co/rsc/demo-shiny-penguins/
 [app-1c]: https://colorado.posit.co/rsc/connect/#/apps/03953aef-f4f7-4de6-8de0-828e1cb64f8f
 <!-- Streamlit -->
@@ -43,23 +43,23 @@ A repo containing links to my favourite RStudio demo repos and documentation
 | **Python** | Jupyter Notebook | [Code][doc-4a] \| [Solo View][doc-4b] \| [Dashboard View][doc-4c] |
 
 <!-- RMarkdown -->
-[doc-1a]: ./documents/rmd-penguins/        
+[doc-1a]: ./documents/rmd-penguins/
 [doc-1b]: https://colorado.posit.co/rsc/demo-rmd-penguins/
 [doc-1c]: https://colorado.posit.co/rsc/connect/#/apps/5450ba17-ddc2-4ef6-aeb8-ac2cec53d244
 <!-- Connect Widgets -->
-[doc-2a]: ./documents/connect-widgets-penguins/ 
+[doc-2a]: ./documents/connect-widgets-penguins/
 [doc-2b]: https://colorado.posit.co/rsc/demo-connect-widgets-penguins
 [doc-2c]: https://colorado.posit.co/rsc/connect/#/apps/692ea95d-ac94-4afa-aa5b-db76c278d2ac
 <!-- Quarto - R -->
-[doc-3a]: ./documents/quarto-colorado-report/          
+[doc-3a]: ./documents/quarto-colorado-report/
 [doc-3b]: https://colorado.posit.co/rsc/demo-quarto-colorado-report-r/
 [doc-3c]: https://colorado.posit.co/rsc/connect/#/apps/205b9011-a965-4f34-8f8f-3c12354833bd/
 <!-- Jupyter Notebook -->
-[doc-4a]: ./documents/jupyter-python-penguins/          
+[doc-4a]: ./documents/jupyter-python-penguins/
 [doc-4b]: https://colorado.posit.co/rsc/demo-jupyter-python-penguins/
 [doc-4c]: https://colorado.posit.co/rsc/connect/#/apps/241fe2cd-6eba-4a79-9aa3-6e6fe28c5714
 <!-- Blastula - R -->
-[doc-5a]: ./documents/rmd-blastula/          
+[doc-5a]: ./documents/rmd-blastula/
 [doc-5b]: https://colorado.posit.co/rsc/demo-rmd-blastula/
 [doc-5c]: https://colorado.posit.co/rsc/connect/#/apps/e0b35f2a-9a69-498a-a97f-914b4e4f5931/
 
@@ -84,11 +84,11 @@ A repo containing links to my favourite RStudio demo repos and documentation
 [api-2b]: https://colorado.posit.co/rsc/demo-plumber-tableau-penguins
 [api-2c]: https://colorado.posit.co/rsc/connect/#/apps/8ffb7488-d360-43ee-93bb-babf7a56ac59
 [api-2d]: https://us-west-2b.online.tableau.com/#/site/rstudio/workbooks/472632?:origin=card_share_link
-<!-- FastAPI -->      
+<!-- FastAPI -->
 [api-3a]: ./apis/fastapi-penguins/
 [api-3b]: https://colorado.posit.co/rsc/demo-fastapi-penguins/docs
 [api-3c]: https://colorado.posit.co/rsc/connect/#/apps/331f89eb-988f-4874-b831-566916def4dd
-<!-- Vetiver -->      
+<!-- Vetiver -->
 [api-4a]: ./apis/vetiver-train-and-deploy-python/
 <!-- Flask webapp -->
 [api-5a]: ./apis/flask-webapp/
@@ -111,7 +111,7 @@ A repo containing links to my favourite RStudio demo repos and documentation
 
 ### Bike share
 
-The bike share demo: 
+The bike share demo:
 
 - To see all content on Connect filter on the tag *[Bike Predict](https://colorado.posit.co/rsc/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=expanded&tags=111-tagtree:218)*
 - View the Connect Widgets Dashboard:
@@ -186,7 +186,7 @@ Links to my most commonly reference documentation.
 sudo systemctl start rstudio-server
 sudo systemctl stop rstudio-server
 sudo systemctl status rstudio-server
-# Or... you can use the rstudio-server utility installed at /usr/bin 
+# Or... you can use the rstudio-server utility installed at /usr/bin
 # (https://docs.posit.co/ide/server-pro/reference/rstudio_server_cli.html)
 sudo rstudio-server restart # start, stop, status, etc.
 

@@ -25,26 +25,26 @@ glimpse(users)
 Add a column that counts the number of days since the user last logged in.
 
 ```{r}
-users <- users |> 
+users <- users |>
   mutate(
     days_since_last_active = round(difftime(today(), active_time, units="days"), 0)
   )
 
-users |> 
+users |>
   select(
     username,
     active_time,
     days_since_last_active,
     locked
-  ) |> 
+  ) |>
   head()
 ```
 
 Visualize the distribution of days since last active:
 
 ```{r}
-users |> 
-  filter(locked == FALSE) |> 
+users |>
+  filter(locked == FALSE) |>
   ggplot() +
   geom_histogram(aes(x = days_since_last_active)) +
   geom_vline(xintercept = 365, color = "red")
@@ -53,11 +53,11 @@ users |>
 Users to lock:
 
 ```{r}
-users_to_lock <- users |> 
+users_to_lock <- users |>
   filter(
     days_since_last_active >= 365,
     locked == FALSE
-  ) |> 
+  ) |>
   arrange(desc(days_since_last_active))
 
 
@@ -66,15 +66,15 @@ glimpse(users_to_lock)
 
 ```{r}
 #' Loack a user
-#' 
+#'
 #' Lock a user using the connectapi. See page
 #' https://docs.posit.co/connect/api/#post-/v1/users/%7Bguid%7D/lock
 #' for reference on how to lock a user.
 #'
-#' @param user 
+#' @param user
 lock_user <- function(user_guid) {
   print(glue("Locking {user_guid}..."))
-  
+
 }
 
 
@@ -82,4 +82,3 @@ for (user_guid in users_to_lock$guid) {
   lock_user(user_guid)
 }
 ```
-

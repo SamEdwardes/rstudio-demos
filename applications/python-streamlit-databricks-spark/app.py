@@ -1,10 +1,11 @@
 import os
 
 import streamlit as st
-from databricks.connect import DatabricksSession
-from databricks.sdk.core import Config
 from loguru import logger
 from posit import connect
+
+from databricks.connect import DatabricksSession
+from databricks.sdk.core import Config
 
 # -----------------------------------------------------------------------------
 # Global variables

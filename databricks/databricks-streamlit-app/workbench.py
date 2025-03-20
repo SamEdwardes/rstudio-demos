@@ -1,6 +1,7 @@
+from loguru import logger
+
 from databricks.connect import DatabricksSession
 from databricks.sdk.core import Config
-from loguru import logger
 
 DATABRICKS_CLUSTER_ID = "0606-201802-s75pygqn"
 

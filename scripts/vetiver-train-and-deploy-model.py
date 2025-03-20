@@ -11,12 +11,12 @@ Train and deploy a linear model.
 import os
 import sys
 
-import pins
 import vetiver
-
-from vetiver.data import mtcars
-from sklearn.linear_model import LinearRegression
 from rsconnect.api import RSConnectServer
+from sklearn.linear_model import LinearRegression
+from vetiver.data import mtcars
+
+import pins
 
 # Fit a model ------------------------------------------------------------------
 
@@ -24,19 +24,14 @@ lm = LinearRegression().fit(mtcars, mtcars["mpg"])
 username = os.getenv("USER")
 model_name = f"{username}/mtcars-linear-model"
 
-v = vetiver.VetiverModel(
-    lm,
-    model_name=model_name,
-    save_ptype=True,
-    ptype_data=mtcars
-)
+v = vetiver.VetiverModel(lm, model_name=model_name, save_ptype=True, ptype_data=mtcars)
 
 # Pin model --------------------------------------------------------------------
 
 board = pins.board_rsconnect(
     server_url=os.getenv("CONNECT_SERVER"),
     api_key=os.getenv("CONNECT_API_KEY"),
-    allow_pickle_read=True
+    allow_pickle_read=True,
 )
 
 vetiver.vetiver_pin_write(board, v)
@@ -44,8 +39,7 @@ vetiver.vetiver_pin_write(board, v)
 # Deploy model -----------------------------------------------------------------
 
 connect_server = RSConnectServer(
-    url=os.getenv("CONNECT_SERVER"), 
-    api_key=os.getenv("CONNECT_API_KEY")
+    url=os.getenv("CONNECT_SERVER"), api_key=os.getenv("CONNECT_API_KEY")
 )
 
 vetiver.deploy_rsconnect(

@@ -4,7 +4,7 @@
 
 ```r
 rsconnect::writeManifest(
-  appDir = ".", 
+  appDir = ".",
   appPrimaryDoc = "full-report.Rmd",
   appFiles = c("email.Rmd")
 )

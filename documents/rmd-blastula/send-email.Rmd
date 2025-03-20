@@ -4,6 +4,6 @@ date: "`r lubridate::today()`"
 ---
 
 ```{r send_email}
-blastula::render_connect_email(input = "./email.Rmd") |> 
+blastula::render_connect_email(input = "./email.Rmd") |>
   blastula::attach_connect_email(subject = glue("Connect Content Report - {today()}"))
 ```
