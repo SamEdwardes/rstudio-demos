@@ -1,0 +1,10 @@
+default:
+    @just --list
+
+# Run streamlit
+run:
+    uv run streamlit run app.py
+
+# Generate a requirements.txt file
+output:
+    uv export --no-hashes -o requirements.txt

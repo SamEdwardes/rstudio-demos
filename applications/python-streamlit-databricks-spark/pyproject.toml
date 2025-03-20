@@ -1,0 +1,13 @@
+[project]
+name = "python-streamlit-spark-databricks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "databricks-connect==14.3.7",
+    "databricks-sdk>=0.46.0",
+    "loguru>=0.7.3",
+    "posit-sdk>=0.8.0",
+    "streamlit>=1.43.2",
+]
