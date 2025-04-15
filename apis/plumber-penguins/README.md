@@ -3,16 +3,13 @@
 A demo of how to use [Plumber](https://www.rplumber.io/index.html) to create APIs on RStudio Connect.
 
 - Code: <https://github.com/SamEdwardes/demo-plumber-penguins>
-- Deployment: <https://colorado.rstudio.com/rsc/demo-plumber-penguins/>
-
-<https://colorado.rstudio.com/rsc/palmerspenguins/>
 
 ![screenshot](imgs/screenshot.png)
 
 ## Usage
 
 ```bash
-curl -X GET "https://colorado.rstudio.com/rsc/palmerspenguins/penguins?sample_size=5"
+curl -X GET "https://pub.current.posit.team/content/8491faf4-d37d-44ce-9499-12dc67c15ddf/penguins?sample_size=2" -H "Content-Type: application/json" -H "Authorization: Key ${CONNECT_API_KEY}"
 ```
 
 ## Deployment
