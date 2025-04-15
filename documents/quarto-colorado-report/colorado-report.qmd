@@ -91,7 +91,7 @@ content <- content |>
       str_ends(app_mode, "dash") ~ "Web App",
       TRUE ~ "Unknown"
     )
-  ) |> 
+  ) |>
   # Orgnize factors
   mutate(
     language = factor(language, levels = c("Unknown", "QUarto", "Python", "R")),
@@ -102,16 +102,16 @@ content <- content |>
 ```{r user-count}
 #| code-fold: false
 
-licensed_users <- client |> 
+licensed_users <- client |>
   get_users(page_size = 50, limit = 99999) |>
   filter(locked == FALSE)
 
-summary_of_last_login <- licensed_users |> 
+summary_of_last_login <- licensed_users |>
   mutate(
     last_active_month = as.Date(lubridate::floor_date(active_time, unit = "month")),
-  ) |> 
+  ) |>
   group_by(last_active_month) |>
-  summarise(count = n(), .groups = "drop") |> 
+  summarise(count = n(), .groups = "drop") |>
   arrange(desc(last_active_month))
 
 last_year <- lubridate::today() - days(365)
@@ -139,16 +139,16 @@ usage_plot <- summary_of_last_login |>
   geom_line() +
   geom_vline(xintercept = last_year, color="red") +
   annotate(
-    "rect", 
-    xmin=min(summary_of_last_login$last_active_month), 
-    xmax=last_year, 
-    ymin=0, 
-    ymax=max(summary_of_last_login$count), 
-    alpha=.2, 
+    "rect",
+    xmin=min(summary_of_last_login$last_active_month),
+    xmax=last_year,
+    ymin=0,
+    ymax=max(summary_of_last_login$count),
+    alpha=.2,
     fill='red'
   ) +
   annotate(
-    "label", 
+    "label",
     x =last_year,
     hjust=1.1,
     y=max(summary_of_last_login$count) / 2,
@@ -161,7 +161,7 @@ usage_plot <- summary_of_last_login |>
     x = "Month",
     y = "Number of Users",
   )
-  
+
 usage_plot
 ```
 
@@ -178,9 +178,9 @@ Colorado has **`r comma(nrow(content))`** items deployed.
 ```{r plot-by-lang}
 #| fig-align: center
 
-deployed_by_language <- content |> 
+deployed_by_language <- content |>
   group_by(language, app_type) |>
-  summarise(n = n(), .groups = "drop") |> 
+  summarise(n = n(), .groups = "drop") |>
   ggplot(aes(x = app_type, y = n)) +
   geom_col(aes(fill = language)) +
   scale_fill_manual(values = colour_mapping_lang) +
@@ -202,10 +202,10 @@ deployed_by_language
 ```{r plot-by-type}
 #| fig-align: center
 
-content |> 
-  tabyl(app_mode) |> 
-  arrange(desc(n)) |> 
-  mutate(app_mode = fct_reorder(factor(app_mode), n)) |> 
+content |>
+  tabyl(app_mode) |>
+  arrange(desc(n)) |>
+  mutate(app_mode = fct_reorder(factor(app_mode), n)) |>
   ggplot(aes(x = app_mode, y = n)) +
   geom_col() +
   geom_label(aes(label = percent(percent, accuracy = 1)), nudge_y = 100) +
@@ -231,13 +231,13 @@ We can see how the type of content deployed changes over time.
 ```{r content-deployed-by-time-by-lang}
 #| fig-align: center
 
-content |> 
-  mutate(create_year_month = floor_date(created_time, unit = "month")) |> 
-  group_by(language, create_year_month) |> 
-  summarise(count = n(), .groups = "drop") |> 
+content |>
+  mutate(create_year_month = floor_date(created_time, unit = "month")) |>
+  group_by(language, create_year_month) |>
+  summarise(count = n(), .groups = "drop") |>
   ggplot(aes(x = create_year_month, y = count)) +
-  geom_col(aes(fill = language)) + 
-  scale_fill_manual(values = colour_mapping_lang) + 
+  geom_col(aes(fill = language)) +
+  scale_fill_manual(values = colour_mapping_lang) +
   scale_y_continuous(label=comma) +
   labs(
     title = "Content Creation Over Time",
@@ -252,13 +252,13 @@ content |>
 
 ```{r content-deployed-by-time-by-type}
 #| fig-align: center
-#| 
-content |> 
-  mutate(create_year_month = floor_date(created_time, unit = "month")) |> 
-  group_by(app_type, create_year_month) |> 
-  summarise(count = n(), .groups = "drop") |> 
+#|
+content |>
+  mutate(create_year_month = floor_date(created_time, unit = "month")) |>
+  group_by(app_type, create_year_month) |>
+  summarise(count = n(), .groups = "drop") |>
   ggplot(aes(x = create_year_month, y = count)) +
-  geom_col(aes(fill = app_type)) + 
+  geom_col(aes(fill = app_type)) +
   scale_fill_manual(values = colour_mapping_type) +
   scale_y_continuous(label=comma) +
   labs(

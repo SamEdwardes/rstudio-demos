@@ -52,4 +52,3 @@ curl -X POST "${MODEL_URL}/predict" \
  -H "Authorization: Key ${CONNECT_API_KEY}" \
  -d '{"cyl":0,"disp":0,"hp":0,"drat":0,"wt":0,"qsec":0,"vs":0,"am":0,"gear":0,"carb":0}'
 ```
-

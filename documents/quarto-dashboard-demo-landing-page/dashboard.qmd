@@ -89,7 +89,7 @@ format:
 
 **Posit Docs**:
 
-- Posit Workbench > **User** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/user/2024.09.0/posit-workbench/managed-credentials/snowflake.html> 
+- Posit Workbench > **User** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/user/2024.09.0/posit-workbench/managed-credentials/snowflake.html>
 - Posit Workbench > **Admin** Guide > Integrations > Snowflake Native App (preview): <https://docs.posit.co/ide/server-pro/2024.09.0/integration/snowflake/native-app/>
 - Architecture diagrams from James: <https://docs.google.com/presentation/d/1mTuZMkx9o9gMtrBNaVJ_PFmiUB-7yxqBfS2FUH6IuG4/edit#slide=id.g28740c4c710_0_200>
 - RevOrg Confluence page: <https://positpbc.atlassian.net/wiki/spaces/REV/pages/1021509633/Snowflake+Posit+Workbench+Native+App>
@@ -219,7 +219,7 @@ From AWS SageMaker:
 - User Guide: <>
 - Configuration: <>
 - Choose the right architecture: <https://solutions.posit.co/architecting/architectures/ppm/>
-- Reference architecture: <https://github.com/rstudio/architectures-package-manager> 
+- Reference architecture: <https://github.com/rstudio/architectures-package-manager>
 - Helm: <https://github.com/rstudio/helm/tree/main/charts/rstudio-pm>
 - Support ticket:
     - Server: <https://docs.posit.co/support.html>
@@ -242,7 +242,7 @@ config_pw(){
 };
 # Show logs for both rstudio-server and rstudio-launcher
 logs_pw(){
-        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Workbench Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-server/rserver.log && echo -e ${GREEN}"\n Posit Launcher Logs:\n"${NC} && tail -n 15 
+        sudo sh -c 'GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Workbench Logs:\n"${NC} && tail -n 15 /var/log/rstudio/rstudio-server/rserver.log && echo -e ${GREEN}"\n Posit Launcher Logs:\n"${NC} && tail -n 15
 /var/log/rstudio/launcher/rstudio-launcher.log'
 };
 alias config=config_pw

@@ -36,7 +36,7 @@ rsconnect write-manifest streamlit \
   app
 ```
 
-> ⚠️ Remember to update the `app/requirements.txt` file if you add any new packages. 
+> ⚠️ Remember to update the `app/requirements.txt` file if you add any new packages.
 
 ### Programatic deploy
 
@@ -49,4 +49,3 @@ rsconnect deploy streamlit \
   --new \
   app
 ```
-

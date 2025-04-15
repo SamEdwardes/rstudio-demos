@@ -17,15 +17,13 @@ ui <- fluidPage(
 
 
 server <- function(input, output, session) {
-  
   output$current_working_directory <- renderPrint({
     getwd()
   })
-  
+
   output$directory_contents <- renderPrint({
     dir(input$directory_to_print)
   })
-  
 }
 
 shinyApp(ui = ui, server = server)

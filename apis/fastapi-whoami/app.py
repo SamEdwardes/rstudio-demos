@@ -3,17 +3,20 @@ from __future__ import annotations
 import json
 from typing import Annotated
 
-from fastapi import FastAPI, Request, Header, Depends
+from fastapi import Depends, FastAPI, Header, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
+
 app = FastAPI()
 
 
 @app.get("/whoami")
-async def get_whoami(rstudio_connect_credentials: Annotated[str | None, Header()] = None) -> JSONResponse:
+async def get_whoami(
+    rstudio_connect_credentials: Annotated[str | None, Header()] = None,
+) -> JSONResponse:
     """
     The most simple and contained way to get user metadata.
-    """ 
+    """
     user_meta_data = json.loads(rstudio_connect_credentials)
     return user_meta_data
 
@@ -35,14 +38,16 @@ class UserMetadata(BaseModel):
 async def get_whoami1(request: Request) -> UserMetadata:
     """
     Headers can be obtained using the `Request` object.
-    """ 
+    """
     rstudio_connect_credentials = request.headers.get("rstudio-connect-credentials")
     user_meta_data = UserMetadata.from_header_string(rstudio_connect_credentials)
     return UserMetadata(**user_meta_data)
 
 
 @app.get("/whoami2")
-async def get_whoami2(rstudio_connect_credentials: Annotated[str | None, Header()] = None) -> UserMetadata:
+async def get_whoami2(
+    rstudio_connect_credentials: Annotated[str | None, Header()] = None,
+) -> UserMetadata:
     """
     Headers can be obtained using the `Header` object directly.
     """
@@ -50,7 +55,9 @@ async def get_whoami2(rstudio_connect_credentials: Annotated[str | None, Header(
     return user_meta_data
 
 
-async def get_current_user(rstudio_connect_credentials: Annotated[str | None, Header()] = None):
+async def get_current_user(
+    rstudio_connect_credentials: Annotated[str | None, Header()] = None,
+):
     """
     FastAPI also had a dependency injection system that can be used.
     """
@@ -59,7 +66,7 @@ async def get_current_user(rstudio_connect_credentials: Annotated[str | None, He
 
 
 @app.get("/whoami3")
-async def get_whoami3(user = Depends(get_current_user)) -> UserMetadata:
+async def get_whoami3(user=Depends(get_current_user)) -> UserMetadata:
     """
     Rely on the depedency injection system for getting the user metadata.
     """

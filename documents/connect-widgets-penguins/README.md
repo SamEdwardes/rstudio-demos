@@ -23,7 +23,7 @@ To deploy to RStudio connect refresh the manifest.json file:
 
 ```r
 rsconnect::writeManifest(
-  "app", 
+  "app",
   appFiles = c("report.Rmd", "imgs")
 )
 ```

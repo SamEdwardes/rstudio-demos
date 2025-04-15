@@ -39,7 +39,7 @@ cp /etc/rstudio-pm/rstudio-pm.gcfg /etc/rstudio-pm/default-rstudio-pm.gcfg
 
 cat <<EOF > /etc/rstudio-pm/rstudio-pm.gcfg
 [Server]
-Address = 
+Address =
 RVersion = /opt/R/${R_VERSION}
 
 [HTTP]

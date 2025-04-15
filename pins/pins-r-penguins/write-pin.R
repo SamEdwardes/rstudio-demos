@@ -2,7 +2,7 @@
 board <- pins::board_rsconnect(server = "https://colorado.rstudio.com/rsc")
 
 # Pin to the board
-board |> 
+board |>
   pins::pin_write(
     palmerpenguins::penguins,
     title = "Pins with R - Palmer Penguins",
@@ -21,5 +21,5 @@ board |>
   )
 
 # See all versions
-board %>% 
+board %>%
   pins::pin_versions("sam.edwardes/penguins_pins_r_demo")

@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends locales \
     && localedef -i en_US -f UTF-8 en_US.UTF-8 \
     && rm -rf /var/lib/apt/lists/*
-	
+
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
@@ -92,4 +92,3 @@ RUN apt-get update \
   && apt-get update \
   && apt-get install -y libpoppler-cpp-dev \
   && rm -rf /var/lib/apt/lists/*
-  

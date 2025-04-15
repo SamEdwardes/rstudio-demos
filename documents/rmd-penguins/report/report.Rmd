@@ -29,18 +29,18 @@ Palmer penguins is a data set provided by Allison Horst (<https://github.com/all
 Here is what the first 5 rows of the data looks like.
 
 ```{r}
-penguins |> 
-  head() |> 
-  kbl() |> 
+penguins |>
+  head() |>
+  kbl() |>
   kable_styling(c("striped", "hover"))
 ```
 
 As you can see, the `penguins` data is much more fun then the `iris` data.
 
 ```{r}
-iris |> 
-  head() |> 
-  kbl() |> 
+iris |>
+  head() |>
+  kbl() |>
   kable_styling(c("striped", "hover"))
 ```
 
@@ -49,7 +49,7 @@ iris |>
 You can make many fun visualizations with the `penguins` data set.
 
 ```{r}
-fig <- penguins |> 
+fig <- penguins |>
   ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
   geom_point() +
   labs(
@@ -59,7 +59,7 @@ fig <- penguins |>
     color = "Species"
   )
 
-fig |> 
+fig |>
   ggplotly()
 ```
 

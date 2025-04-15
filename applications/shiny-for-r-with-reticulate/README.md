@@ -10,7 +10,7 @@ Any example of how to publish a Shiny for R application that uses reticulate to 
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate 
+source .venv/bin/activate
 python -m pip install --upgrade pip wheel setuptools
 ```
 
@@ -62,7 +62,7 @@ np$array(c(1, 2, 3))
 
 ```R
 > reticulate::py_config()
-Error in normalizePath(conda, winslash = "/", mustWork = TRUE) : 
+Error in normalizePath(conda, winslash = "/", mustWork = TRUE) :
   path[1]="/opt/python/3.9.6/bin/conda": No such file or directory
 python:         /usr/home/sam.edwardes/rstudio-demos/applications/shiny-for-r-with-reticulate/.venv/bin/python3
 libpython:      /opt/python/3.10.11/lib/libpython3.10.so
@@ -101,4 +101,3 @@ rsconnect::deployApp(
   appTitle = "Shiny for R with Reticulate"
 )
 ```
-
