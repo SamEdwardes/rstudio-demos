@@ -7,20 +7,22 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True
 url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
 data = pd.read_csv(url)
 
-app.layout = dbc.Container([
-    html.H1('Meet the penguins!', style={'margin-top': '10pt'}),
-    html.Div(
-        [
-            html.Div(
-                dcc.Link(
-                    f"{page['name']} - {page['path']}", href=page["relative_path"]
+app.layout = dbc.Container(
+    [
+        html.H1("Meet the penguins!", style={"margin-top": "10pt"}),
+        html.Div(
+            [
+                html.Div(
+                    dcc.Link(
+                        f"{page['name']} - {page['path']}", href=page["relative_path"]
+                    )
                 )
-            )
-            for page in dash.page_registry.values()
-        ]
-    ),
-	dash.page_container
-])
+                for page in dash.page_registry.values()
+            ]
+        ),
+        dash.page_container,
+    ]
+)
 
-if __name__ == '__main__':
-	app.run_server(debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=True)

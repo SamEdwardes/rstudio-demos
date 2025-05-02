@@ -1,25 +1,20 @@
-
 import os
 
-import pins
 import rsconnect
 import vetiver
-
-from vetiver.data import mtcars
 from sklearn.tree import DecisionTreeRegressor
+from vetiver.data import mtcars
 
+import pins
 
 # Fit a a model.
 
-car_mod = DecisionTreeRegressor().fit(
-    mtcars.drop(columns="mpg"), 
-    mtcars["mpg"]
-)
+car_mod = DecisionTreeRegressor().fit(mtcars.drop(columns="mpg"), mtcars["mpg"])
 
 v = vetiver.VetiverModel(
-    car_mod, 
-    model_name = "sam.edwardes/cars_mpg",
-    prototype_data = mtcars.drop(columns="mpg") 
+    car_mod,
+    model_name="sam.edwardes/cars_mpg",
+    prototype_data=mtcars.drop(columns="mpg"),
 )
 
 # Save the model as a pin to Connect.
@@ -27,7 +22,7 @@ v = vetiver.VetiverModel(
 board = pins.board_rsconnect(
     server_url=os.getenv("CONNECT_SERVER"),
     api_key=os.getenv("CONNECT_API_KEY"),
-    allow_pickle_read=True
+    allow_pickle_read=True,
 )
 
 vetiver.vetiver_pin_write(board, v, versioned=True)
@@ -35,13 +30,12 @@ vetiver.vetiver_pin_write(board, v, versioned=True)
 # Deploy the model to Connect as a REST API using FastAPI.
 
 connect_server = rsconnect.api.RSConnectServer(
-    url=os.getenv("CONNECT_SERVER"),
-    api_key=os.getenv("CONNECT_API_KEY")
+    url=os.getenv("CONNECT_SERVER"), api_key=os.getenv("CONNECT_API_KEY")
 )
 
 vetiver.deploy_rsconnect(
     connect_server=connect_server,
     board=board,
     pin_name="sam.edwardes/cars_mpg",
-    title="Tree model for mtcars"
+    title="Tree model for mtcars",
 )

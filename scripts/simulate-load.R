@@ -25,7 +25,7 @@ for (i in 1:n_iterations) {
 }
 
 # Get end time.
-end_time <-  Sys.time()
+end_time <- Sys.time()
 
 # Get the total run time.
 total_time <- difftime(
@@ -34,4 +34,3 @@ total_time <- difftime(
 )
 
 print(total_time)
-

@@ -12,13 +12,13 @@ A fast replacement for an entire ecosystem of tools:
 - pip
 - pyenv
 - pip-tools
-- poetry 
+- poetry
 - pdm
 - pipx
 
 ## What is uv - for R users
 
-uv does not do anything with R! 
+uv does not do anything with R!
 
 But if I were to compare it to the R ecosystem, uv is kind of like having `rig`, `renv`, and `pak` in a single super fast package.
 
@@ -30,7 +30,7 @@ But if I were to compare it to the R ecosystem, uv is kind of like having `rig`,
 - Running scripts (`uv run app.py`)
 - Running tools (`uvx ruff`)
 
-## uv vs... 
+## uv vs...
 
 ## uv vs. pip
 
@@ -200,7 +200,7 @@ pl.DataFrame({"x": [1, 2, 3]})
 
 ## Why not uv?
 
-- They are VC funded, is it sustainable (no business model yet)? 
+- They are VC funded, is it sustainable (no business model yet)?
 - but... the project is open source and could be forked (MIT & Apache-2.0).
 - Pace of development is very fast. Constant changes right now.
 

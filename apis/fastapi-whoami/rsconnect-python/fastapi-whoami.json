@@ -8,5 +8,15 @@
         "title": "fastapi-whoami",
         "app_mode": "python-fastapi",
         "app_store_version": 1
+    },
+    "https://pub.current.posit.team/": {
+        "server_url": "https://pub.current.posit.team/",
+        "filename": "/home/sam.edwardes/rstudio-demos/apis/fastapi-whoami",
+        "app_url": "https://pub.current.posit.team/content/847effc0-47e2-4bc7-bb01-b73a7674c08c/",
+        "app_id": 107,
+        "app_guid": "847effc0-47e2-4bc7-bb01-b73a7674c08c",
+        "title": "Python API - Fast API - whoami",
+        "app_mode": "python-fastapi",
+        "app_store_version": 1
     }
 }

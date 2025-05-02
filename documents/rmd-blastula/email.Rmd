@@ -55,7 +55,7 @@ content <- content |>
       str_ends(app_mode, "dash") ~ "Web App",
       TRUE ~ "Unknown"
     )
-  ) |> 
+  ) |>
   # Orgnize factors
   mutate(
     language = factor(language, levels = c("Unknown", "QUarto", "Python", "R")),
@@ -68,9 +68,9 @@ content <- content |>
 This report includes a summary of all the content that is currently published on Connect. As of today, Connect has **`r comma(nrow(content))`** items deployed:
 
 ```{r fig.align='center'}
-content |> 
+content |>
   group_by(language, app_type) |>
-  summarise(n = n(), .groups = "drop") |> 
+  summarise(n = n(), .groups = "drop") |>
   ggplot(aes(x = app_type, y = n)) +
   geom_col(aes(fill = language)) +
   scale_fill_manual(values = colour_mapping_lang) +
@@ -86,10 +86,10 @@ content |>
 ```
 
 ```{r fig.align='center'}
-content |> 
-  tabyl(app_mode) |> 
-  arrange(desc(n)) |> 
-  mutate(app_mode = fct_reorder(factor(app_mode), n)) |> 
+content |>
+  tabyl(app_mode) |>
+  arrange(desc(n)) |>
+  mutate(app_mode = fct_reorder(factor(app_mode), n)) |>
   ggplot(aes(x = app_mode, y = n)) +
   geom_col() +
   geom_label(aes(label = percent(percent, accuracy = 1)), nudge_y = 100) +
@@ -104,13 +104,13 @@ content |>
 ```
 
 ```{r fig.align='center'}
-content |> 
-  mutate(create_year_month = floor_date(created_time, unit = "month")) |> 
-  group_by(language, create_year_month) |> 
-  summarise(count = n(), .groups = "drop") |> 
+content |>
+  mutate(create_year_month = floor_date(created_time, unit = "month")) |>
+  group_by(language, create_year_month) |>
+  summarise(count = n(), .groups = "drop") |>
   ggplot(aes(x = create_year_month, y = count)) +
-  geom_col(aes(fill = language)) + 
-  scale_fill_manual(values = colour_mapping_lang) + 
+  geom_col(aes(fill = language)) +
+  scale_fill_manual(values = colour_mapping_lang) +
   scale_y_continuous(label=comma) +
   labs(
     title = "Content Creation Over Time",
@@ -122,12 +122,12 @@ content |>
 ```
 
 ```{r fig.align='center'}
-content |> 
-  mutate(create_year_month = floor_date(created_time, unit = "month")) |> 
-  group_by(app_type, create_year_month) |> 
-  summarise(count = n(), .groups = "drop") |> 
+content |>
+  mutate(create_year_month = floor_date(created_time, unit = "month")) |>
+  group_by(app_type, create_year_month) |>
+  summarise(count = n(), .groups = "drop") |>
   ggplot(aes(x = create_year_month, y = count)) +
-  geom_col(aes(fill = app_type)) + 
+  geom_col(aes(fill = app_type)) +
   scale_fill_manual(values = colour_mapping_type) +
   scale_y_continuous(label=comma) +
   labs(
