@@ -8,12 +8,10 @@ validate = true
 files = [
   '/app.py',
   '/requirements.txt',
-  '/.posit/publish/2025-03-10-Databricks-test-T7IC.toml',
-  '/.posit/publish/deployments/deployment-AMVM.toml'
+  '/.posit/publish/Databricks Streamlit - SQL War-G3JV.toml',
+  '/.posit/publish/deployments/deployment-L5V4.toml'
 ]
-title = '2025-03-10-Databricks-test'
+title = 'Streamlit - Databricks SQL Warehouse - Simple Example'
 
 [python]
-version = '3.11.10'
-package_file = 'requirements.txt'
-package_manager = 'pip'
+version = "3.12.6"

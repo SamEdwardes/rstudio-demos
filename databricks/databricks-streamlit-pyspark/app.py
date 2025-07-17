@@ -7,39 +7,35 @@ from posit import connect
 from databricks.connect import DatabricksSession
 from databricks.sdk.core import Config
 
-DATABRICKS_CLUSTER_ID = "0606-201802-s75pygqn"
-
 # -----------------------------------------------------------------------------
 # Set-up Databricks connection
 # -----------------------------------------------------------------------------
+DATABRICKS_CLUSTER_ID = os.environ.get("DATABRICKS_CLUSTER_ID", "0606-201802-s75pygqn")
 
-# If running on Connect. See
-# https://docs.posit.co/connect/cookbook/content/integrations/databricks/viewer/python/
-# for examples using different frameworks.
+if os.environ.get("WORKBENCH_WEB_BASE_URL"):
+    logger.info("Running in Posit Workbench")
+    cfg = Config(profile="workbench", cluster_id=DATABRICKS_CLUSTER_ID)
 
-if os.getenv("RSTUDIO_PRODUCT") == "CONNECT":
+elif os.getenv("RSTUDIO_PRODUCT") == "CONNECT":
     logger.info("Running in Posit Connect")
+    # Get OAuth token using posit-sdk
     client = connect.Client()
     user_session_token = st.context.headers.get("Posit-Connect-User-Session-Token")
     access_token = client.oauth.get_credentials(user_session_token).get("access_token")
-    config = Config(
+    # Create the Databricks config object
+    cfg = Config(
         token=access_token,
-        host="https://adb-3256282566390055.15.azuredatabricks.net",
+        host=os.environ.get(
+            "DATABRICKS_HOST", "https://adb-3256282566390055.15.azuredatabricks.net"
+        ),
         cluster_id=DATABRICKS_CLUSTER_ID,
     )
-
-# If running outside of Connect. This example assumes you are runninging in
-# Posit Workbench with Databricks managed credentials configured.
 
 else:
-    logger.info("NOT running in Posit Connect")
-    config = Config(
-        profile="workbench",
-        cluster_id=DATABRICKS_CLUSTER_ID,
-    )
+    raise ValueError("Not running on Posit Connect or Posit Workbench")
 
 # Create your spark connection object.
-spark = DatabricksSession.builder.sdkConfig(config).getOrCreate()
+spark = DatabricksSession.builder.sdkConfig(cfg).getOrCreate()
 
 # -----------------------------------------------------------------------------
 # Streamlit UI

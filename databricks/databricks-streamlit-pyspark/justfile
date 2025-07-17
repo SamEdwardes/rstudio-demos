@@ -1,0 +1,5 @@
+default:
+    @just --list
+
+export:
+    uv export -o requirements.txt --no-hashes --no-dev
