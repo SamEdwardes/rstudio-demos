@@ -8,9 +8,21 @@ A demo of how to use [Plumber](https://www.rplumber.io/index.html) to create API
 
 ## Usage
 
+Using curl:
+
 ```bash
-curl -X GET "https://pub.current.posit.team/content/8491faf4-d37d-44ce-9499-12dc67c15ddf/penguins?sample_size=2" -H "Content-Type: application/json" -H "Authorization: Key ${CONNECT_API_KEY}"
+curl -L -X GET "https://pub.current.posit.team/public/plumber-penguins-2025-07-17/penguins?sample_size=2" -H "Content-Type: application/json" -H "Authorization: Key ${CONNECT_API_KEY}"
 ```
+
+Using httpie:
+
+```bash
+uvx --from httpie https pub.current.posit.team/public/plumber-penguins-2025-07-17/penguins \
+  "Authorization:Key ${CONNECT_API_KEY}" \
+  sample_size==2
+```
+
+
 
 ## Deployment
 
