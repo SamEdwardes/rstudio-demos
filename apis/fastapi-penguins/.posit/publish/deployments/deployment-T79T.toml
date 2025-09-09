@@ -11,9 +11,9 @@ id = '001ef08d-cb55-4cd7-bc7b-7b04927e0095'
 dashboard_url = 'https://pub.current.posit.team/connect/#/apps/001ef08d-cb55-4cd7-bc7b-7b04927e0095'
 direct_url = 'https://pub.current.posit.team/content/001ef08d-cb55-4cd7-bc7b-7b04927e0095/'
 logs_url = 'https://pub.current.posit.team/connect/#/apps/001ef08d-cb55-4cd7-bc7b-7b04927e0095/logs'
-deployed_at = '2025-07-17T16:02:03Z'
-bundle_id = '6232'
-bundle_url = 'https://pub.current.posit.team/__api__/v1/content/001ef08d-cb55-4cd7-bc7b-7b04927e0095/bundles/6232/download'
+deployed_at = '2025-07-17T20:13:25Z'
+bundle_id = '6242'
+bundle_url = 'https://pub.current.posit.team/__api__/v1/content/001ef08d-cb55-4cd7-bc7b-7b04927e0095/bundles/6242/download'
 files = [
   '.posit/publish/deployments/deployment-T79T.toml',
   '.posit/publish/fastapi-penguins-G3IU.toml',
