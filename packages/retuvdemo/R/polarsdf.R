@@ -3,7 +3,7 @@ pl <- NULL
 .onLoad <- function(...) {
   reticulate::py_require("polars")
   pl <<- reticulate::import("polars", delay_load = TRUE)
-}pl
+}
 
 #' Polars DataFrame
 #'
