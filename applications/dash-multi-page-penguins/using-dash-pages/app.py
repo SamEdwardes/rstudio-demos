@@ -1,7 +1,11 @@
-import dash
-import dash_bootstrap_components as dbc
-import pandas as pd
-from dash import Dash, dcc, html
+# Load environment variables before importing dash
+from dotenv import load_dotenv
+load_dotenv()
+
+import dash # noqa: E402
+import dash_bootstrap_components as dbc  # noqa: E402
+import pandas as pd # noqa: E402
+from dash import Dash, dcc, html # noqa: E402
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True)
 url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
@@ -25,4 +29,4 @@ app.layout = dbc.Container(
 )
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)

@@ -10,7 +10,7 @@
 Create a new virtual environment:
 
 ```bash
-python -m venv venv
+python -m venv .venv
 source venv/bin/activate
 python -m pip install --upgrade pip wheel
 pip install -requirements.txt
@@ -29,10 +29,11 @@ python app.py
 The app is automatically deployed to RStudio connect using git backed deployment. Make any changes to the code, then run the following:
 
 ```bash
-rsconnect write-manifest dash \
+uv run rsconnect write-manifest dash \
   --overwrite \
-  --python venv/bin/python \
   --entrypoint app \
+  --exclude .env \
+  --exclude **/*.pyc \
   .
 ```
 
@@ -43,8 +44,9 @@ rsconnect write-manifest dash \
 You can deploy the app using the rsconnect cli:
 
 ```bash
- rsconnect deploy dash \
-  --python venv/bin/python \
+uv run rsconnect deploy dash \
   --entrypoint app:app \
+  --exclude .env \
+  --exclude **/*.pyc \
   .
 ```

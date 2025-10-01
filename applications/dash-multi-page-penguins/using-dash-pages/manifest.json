@@ -6,49 +6,54 @@
     "entrypoint": "app"
   },
   "python": {
-    "version": "3.10.4",
+    "version": "3.12.7",
     "package_manager": {
       "name": "pip",
-      "version": "22.2.2",
+      "version": "25.2",
       "package_file": "requirements.txt"
+    }
+  },
+  "environment": {
+    "python": {
+      "requires": "~=3.12.0"
     }
   },
   "files": {
     "requirements.txt": {
-      "checksum": "4b6d34b8d6df48b6c01943b055cc343b"
+      "checksum": "09b4a3c6e8fb4b2aba278dd1e801caa0"
+    },
+    ".gitignore": {
+      "checksum": "f579cccc964135c7d644c7b2d3b0d3ec"
+    },
+    ".python-version": {
+      "checksum": "d18c4e0052ac7ae03328c2163225e88f"
     },
     "README.md": {
-      "checksum": "123601a2fe4822cb2946d069701ad329"
+      "checksum": "9355e566bc5a39a5c39b09846f64fafa"
     },
     "app.py": {
-      "checksum": "4ceda498a673bec06ec09e728bae145f"
+      "checksum": "66e25a05b77266816ba3c3d03fc3d6ec"
     },
-    "pages/__pycache__/analytics.cpython-310.pyc": {
-      "checksum": "5c02f2a356ca9f3217587904416df271"
+    "imgs/app-screenshot.png": {
+      "checksum": "07f77b94e72e8b296506373ffd1a276b"
     },
-    "pages/__pycache__/archive.cpython-310.pyc": {
-      "checksum": "9f03b69d0b7aa7905cf7527863136636"
+    "pages/__pycache__/histogram.cpython-312.pyc": {
+      "checksum": "39e81fbafdcde6ad296f7d44f998faf8"
     },
-    "pages/__pycache__/histogram.cpython-310.pyc": {
-      "checksum": "36e9438c85e16065f9f85f082a2eb2f8"
+    "pages/__pycache__/home.cpython-312.pyc": {
+      "checksum": "85bc45552c7df753327022912916b617"
     },
-    "pages/__pycache__/home.cpython-310.pyc": {
-      "checksum": "8648448e2e5a96f635351b8d56cf97ce"
-    },
-    "pages/__pycache__/info.cpython-310.pyc": {
-      "checksum": "d4ba603d250475e778c373ca7b4d052f"
-    },
-    "pages/__pycache__/scatter.cpython-310.pyc": {
-      "checksum": "ec647ca70be19f2fe4c083ff7e417169"
+    "pages/__pycache__/scatter.cpython-312.pyc": {
+      "checksum": "644876b383b9f7416489950cb63e2ce2"
     },
     "pages/histogram.py": {
-      "checksum": "0e7099bd3a092715195c009fd7fbfaa6"
+      "checksum": "b6627b306705123ac66886518404c222"
     },
     "pages/home.py": {
-      "checksum": "9bdd0ed2849f1e4ad57005e628a3cae5"
+      "checksum": "c8a182dee484b80d3c2f4783b98a7ef9"
     },
     "pages/scatter.py": {
-      "checksum": "9c9ff466eb5312b95f073435c66dd3e6"
+      "checksum": "43cfe4193be0df4b712085b1b267f229"
     }
   }
 }
