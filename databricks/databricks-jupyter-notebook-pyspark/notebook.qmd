@@ -29,11 +29,11 @@ if os.environ.get("WORKBENCH_WEB_BASE_URL"):
         profile="workbench",
         cluster_id=os.environ.get("DATABRICKS_CLUSTER_ID", "0606-201802-s75pygqn"),
     )
-    
+
 elif os.environ.get("POSIT_PRODUCT") == "CONNECT":
     logger.info("Running in Posit Connect")
     raise ValueError("Example for Databricks with PySpark running in Posit Connect not yet created. Service account for Databricks first needs to be added to Connect.")
-    
+
 else:
     raise ValueError("Not running in Posit Workbench or Posit Connect.")
 ```
@@ -72,5 +72,3 @@ df
 #| vscode: {languageId: python}
 px.histogram(df, x="loan_amnt")
 ```
-
-
