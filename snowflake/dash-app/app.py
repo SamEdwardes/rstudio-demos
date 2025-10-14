@@ -43,7 +43,8 @@ def make_connection_to_snowflake():
         session_token = get_session_token(flask.request)
 
         auth = PositAuthenticator(
-            local_authenticator="EXTERNALBROWSER", user_session_token=session_token
+            local_authenticator="EXTERNALBROWSER",
+            user_session_token=session_token
         )
 
         con = snowflake.connector.connect(

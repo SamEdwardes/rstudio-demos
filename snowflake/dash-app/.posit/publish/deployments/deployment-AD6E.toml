@@ -2,7 +2,7 @@
 '$schema' = 'https://cdn.posit.co/publisher/schemas/posit-publishing-record-schema-v3.json'
 server_type = 'connect'
 server_url = 'https://pub.current.posit.team'
-client_version = '1.22.0'
+client_version = '1.23.8'
 created_at = ''
 dismissed_at = ''
 type = 'python-dash'
@@ -11,9 +11,9 @@ id = 'cf8b8652-a209-432e-8308-4c495354386a'
 dashboard_url = 'https://pub.current.posit.team/connect/#/apps/cf8b8652-a209-432e-8308-4c495354386a'
 direct_url = 'https://pub.current.posit.team/content/cf8b8652-a209-432e-8308-4c495354386a/'
 logs_url = 'https://pub.current.posit.team/connect/#/apps/cf8b8652-a209-432e-8308-4c495354386a/logs'
-deployed_at = '2025-10-01T22:27:19Z'
-bundle_id = '7875'
-bundle_url = 'https://pub.current.posit.team/__api__/v1/content/cf8b8652-a209-432e-8308-4c495354386a/bundles/7875/download'
+deployed_at = '2025-10-02T15:22:07Z'
+bundle_id = '7926'
+bundle_url = 'https://pub.current.posit.team/__api__/v1/content/cf8b8652-a209-432e-8308-4c495354386a/bundles/7926/download'
 files = [
   '.posit/publish/Snowflake with Dash Example-4JLL.toml',
   '.posit/publish/deployments/deployment-AD6E.toml',
