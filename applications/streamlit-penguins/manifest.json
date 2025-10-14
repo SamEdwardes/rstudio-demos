@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-streamlit",
+    "entrypoint": "app"
+  },
+  "python": {
+    "version": "3.12.11",
+    "package_manager": {
+      "name": "pip",
+      "version": "25.2",
+      "package_file": "requirements.txt"
+    }
+  },
+  "environment": {
+    "python": {
+      "requires": ">=3.12.8"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "62813ff240df133521207906753a064a"
+    },
+    ".gitignore": {
+      "checksum": "af910880509ee1e86bf64824ac57608b"
+    },
+    ".posit/publish/Meet the Penguins (Streamlit)-RHOH.toml": {
+      "checksum": "427dc44d80c58f41f3139d7b92ca03d1"
+    },
+    ".posit/publish/Push button streamlit app-O32J.toml": {
+      "checksum": "631658e445012bf92e795f7e823e7d92"
+    },
+    ".posit/publish/Streamlit Demo 2024-10-24-UF6I.toml": {
+      "checksum": "442e4edc97cd8a531d5f3b0a3bc64af9"
+    },
+    ".posit/publish/Streamlit deployment-0CSJ.toml": {
+      "checksum": "8c8ff0ffd1135c435f2fccb7ee8de5a0"
+    },
+    ".posit/publish/Streamlit from VS Code-T1RD.toml": {
+      "checksum": "aad4de5bb2ded2b06335c20552693e5f"
+    },
+    ".posit/publish/Streamlit push button-E8HS.toml": {
+      "checksum": "b527df0f9bddf5a67426716f2cf7ddc7"
+    },
+    ".posit/publish/deployments/deployment-1.toml": {
+      "checksum": "65e207dcd245bf8ce24c739fd122d9ae"
+    },
+    ".posit/publish/deployments/deployment-1EU4.toml": {
+      "checksum": "336ffd37b50f80ebec801f73ee7d7039"
+    },
+    ".posit/publish/deployments/deployment-2.toml": {
+      "checksum": "cc1fd8f83f063494d7070810f2109d98"
+    },
+    ".posit/publish/deployments/deployment-B2CF.toml": {
+      "checksum": "2a16127bdd4fadf2af770e9b029a9d79"
+    },
+    ".posit/publish/deployments/deployment-EU1B.toml": {
+      "checksum": "32f14ea83a8ba66722c3d32cde5a2954"
+    },
+    ".posit/publish/deployments/deployment-I4QF.toml": {
+      "checksum": "7e07f0c342bd5eee8dff80e3959eefb8"
+    },
+    ".ruff_cache/.gitignore": {
+      "checksum": "07813ad49b7c958916325086d422ca91"
+    },
+    ".ruff_cache/0.14.0/10044378915399063860": {
+      "checksum": "550b256c932e3b75e27d8a53a06d8308"
+    },
+    ".ruff_cache/0.14.0/6534314003691519928": {
+      "checksum": "792386f553880dbaf42285623bb522af"
+    },
+    ".ruff_cache/CACHEDIR.TAG": {
+      "checksum": "4b50dc490ca121c935cec9c15273aa95"
+    },
+    "LICENSE": {
+      "checksum": "77f9d1d8952a6481ac0196ba89e11cfe"
+    },
+    "README.md": {
+      "checksum": "fef44a41875fa3f2b4c1eb8c53be56a2"
+    },
+    "app.py": {
+      "checksum": "dc1abd8b0ac2110cff35cc9106e2ef84"
+    },
+    "demo-streamlit-penguins.Rproj": {
+      "checksum": "c8d3f84a410f46d4d8b03a268e313e35"
+    },
+    "imgs/app-screenshot.png": {
+      "checksum": "c5f2bd6ab2f5d5cdd7105b7692f56db6"
+    },
+    "pyproject.toml": {
+      "checksum": "080fb8b893e5008c82ef2484be4abaf3"
+    },
+    "pyrefly.toml": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "uv.lock": {
+      "checksum": "3171086a1cbbf16c8362826f9cb51d47"
+    }
+  }
+}

@@ -9,3 +9,10 @@ dependencies = [
     "rsconnect-python>=1.25.1",
     "streamlit>=1.41.1",
 ]
+
+[tool.pyrefly]
+
+[dependency-groups]
+dev = [
+    "rsconnect-python>=1.27.1",
+]

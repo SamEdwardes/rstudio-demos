@@ -7,45 +7,38 @@
 
 ## Usaage
 
-Create a virtual environment.
+Create a virtual environment and install dependencies.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip wheel
-pip install -r app/requirements.txt
+uv sync
 ```
 
 Then run the app.
 
 ```bash
-streamlit run app/app.py
+uv run streamlit run app.py
 ```
 
 ## Deployment
+
+Ensure that  the requirements.txt is in sync with the lockfile.
+
+```bash
+uv export -o requirements.txt --no-hashes --no-dev
+```
 
 ### Git-backed deploy
 
 The app is automatically deployed to RStudio connect using git backed deployment. Make any changes to the code, then run the following:
 
 ```bash
-rsconnect write-manifest streamlit \
-  --overwrite \
-  --python .venv/bin/python \
-  --entrypoint app \
-  app
+uv run rsconnect write-manifest streamlit --overwrite .
 ```
-
-> ⚠️ Remember to update the `app/requirements.txt` file if you add any new packages.
 
 ### Programatic deploy
 
 You can deploy the app using the rsconnect cli:
 
 ```bash
-rsconnect deploy streamlit \
-  --python .venv/bin/python \
-  --entrypoint app \
-  --new \
-  app
+uv run rsconnect deploy streamlit --new .
 ```
