@@ -1,0 +1,74 @@
+---
+title: Configuration
+jupyter: python3
+---
+
+```{python}
+#| vscode: {languageId: python}
+import os
+
+import plotly.express as px
+import polars as pl
+from databricks.connect import DatabricksSession
+from databricks.sdk.core import Config
+from dotenv import load_dotenv
+from loguru import logger
+
+load_dotenv()
+```
+
+
+
+Create the Databricks configuration.
+
+```{python}
+#| vscode: {languageId: python}
+if os.environ.get("WORKBENCH_WEB_BASE_URL"):
+    logger.info("Running in Posit Workbench")
+    cfg = Config(
+        profile="workbench",
+        cluster_id=os.environ.get("DATABRICKS_CLUSTER_ID", "0606-201802-s75pygqn"),
+    )
+
+elif os.environ.get("POSIT_PRODUCT") == "CONNECT":
+    logger.info("Running in Posit Connect")
+    raise ValueError("Example for Databricks with PySpark running in Posit Connect not yet created. Service account for Databricks first needs to be added to Connect.")
+
+else:
+    raise ValueError("Not running in Posit Workbench or Posit Connect.")
+```
+
+## Spark
+
+Establish a connection to Databricks
+
+```{python}
+#| vscode: {languageId: python}
+spark = DatabricksSession.builder.sdkConfig(cfg).getOrCreate()
+```
+
+```{python}
+#| vscode: {languageId: python}
+sql_query = """
+SELECT *
+FROM `sol_eng_demo_nickp`.`default`.`lending_club`
+LIMIT 100;
+"""
+
+df = (
+    pl
+    .DataFrame(spark.sql(sql_query).toPandas())
+    .with_columns(
+        pl.col("loan_amnt", "funded_amnt", "funded_amnt_inv", "revol_bal").cast(pl.Int64),
+        pl.col("installment", "annual_inc", "out_prncp", "out_prncp_inv", "total_pymnt").cast(pl.Float64),
+        pl.col("int_rate", "revol_util").str.replace("%", "").cast(pl.Float64) / 100
+    )
+)
+
+df
+```
+
+```{python}
+#| vscode: {languageId: python}
+px.histogram(df, x="loan_amnt")
+```

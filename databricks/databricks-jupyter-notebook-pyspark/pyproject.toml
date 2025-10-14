@@ -1,7 +1,7 @@
 [project]
 name = "databricks-jupyter-notebook"
 version = "0.1.0"
-requires-python = "==3.12.6"
+requires-python = "==3.10.17"
 dependencies = [
     "databricks-connect>=14,<15",
     "databricks-sdk>=0.52.0",

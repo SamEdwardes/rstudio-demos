@@ -1,8 +1,20 @@
-library(ellmer)
+library(shiny)
+library(shinychat)
 
-chat <- chat_databricks(
-  model = "databricks-claude-3-7-sonnet",
-  system_prompt = "You are a friendly but terse assistant.",
+ui <- bslib::page_fluid(
+  chat_ui("chat")
 )
 
-live_console(chat)
+server <- function(input, output, session) {
+  chat <- ellmer::chat_databricks(
+    model = "databricks-claude-3-7-sonnet",
+    system_prompt = "You're a trickster who answers in riddles"
+  )
+  
+  observeEvent(input$chat_user_input, {
+    stream <- chat$stream_async(input$chat_user_input)
+    chat_append("chat", stream)
+  })
+}
+
+shinyApp(ui, server)
