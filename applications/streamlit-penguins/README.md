@@ -42,3 +42,11 @@ You can deploy the app using the rsconnect cli:
 ```bash
 uv run rsconnect deploy streamlit --new .
 ```
+
+## Databot
+
+Here is an example of a prompt to use with Databot:
+
+```markdown
+I want to better understand this data: https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv. Use polars to explore the data.
+```
