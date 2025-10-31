@@ -1,14 +1,15 @@
+# Use load_dotenv when running in VS Code. For Positron it is not required:
+# https://docs.posit.co/ide/server-pro/user/positron/guide/proxying-web-servers.html#dash
 from dotenv import load_dotenv
 
 load_dotenv()
 
-import json
 import os
 
-import flask
 import polars as pl
 import snowflake.connector
 from dash import Dash, Input, Output, callback, dash_table, dcc, html
+from flask import Request, request
 from loguru import logger
 from posit.connect.external.snowflake import PositAuthenticator
 from werkzeug.exceptions import BadRequest
@@ -19,7 +20,7 @@ DATABASE = "LENDING_CLUB"
 SCHEMA = "PUBLIC"
 
 
-def get_session_token(req: flask.Request) -> str:
+def get_session_token(req: Request) -> str:
     """
     Returns a dict containing "user" and "groups" information populated by
     the incoming request header "RStudio-Connect-Credentials".
@@ -40,11 +41,10 @@ def make_connection_to_snowflake():
     if os.getenv("POSIT_PRODUCT") == "CONNECT":
         logger.info("Running in Posit Connect")
 
-        session_token = get_session_token(flask.request)
+        session_token = get_session_token(request)
 
         auth = PositAuthenticator(
-            local_authenticator="EXTERNALBROWSER",
-            user_session_token=session_token
+            local_authenticator="EXTERNALBROWSER", user_session_token=session_token
         )
 
         con = snowflake.connector.connect(
@@ -92,7 +92,6 @@ def query_data(grade_filter=None) -> pl.DataFrame:
 
 app = Dash()
 
-
 app.layout = [
     html.H1("Loan Data"),
     html.Div(
@@ -136,11 +135,4 @@ def update_table(selected_grade):
 
 
 if __name__ == "__main__":
-    if os.getenv("DASH_DEBUG"):
-        logger.info("Running in dash debug mode.")
-        port = os.environ["PORT"]
-        logger.info(f"{port=}")
-        logger.info(f"{os.getenv('DASH_REQUESTS_PATHNAME_PREFIX')=}")
-        app.run(debug=True, port=port)
-    else:
-        app.run(debug=False)
+    app.run(debug=True)
