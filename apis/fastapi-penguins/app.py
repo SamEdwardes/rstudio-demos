@@ -1,7 +1,9 @@
 import datetime as dt
+import socket
 
 import polars as pl
 from fastapi import FastAPI
+from loguru import logger
 from pydantic import BaseModel, Field
 
 app = FastAPI()
@@ -44,6 +46,7 @@ class PenguinRaw(BaseModel):
 
 @app.get("/penguins", response_model=list[Penguin])
 def penguins(sample_size: int | None = None):
+    logger.info(f"Server /penguins endpoint - {sample_size=}, {socket.gethostname()=}")
     url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
     penguins_df = pl.read_csv(url)
     if sample_size:
@@ -54,6 +57,9 @@ def penguins(sample_size: int | None = None):
 
 @app.get("/raw_penguins", response_model=list[PenguinRaw])
 def raw_penguins(sample_size: int | None = None):
+    logger.info(
+        f"Server /raw_penguins endpoint - {sample_size=}, {socket.gethostname()=}"
+    )
     url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
     penguins_raw_df = pl.read_csv(url)
     if sample_size:

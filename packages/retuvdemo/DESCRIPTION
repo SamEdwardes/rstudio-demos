@@ -1,0 +1,12 @@
+Package: retuvdemo
+Title: Demo How to Use Reticulate in an R Package with uv
+Version: 0.0.0.9000
+Authors@R: 
+    person("Sam", "Edwardes", , "sam.edwardes@posit.co", role = c("aut", "cre"))
+Description: A demo of how to use reticulate with uv in an R package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    reticulate
