@@ -1,0 +1,27 @@
+---
+title: "Quarto report with identical email"
+format: email
+notebook-links: false
+---
+
+```{python}
+#| echo: false
+from datetime import datetime
+
+now = datetime.now()
+```
+
+
+<!-- Render _content.qmd for display in Posit Connect  -->
+{{< embed _content.qmd >}}
+
+:::{.email}
+
+:::{.subject}
+Email Subject for `{python} now` 
+:::
+
+<!-- Render _content.qmd for display the email  -->
+{{< embed _content.qmd >}}
+
+:::

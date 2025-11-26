@@ -1,0 +1,29 @@
+<!-- If you don't include an h1 it can mess up the rendering of the parent document. Including a hidden h1 resolves this. -->
+[# Hidden h1]{style="display: none;"}
+
+```{python import-block}
+import polars as pl
+```
+
+## Code chunk 1
+
+This is code chunk 1
+
+```{python code-chunk-1}
+#| fig-cap: "The data"
+df = pl.DataFrame({
+    "x": ["A", "B", "C"],
+    "y": [1, 2, 3],
+})
+
+print(df)
+```
+
+## Code chunk 2
+
+This is code chunk 2
+
+```{python code-chunk-2}
+#| fig-cap: "The plot"
+df.plot.bar(x="x", y="y").properties(width=500, title="Bar Plot")
+```

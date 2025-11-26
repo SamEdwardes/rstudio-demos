@@ -1,0 +1,24 @@
+---
+title: "Include"
+format: email
+notebook-links: false
+---
+
+```{python}
+#| echo: false
+from datetime import datetime
+
+now = datetime.now()
+```
+
+{{< include _content.qmd >}}
+
+:::{.email}
+
+:::{.subject}
+Email Subject for `{python} now` 
+:::
+
+{{< include _content.qmd >}}
+
+:::
