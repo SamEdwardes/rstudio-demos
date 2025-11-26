@@ -1,0 +1,64 @@
+---
+title: Quarto Document with attachments
+format: email
+format: 
+    # If you don't want to send an email you could use `html` instead
+    email: 
+        other-links:
+            - text: data.csv
+              href: data.csv
+              icon: filetype-csv
+    ipynb: default
+    typst: default
+email-attachments:
+  - data.csv
+  - foo.txt
+  - foo.pdf # This doesn't work
+---
+
+## Report
+
+Generate some data, and attach to this report.
+
+```{python}
+import polars as pl
+
+df = pl.DataFrame({
+    "A": [1, 2, 3],
+    "B": ["a", "b", "c"]
+})
+
+df.write_csv("data.csv")
+
+df
+```
+
+```{python}
+from pathlib import Path
+
+Path("foo.txt").write_text("This is a text file.")
+```
+
+## Email preview
+
+<!-- Content inside the .email dev won't be included in the report -->
+
+::: {.email}
+
+::: {.subject}
+Email with attachments
+:::
+
+Please find attached your data!
+
+:::
+
+Here is a preview of your email:
+
+<iframe src="email-preview/index.html" width="100%" height="500"></iframe>
+
+## PDF Preview
+
+Open [pdf.pdf](doc.pdf) or view below:
+
+<iframe src="doc.pdf" width="100%" height="500"></iframe>
