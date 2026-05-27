@@ -2,7 +2,6 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-
 @st.cache_data
 def load_data():
     url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"

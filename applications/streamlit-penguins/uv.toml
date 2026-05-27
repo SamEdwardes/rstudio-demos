@@ -1,0 +1,3 @@
+[[index]]
+url = "https://packagemanager.posit.co/pypi/latest/simple"
+default = true
