@@ -1,0 +1,17 @@
+# Generic hooks that are useful for most projects.
+[[repos]]
+repo = "https://github.com/pre-commit/pre-commit-hooks"
+rev = "v6.0.0"
+hooks = [
+  { id = "check-yaml" },
+  { id = "check-toml" },
+  { id = "check-json" },
+  { id = "end-of-file-fixer" },
+  { id = "trailing-whitespace" },
+  { id = "check-added-large-files" },
+]
+
+[[repos]]
+repo = "https://github.com/rvben/rumdl-pre-commit"
+rev = "v0.0.222"
+hooks = [{ id = "rumdl-fmt", args = ["--disable=MD013"] }]
