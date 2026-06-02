@@ -4,6 +4,8 @@
 
 Deploying a SvelteKit app to Posit Connect.
 
+![Screenshot of the SvelteKit app running on Posit Connect](./app-screenshot.jpg)
+
 ## Connect config
 
 `/etc/rstudio-connect/rstudio-connect.gcfg`
@@ -52,13 +54,15 @@ You can preview the production build with `npm run preview`.
 <https://docs.posit.co/connect/user/nodejs/>
 
 ```sh
-# Build the app
+npm install
 npm run check
+
+# Build the app
 npm run build
 
-# Deploy to Connect
-uvx --with rsconnect-python rsconnect deploy nodejs --entrypoint build/index.js .
+# package.json and package-lock.json must be included in the bundle
+cp package.json package-lock.json build/
 
-# Or...
-npm run connect-deploy
+# Deploy to Connect
+rsconnect deploy nodejs ./build
 ```

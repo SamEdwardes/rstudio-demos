@@ -1,5 +1,12 @@
 {
-	"permissions": {
-		"allow": ["mcp__svelte__get-documentation"]
-	}
+  "permissions": {
+    "allow": [
+      "mcp__svelte__get-documentation",
+      "mcp__svelte__svelte-autofixer",
+      "Bash(bunx prettier *)",
+      "Bash(bun run *)",
+      "Bash(bunx eslint *)",
+      "Read(//Users/samedwardes/.local/share/uv/tools/rsconnect-python/lib/python3.14/site-packages/rsconnect/**)"
+    ]
+  }
 }
