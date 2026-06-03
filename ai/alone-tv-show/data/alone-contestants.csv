@@ -1,0 +1,125 @@
+Season,Name,Age,Gender,Hometown,Country,Days Lasted,Reason / Outcome,Status,10 Items
+1,Alan Kay,40,Male,"Blairsville, Georgia",United States,56,Victor,Winner,Saw; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Water bottle/canteen; Fishing line & hooks; Small gauge gill net; Trap wire; Knife
+1,Sam Larson,22,Male,"Lincoln, Nebraska",United States,55,Lost the mind game,Tapped out,12x12 ground sheet tarp; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Bow and 6 arrows; Slingshot; Emergency rations; Knife
+1,Mitch Mitchell,34,Male,"Bellingham, Massachusetts",United States,43,Mother's cancer,Tapped out,Axe; Sleeping bag; Bivvy bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Small gauge gill net; Bow and 6 arrows; Knife; Sharpening stone
+1,Lucas Miller,32,Male,"Quasqueton, Iowa",United States,39,Felt content,Tapped out,12x12 ground sheet tarp; Saw; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Extra Tarp; Emergency rations; Knife
+1,Dustin Feher,37,Male,"Pittsburgh, Pennsylvania",United States,8,Fear of storm,Tapped out,550 paracord; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Water bottle/canteen; Fishing line & hooks; Small gauge gill net; Slingshot; Knife
+1,Brant McGee,44,Male,"Albemarle, North Carolina",United States,6,Consumed salt water,Tapped out,12x12 ground sheet tarp; 550 paracord; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Bow and 6 arrows; Emergency rations; Knife
+1,Wayne Russell,46,Male,"Saint John, New Brunswick",Canada,4,Fear of bears,Tapped out,12x12 ground sheet tarp; 550 paracord; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Bow and 6 arrows; Emergency rations; Knife
+1,Chris Weatherman,41,Male,"Umatilla, Florida",United States,1.5,Fear of wolves,Tapped out,12x12 ground sheet tarp; 550 paracord; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Bow and 6 arrows; Multitool; Knife
+1,Joe Robinet,24,Male,"Windsor, Ontario",Canada,1,Loss of ferro rod,Tapped out,12x12 tarp; 550 paracord; Axe; Sleeping bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Small gauge gill net; Extra emergency rations; Large knife
+1,Josh Chavez,31,Male,"Jackson, Ohio",United States,0.5,Fear of bears,Tapped out,12x12 ground sheet; 550 paracord; Saw; Axe; Sleeping bag; Bivvy bag; Large 2-quart pot; Ferro rod; Fishing line & hooks; Bow and 6 arrows
+2,David McIntyre,50,Male,"Kentwood, Michigan",United States,66,Victor,Winner,Axe; Knife; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Gill net
+2,Larry Roberts,44,Male,"Rush City, Minnesota",United States,64,"Hunger, mental breakdown",Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+2,Jose Martinez Amoedo,45,Male,"Santa Pola, Valencia",Spain/Canada,59,Fell off kayak into river,Tapped out,Axe; Knife; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Sharpening stone
+2,Nicole Apelian,45,Female,"Portland, Oregon",United States,57,Missed her kids,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Gill net
+2,Justin Vititoe,35,Male,"Augusta, Georgia",United States,35,Nothing left to accomplish,Tapped out,Axe; Knife; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Saw
+2,Randy Champagne,28,Male,"Boulder, Utah",United States,21,Did not like being alone,Tapped out,Pot; Ferro rod; Paracord; Fishing line & hooks; Sleeping bag; Bow & arrows; Knife; Gill net; Multitool; Saw
+2,Mike Lowe,55,Male,"Lewis, Colorado",United States,21,Missed his wife,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Duct tape
+2,Tracy Wilson,44,Female,"Aiken, South Carolina",United States,8,Bear scare,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+2,Mary Kate Green,36,Female,"Homer, Alaska",United States,7,Split tendon with axe,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+2,Desmond White,37,Male,"Coolidge, Arizona",United States,0.25,Bear scare,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+3,Zachary Fowler,36,Male,"Appleton, Maine",United States,87,Victor,Winner,Pot; Ferro rod; Paracord; Fishing line & hooks; Sleeping bag; Bow & arrows; Knife; Gill net; Multitool; Duct tape
+3,Carleigh Fairchild,29,Female,"Edna Bay, Alaska",United States,86,BMI too low,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+3,Megan Hanacek,41,Female,"Port McNeill, British Columbia",Canada,78,"Broken teeth, jaw pain",Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+3,Dave Nessia,49,Male,"Salt Lake City, Utah",United States,73,Systolic pressure too low,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+3,Callie North,27,Female,"Lopez Island, Washington",United States,72,Journey complete,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Duct tape
+3,Greg Ovens,53,Male,"Canal Flats, British Columbia",Canada,51,Hypothermia,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+3,Dan Wowak,34,Male,"Mahanoy City, Pennsylvania",United States,50,Missed family,Tapped out,Pot; Ferro rod; Paracord; Fishing line & hooks; Sleeping bag; Bow & arrows; Knife; Gill net; Multitool; Duct tape
+3,Britt Ahart,40,Male,"Mantua, Ohio",United States,35,Missed family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+3,Zach Gault,22,Male,"Caledon, Ontario",Canada,8,Cut arm with axe,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+3,Jim Shields,37,Male,"Langhorne, Pennsylvania",United States,3,Regretted leaving family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Jim Baird,35,Male,"Toronto, Ontario",Canada,75,Victor,Winner,Axe; Knife; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Saw
+4,Ted Baird,32,Male,"Toronto, Ontario",Canada,75,Victor,Winner,Axe; Knife; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Saw
+4,Pete Brockdorff,61,Male,"Poolesville, Maryland",United States,74,"Severe GERD, cost not worth it",Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+4,Sam Brockdorff,26,Male,"Poolesville, Maryland",United States,74,Cost not worth it,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Brooke Whipple,45,Female,"Fox, Alaska",United States,49,Too exhausted,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+4,Dave Whipple,40,Male,"Fox, Alaska",United States,49,Too exhausted,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Chris Wilkes,44,Male,"Hattiesburg, Mississippi",United States,14,Missed family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Brody Wilkes,33,Male,"Kentwood, Louisiana",United States,14,Missed family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+4,Shannon Bosdell,44,Male,"Wrangell, Alaska",United States,5,Lower back injury,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Jesse Bosdell,31,Male,"Skowhegan, Maine",United States,5,Partner's injury,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+4,Alex Ribar,48,Male,"Montville, Maine",United States,2,Not mentally prepared,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Logan Ribar,19,Male,"Liberty, Maine",United States,2,Not mentally prepared,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+4,Brad Richardson,23,Male,"Fox Lake, Illinois",United States,1,Partner's ankle injury,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+4,Josh Richardson,19,Male,"Fox Lake, Illinois",United States,1,Injured ankle,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+5,Sam Larson,25,Male,"Lincoln, Nebraska",United States,60,Victor,Winner,Pot; Ferro rod; Paracord; Fishing line & hooks; Sleeping bag; Bow & arrows; Knife; Gill net; Multitool; Duct tape
+5,Britt Ahart,41,Male,"Mantua, Ohio",United States,56,Missed his family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+5,Larry Roberts,46,Male,"Rush City, Minnesota",United States,41,Missed his family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+5,Dave Nessia,50,Male,"Salt Lake City, Utah",United States,36,Felt 'right',Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+5,Randy Champagne,31,Male,"Boulder, Utah",United States,35,Lonely,Tapped out,Pot; Ferro rod; Paracord; Fishing line & hooks; Sleeping bag; Bow & arrows; Knife; Gill net; Multitool; Saw
+5,Brooke Whipple,45,Female,"Fox, Alaska",United States,28,Lonely,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+5,Jesse Bosdell,32,Male,"Skowhegan, Maine",United States,24,Possible fecal impaction,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+5,Nicole Apelian,47,Female,"Raymond, Washington",United States,9,MS attack,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+5,Brad Richardson,24,Male,"Fox Lake, Illinois",United States,7,Had no food,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+5,Carleigh Fairchild,30,Female,"Anchorage, Alaska",United States,5,Fish hook in hand,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+6,Jordan Jonas,35,Male,"Lynchburg, Virginia",United States,77,Victor,Winner,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Gill net
+6,Woniya Thibeault,42,Female,"Grass Valley, California",United States,73,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+6,Nathan Donnelly,39,Male,"Lopez Island, Washington",United States,72,Shelter fire,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+6,Barry Karcher,39,Male,"Fort Collins, Colorado",United States,69,Lost too much weight,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+6,Nikki van Schyndel,44,Female,"Echo Bay, British Columbia",Canada,52,Low BMI,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+6,Michelle Wohlberg,31,Female,"Mullingar, Saskatchewan",Canada,48,Impacted bowel,Medically evacuated,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+6,Brady Nicholls,36,Male,"San Antonio, Texas",United States,32,Missed his family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+6,Ray Livingston,43,Male,"Vancouver, Washington",United States,19,Nothing left to give,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+6,Donny Dust,38,Male,"Monument, Colorado",United States,8,Food poisoning,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+6,Tim Backus,55,Male,"Lubbock, Texas",United States,4,Broken ankle,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+7,Roland Welker,47,Male,"Red Devil, Alaska",United States,100,Victor (100-day goal),Winner,Axe; Knife; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Gill net
+7,Callie Russell,31,Female,"Flathead Valley, Montana",United States,89,Frostbite of toes,Medically evacuated,Axe; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+7,Kielyn Marrone,33,Female,"Espanola, Ontario",Canada,80,Starvation,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+7,Amós Rodriguez,40,Male,"Indianapolis, Indiana",United States,58,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+7,Mark D'Ambrosio,33,Male,"Vancouver, Washington",United States,44,Missed his son,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+7,Joe Nicholas,31,Male,"Redding, California",United States,43,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+7,Joel Van Der Loon,34,Male,"Sisters, Oregon",United States,40,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+7,Keith Syers,45,Male,"Sturgis, Kentucky",United States,22,"Food poisoning, infection",Medically evacuated,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+7,Correy Hawk,30,Male,"Plattsmouth, Nebraska",United States,12,"Torn meniscus, MCL",Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+7,Shawn Helton,43,Male,"Henry, Tennessee",United States,10,Lost fire starter,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+8,Clay Hayes,39,Male,"Kendrick, Idaho",United States,74,Victor,Winner,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+8,Biko Wright,29,Male,"Otis, Oregon",United States,73,"Starvation, heart palpitations",Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+8,Theresa Emmerich Kamper,39,Female,"Exeter, England",United Kingdom,69,Low BMI,Medically evacuated,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+8,Colter Barnes,36,Male,"Inian Islands, Alaska",United States,67,Low BMI,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+8,Rose Anna Moore,43,Female,"Wellsboro, Pennsylvania",United States,37,"Frostbite, malnutrition",Medically evacuated,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+8,Nate Weber,47,Male,"East Jordan, Michigan",United States,24,Food poisoning,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+8,Matt Corradino,42,Male,St. Croix,U.S. Virgin Islands,22,Missed his family,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+8,Michelle Finn,46,Female,"Cherryfield, Maine",United States,21,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+8,Jordon Bell,43,Male,"Oak Ridge, Tennessee",United States,19,Missed his family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+8,Tim Madsen,48,Male,"Laramie, Wyoming",United States,6,"Anxiety attack, chest pains",Medically evacuated,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+9,Juan Pablo Quiñonez,30,Male,"Pinawa, Manitoba",Canada,78,Victor,Winner,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Gill net
+9,Karie Lee Knoke,57,Female,"Sandpoint, Idaho",United States,75,"Starvation, exhaustion",Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+9,Teimojin Tan,31,Male,"Montreal, Quebec",Canada,63,Missed his family,Tapped out,Sleeping bag; Axe; Multitool; Ferro rod; 2-quart pot; Bow and arrows; Paracord; Trapping wire; Fishing line and hooks; Emergency rations
+9,Adam Riley,36,Male,"Fayetteville, Arkansas",United States,52,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+9,Jessie Krebs,49,Female,"Pagosa Springs, Colorado",United States,46,Stomach inflammation,Medically evacuated,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+9,Tom Garstang,35,Male,"Earlysville, Virginia",United States,43,Back and knee injury,Tapped out,Bow and arrows; Axe; Paracord; Ferro rod; 2-quart pot; Fishing line and hooks; Sleeping bag; Saw; Multitool; Trapping wire
+9,Terry Burns,31,Male,"Homer, Alaska",United States,42,"Low BMI, parasitic infection",Medically evacuated,Axe; Sleeping bag; Bow and arrows; Fishing line and hooks; Ferro rod; Paracord; 2-quart pot; Trapping wire; Multitool; Crosscut Saw
+9,Benji Hill,46,Male,"Bellevue, Idaho",United States,27,Giardia infection,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+9,Igor Limansky,39,Male,"Salt Lake City, Utah",United States,20,"Heart palpitations, exhaustion",Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+9,Jacques Turcotte,23,Male,"Juneau, Alaska",United States,15,Missed his family,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+10,Alan Tenta,52,Male,"Columbia Valley, British Columbia",Canada,66,Victor,Winner,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Gill net
+10,James 'Wyatt' Black,50,Male,"Bracebridge, Ontario",Canada,64,Felt journey was complete,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+10,Mikey Helton,31,Male,"Rome, Georgia",United States,55,Severe hypothermia risk,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+10,Melanie Sawyer,54,Female,"Moriah, New York",United States,43,Felt journey complete,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+10,Tarcisio 'Taz' Ramos Dos Santos,35,Male,"Becket, Massachusetts",United States,40,Starvation,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+10,Cade Cole,28,Male,"Crowheart, Wyoming",United States,23,Loss of consciousness,Medically evacuated,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+10,Jodi Rose,45,Female,"Worland, Wyoming",United States,22,Missed her family,Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+10,Luke Joseph Olsen,39,Male,"Maui, Hawaii",United States,20,Intestinal problems,Tapped out,Axe; Pot; Sleeping bag; Paracord; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool; Saw
+10,Ann Rosenquist,56,Female,"Bayfield, Wisconsin",United States,19,"Starvation, heart palpitations",Tapped out,Axe; Saw; Sleeping bag; Paracord; Pot; Fishing line & hooks; Ferro rod; Bow & arrows; Multitool; Knife
+10,Lee Ray DeWilden,59,Male,"Huslia, Alaska",United States,18,Starvation,Tapped out,Axe; Pot; Sleeping bag; Paracord; Saw; Fishing line & hooks; Ferro rod; Bow & arrows; Knife; Multitool
+11,William Larkham Jr.,49,Male,"Happy Valley-Goose Bay, NL",Canada,84,Victor,Winner,Sleeping Bag; Axe; Saw; Knife; 2-Quart Pot; Ferro Rod; Snare Wire; Fishing Line and Hooks; Paracord; Fishing Net
+11,Timber Cleghorn,35,Male,"Salem, Indiana",United States,83,Achieved personal goals,Tapped out,Sleeping Bag; 2-Quart Pot; Ferro Rod; Axe; Saw; Multitool; Bow and Arrows; Paracord; Snare Wire; Fishing Line and Hooks
+11,Dub Paetz,44,Male,"Frederic, Michigan",United States,80,"Starvation, missed family",Tapped out,Swiss Army Knife; Saw; Axe; Ferro Rod; Fishing Line and Hooks; Snare Wire; 2-Quart Pot; Paracord; Bow and Arrows; Sleeping Bag
+11,Sarah Poynter,48,Female,"Skwentna, Alaska",United States,42,Kidney pain,Tapped out,Sleeping Bag; Paracord; 2-Quart Pot; Ferro Rod; Snare Wire; Fishing Line and Hooks; Bow and Arrows; Hatchet; Saw; Multitool
+11,Isaiah Tuck,36,Male,"Ghent, West Virginia",United States,23,Severe chest pains,Tapped out,Sleeping Bag; Multitool; Pot; Ferro Rod; Bow and Arrows; Fishing Line and Hooks; Shovel; Paracord; Snare Wire; Saw
+11,Jake Messinger,42,Male,"Fremont County, Idaho",United States,21,Bowel obstruction,Medically evacuated,Axe; Saw; Shovel; Paracord; Multitool; Fishing Line and Hooks; 2-Quart Pot; Snare Wire; Bow and Arrows; Sleeping Bag
+11,Michela Carriere,34,Female,"Cumberland House, Saskatchewan",Canada,18,"Loneliness, isolation",Tapped out,Sleeping Bag; Ferro Rod; Axe; Multitool; Paracord; Bow and Arrows; 2-Quart Pot; Snare Wire; Fish Net; Saw
+11,Dusty Blake,36,Male,"Fifty-Six, Arkansas",United States,10,Severe gastric pain,Tapped out,Axe; Saw; Ferro Rod; Multitool; Fishing Line and Hooks; Paracord; Pot; Snare Wire; Bow and Arrows; Sleeping Bag
+11,Peter Albano,42,Male,"Castlegar, British Columbia",Canada,8,Emotional breakdown,Tapped out,Sleeping Bag; 2-Quart Pot; Ferro Rod; Bow and Arrows; Fishing Line and Hooks; Snare Wire; Multitool; Saw; Paracord; Shovel
+11,Cubby Hoover,33,Male,"Seligman, Missouri",United States,4,Deep arrow wound to leg,Tapped out,Sleeping Bag; 2-Quart Pot; Ferro Rod; Paracord; Multitool; Bow and Arrows; Fishing Line and Hook; Snare Wire; Saw; Axe
+12,Nathan Olsen,52,Male,"Buhl, Idaho",United States,34,Victor,Winner,Cook pot; Canteen; Leatherman; Knife; Bow and arrows; Fishing gear; Blanket; Salt; Soap; Ferro rod
+12,Kelsey Loper,35,Female,"Winnett, Montana",United States,33,Lack of food,Tapped out,"Fishing; Bow; Ferro rod; Pot; Blanket; Tarp; 1/3 lb rice, 1/3 lb salt, and 1/3 lb sugar; Leatherman; Paracord; Saw"
+12,Katie Rydge,46,Female,"Emerald Beach, NSW",Australia,28,Needed to learn to let go,Tapped out,Bow and arrows; Fishing line and hooks; Leatherman; Silky saw; Water pot; Axe; Ferro rod; Salt; Canvas tarp; Blanket
+12,Baha Mahmutov,50,Male,"Wharncliff, Ontario",Canada,19,"Fire struggles, lack of food",Tapped out,Tarp; Bank line; Pot; Soap; Bow; Pemmican; Salt; Saw; Multitool; Shovel
+12,Dug North,53,Male,"Nashua, New Hampshire",United States,14,Health concerns after fainting,Tapped out,Pot; Canteen; Leatherman; Tarp; Ferro rod; Fishing gear; Shovel; Bow; Salt; Blanket
+12,Douglas S. Meyer,57,Male,"Kannapolis, North Carolina",United States,14,"Wet weather, father's cancer",Tapped out,Blanket; Bivy bag; Pot; Water bottle; Ferro rod; Leatherman; Machete; Fishing gear; Bow and arrows; Pemmican
+12,Will Lamb,31,Male,"Leakey, Texas",United States,5,"Acute colitis, bloody vomit",Medically evacuated,Tarp; Machete; Pot; Multitool; Fishing gear; Bank line; Blanket; Bow and arrows; Shovel; Ferro rod
+12,Pablo Arguelles,55,Male,"Jacksonville, Florida",United States,5,Struggled to stay hydrated,Tapped out,Bow and arrows; Shovel; Saw; 2-quart pot; Ferro rod; Bivy bag; Paracord; Fishing line and hooks; Multitool; 12x12 tarp
+12,Colton Gilman,35,Male,"Red Lodge, Montana",United States,4,"Depression, lack of distractions",Tapped out,Bow and arrows; Ferro rod; Pot; Fishing gear; Wool blanket; Multitool; Axe; Paracord; Tarp; Saw
+12,Jit Patel,35,Male,Anakiwa,New Zealand,4,Diarrhea and vomiting,Tapped out,Bow and arrows; Fishing gear; Pot; Ferro rod; Water bottle; Multitool; Paracord; Shovel; Tarp; Saw
