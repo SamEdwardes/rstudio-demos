@@ -1,0 +1,10 @@
+{
+  "permission": {
+    "executeCode": {
+      "*": "allow"
+    },
+    "bash": {
+      "uv add *": "allow"
+    }
+  }
+}
