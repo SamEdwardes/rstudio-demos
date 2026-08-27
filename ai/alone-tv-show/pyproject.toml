@@ -1,9 +1,18 @@
 [project]
 name = "alone-tv-show"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server with data about the survival TV show Alone"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13"
 dependencies = [
+    "fastmcp>=3.4.6",
+    "plotnine>=0.15.8",
     "polars>=1.41.2",
+    "pyarrow>=25.0.1",
+    "shiny>=1.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
 ]
